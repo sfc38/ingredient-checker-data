@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dietary Ingredient Database",
+  "description": "Schema for per-ingredient dietary rulings across multiple profiles (halal, vegan, vegetarian, kosher).",
+  "type": "object",
+  "required": ["version", "profiles", "ingredients"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}(\\.[0-9]+)?$",
+      "description": "ISO date of last build, optionally with a patch suffix (e.g. 2026-06-01.2)."
+    },
+    "profiles": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["halal", "vegan", "vegetarian", "kosher"] },
+      "minItems": 1
+    },
+    "ingredients": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/ingredient" }
+    }
+  },
+  "$defs": {
+    "ingredient": {
+      "type": "object",
+      "required": ["id", "names", "category", "rulings"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]{2}:[a-z0-9-]+$",
+          "description": "Open Food Facts canonical ingredient ID (e.g. en:e471)."
+        },
+        "names": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "e_number": {
+          "type": ["string", "null"],
+          "pattern": "^E[0-9]{3,4}[a-z]?$"
+        },
+        "category": {
+          "type": "string",
+          "enum": ["additive", "meat", "dairy", "plant", "fish", "egg", "alcohol", "insect", "mineral", "other"]
+        },
+        "rulings": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": false,
+          "properties": {
+            "halal":      { "$ref": "#/$defs/ruling" },
+            "vegan":      { "$ref": "#/$defs/ruling" },
+            "vegetarian": { "$ref": "#/$defs/ruling" },
+            "kosher":     { "$ref": "#/$defs/ruling" }
+          }
+        },
+        "last_reviewed": { "type": "string", "format": "date" }
+      }
+    },
+    "ruling": {
+      "type": "object",
+      "required": ["effective_status", "explanation", "opinions", "confidence"],
+      "additionalProperties": false,
+      "properties": {
+        "effective_status": {
+          "type": "string",
+          "enum": ["allowed", "forbidden", "caution", "unknown"]
+        },
+        "explanation": { "type": "string", "minLength": 1 },
+        "disputed": { "type": "boolean", "default": false },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+        "opinions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/opinion" },
+          "minItems": 1
+        }
+      }
+    },
+    "opinion": {
+      "type": "object",
+      "required": ["source", "type", "status"],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "enum": ["authority", "community", "scientific", "scripture"] },
+        "status": { "type": "string", "enum": ["allowed", "forbidden", "caution", "unknown"] },
+        "note": { "type": "string" },
+        "ref": { "type": "string", "description": "Citation: document name, page, or URL." }
+      }
+    }
+  }
+}
