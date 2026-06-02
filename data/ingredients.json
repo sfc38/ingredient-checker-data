@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-01",
+  "version": "2026-06-02.1",
   "profiles": ["halal"],
   "ingredients": [
     {
@@ -7,10 +7,15 @@
       "names": ["Beef"],
       "e_number": null,
       "category": "meat",
+      "definition": "Meat from cattle.",
+      "common_sources": [
+        { "name": "Halal-slaughtered (dhabihah)",   "note": "Halal" },
+        { "name": "Non-halal commercial slaughter", "note": "Generally considered haram or mushbooh by most schools" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Beef is permissible only if the animal was slaughtered according to Islamic requirements (dhabihah). Non-halal-slaughtered beef is generally considered impermissible by most schools.",
+          "explanation": "Beef is permissible only if the animal was slaughtered according to Islamic requirements (dhabihah). Beef on a generic product label does not specify slaughter method; treat as mushbooh unless the product is certified halal.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
@@ -19,17 +24,23 @@
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:chicken",
       "names": ["Chicken", "Poultry"],
       "e_number": null,
       "category": "meat",
+      "definition": "Meat from domestic chicken or other poultry.",
+      "common_sources": [
+        { "name": "Halal-slaughtered (dhabihah)",   "note": "Halal" },
+        { "name": "Non-halal commercial slaughter", "note": "Generally considered haram or mushbooh by most schools" },
+        { "name": "Mechanically slaughtered",       "note": "Disputed; some authorities permit, others reject" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Chicken is permissible only if slaughtered according to Islamic requirements (dhabihah). Non-halal-slaughtered poultry is generally considered impermissible by most schools.",
+          "explanation": "Chicken is permissible only if slaughtered according to Islamic requirements (dhabihah). Generic chicken on a product label does not specify slaughter method; treat as mushbooh unless the product is certified halal.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
@@ -38,494 +49,638 @@
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:e120",
       "names": ["E120", "Cochineal", "Carmine", "Carminic Acid", "Natural Red 4"],
       "e_number": "E120",
       "category": "insect",
+      "definition": "A bright red colorant produced by crushing and processing dried cochineal insects.",
+      "common_sources": [
+        { "name": "Cochineal (Dactylopius coccus) insect", "note": "Disputed across schools — insect-derived" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Red colorant derived from crushed cochineal insects. Scholarly opinions differ: some schools consider insect-derived ingredients impermissible while others permit them. Conservative ruling is mushbooh pending guidance.",
+          "explanation": "Insect-derived ingredients are treated differently by different schools. Some conservative scholars consider all insects (other than locusts) impermissible; others permit insect-derived substances. Classified as mushbooh with disagreement flagged.",
           "disputed": true,
           "confidence": "medium",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "forbidden", "note": "Insect-derived" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution", "note": "Differs by school of thought" }
+            { "source": "WorldOfIslam E-number list",                       "type": "community", "status": "forbidden", "note": "Insect-derived" },
+            { "source": "Community consensus across halal-checker resources","type": "community", "status": "caution",   "note": "Differs by school of thought" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:e441",
       "names": ["E441", "Gelatin", "Gelatine"],
       "e_number": "E441",
       "category": "additive",
+      "definition": "A protein extracted from animal collagen. Used as a gelling agent in candy, marshmallows, gummies, capsules, yogurt, and many desserts.",
+      "common_sources": [
+        { "name": "Porcine (pig skin and bone)",        "note": "Haram. Most common commercial source in EU and US." },
+        { "name": "Bovine (cow hide and bone)",          "note": "Halal only if from a halal-slaughtered animal" },
+        { "name": "Fish",                                "note": "Generally halal" },
+        { "name": "Halal-certified bovine",              "note": "Halal" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Source must be verified. Porcine gelatin is haram. Bovine or fish gelatin is halal only if the source animal was slaughtered according to Islamic requirements. Most commercial gelatin in EU/US markets is porcine unless explicitly marked halal.",
+          "explanation": "Gelatin is classified as mushbooh because the source is rarely declared on the label. The default commercial source in EU and US markets is porcine, which is haram. Bovine and fish gelatin exist but are usually labeled when used. Treat as haram unless the product carries a halal certification.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution", "note": "Source-dependent; often porcine" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution", "note": "Source-dependent; often porcine" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:e471",
       "names": ["E471", "Mono- and Diglycerides", "Mono- and Di-glycerides of Fatty Acids"],
       "e_number": "E471",
       "category": "additive",
+      "definition": "An emulsifier derived from glycerol and fatty acids. Used to blend oils and water in bread, margarine, ice cream, peanut butter, and many processed foods.",
+      "common_sources": [
+        { "name": "Plant oils (soybean, palm, sunflower)", "note": "Halal" },
+        { "name": "Beef tallow",                           "note": "Halal only if from a halal-slaughtered animal" },
+        { "name": "Lard (pork fat)",                       "note": "Haram" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Emulsifier derived from glycerol and fatty acids. Source can be plant oils (halal) or animal fats (potentially haram, especially if porcine). The source is rarely declared on the label; verify with the manufacturer.",
+          "explanation": "Classified as mushbooh because the source fat is almost never declared on the label. Many manufacturers use plant oils (halal), but animal fats including lard are also used. Verification with the manufacturer is the only way to know.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:e472e",
       "names": ["E472e", "Mono- and Diacetyl Tartaric Acid Esters of Mono- and Diglycerides", "DATEM"],
       "e_number": "E472e",
       "category": "additive",
+      "definition": "A dough conditioner derived from glycerides. Common in industrial bread, rolls, and baked goods.",
+      "common_sources": [
+        { "name": "Plant-derived glycerides",  "note": "Halal" },
+        { "name": "Animal-derived glycerides", "note": "Mushbooh; haram if porcine" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Dough conditioner derived from glycerides. Underlying fat may be plant- or animal-sourced. Verify with the manufacturer.",
+          "explanation": "Inherits the source-verification concern of E471: the underlying fat may be plant or animal. Classified as mushbooh until the manufacturer confirms a plant source.",
           "disputed": false,
           "confidence": "medium",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:e481",
       "names": ["E481", "Sodium Stearoyl Lactylate", "SSL"],
       "e_number": "E481",
       "category": "additive",
+      "definition": "An emulsifier produced from stearic acid and lactic acid. Common in bread, cakes, and creamy fillings.",
+      "common_sources": [
+        { "name": "Plant-derived stearic acid",  "note": "Halal" },
+        { "name": "Animal-derived stearic acid", "note": "Mushbooh; haram if porcine" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Emulsifier produced from stearic acid, which may be plant- or animal-derived. Verify the source with the manufacturer.",
+          "explanation": "Classified as mushbooh because stearic acid can be either plant- or animal-derived and labels do not distinguish. Verify with the manufacturer.",
           "disputed": false,
           "confidence": "medium",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:e483",
       "names": ["E483", "Stearyl Tartrate"],
       "e_number": "E483",
       "category": "additive",
+      "definition": "A flour treatment agent derived from stearyl alcohol and tartaric acid. Used to improve dough strength in commercial baking.",
+      "common_sources": [
+        { "name": "Plant-derived stearyl alcohol",  "note": "Halal" },
+        { "name": "Animal-derived stearyl alcohol", "note": "Mushbooh; haram if porcine" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Flour treatment agent derived from stearyl alcohol. The stearyl source can be either plant or animal; halal status depends on origin. Verification with the manufacturer or a certification body is recommended.",
+          "explanation": "Stearyl tartrate is classified as mushbooh because the stearyl alcohol can be derived from either plant or animal sources, and the halal status depends on origin. Verification with the manufacturer or a certification body is recommended.",
           "disputed": false,
           "confidence": "medium",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:e542",
       "names": ["E542", "Bone Phosphate", "Edible Bone Phosphate"],
       "e_number": "E542",
       "category": "additive",
+      "definition": "An anti-caking agent made from animal bone meal. Used in powdered foods, supplements, and toothpaste.",
+      "common_sources": [
+        { "name": "Porcine bone",       "note": "Haram. Common source in EU markets." },
+        { "name": "Bovine bone",        "note": "Halal only if from a halal-slaughtered animal" },
+        { "name": "Fish bone (rare)",   "note": "Generally halal" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Anti-caking agent derived from animal bones, commonly porcine in EU markets. Even when bovine-sourced, the animal must have been slaughtered according to Islamic requirements. Treat as haram unless the manufacturer confirms a halal source.",
+          "explanation": "Made directly from animal bones, commonly porcine in EU markets. Even when bovine-sourced, the source animal must have been halal-slaughtered. Treat as haram unless the manufacturer explicitly confirms a halal source.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "forbidden", "note": "Animal bone, often porcine" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution", "note": "Source-dependent but typically porcine in EU" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "forbidden", "note": "Animal bone, often porcine" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution",   "note": "Source-dependent but typically porcine in EU" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:e631",
       "names": ["E631", "Disodium Inosinate", "Sodium 5'-Inosinate"],
       "e_number": "E631",
       "category": "additive",
+      "definition": "A flavor enhancer commonly paired with MSG (E621) to intensify savory taste. Used in chips, instant noodles, and snacks.",
+      "common_sources": [
+        { "name": "Fish (sardines, anchovies)",            "note": "Generally halal" },
+        { "name": "Meat extract (including porcine)",      "note": "Mushbooh; haram if porcine" },
+        { "name": "Microbial fermentation (modern method)", "note": "Halal" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Flavor enhancer historically extracted from fish or meat (including pork). Modern production sometimes uses fermentation. Source must be verified; treat as mushbooh by default.",
+          "explanation": "Historically extracted from fish or meat (including pork). Modern production sometimes uses microbial fermentation, which is halal, but labels do not specify the production method. Classified as mushbooh until verified.",
           "disputed": false,
           "confidence": "medium",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution", "note": "Source-dependent" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution", "note": "Source-dependent" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:e635",
       "names": ["E635", "Disodium Ribonucleotides"],
       "e_number": "E635",
       "category": "additive",
+      "definition": "A blend of E627 (disodium guanylate) and E631 (disodium inosinate) used as a flavor enhancer.",
+      "common_sources": [
+        { "name": "Fish-derived",                  "note": "Generally halal" },
+        { "name": "Meat-derived (incl. porcine)",  "note": "Mushbooh; haram if porcine" },
+        { "name": "Microbial fermentation",        "note": "Halal" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Blend of E627 and E631. Inherits the source-verification concern of E631 (may be derived from fish, meat, or fermentation). Treat as mushbooh by default.",
+          "explanation": "Inherits the source-verification concern of E631. The same blend may be made from fish, meat (including pork), or microbial fermentation. Classified as mushbooh until verified.",
           "disputed": false,
           "confidence": "medium",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:e904",
       "names": ["E904", "Shellac", "Confectioner's Glaze"],
       "e_number": "E904",
       "category": "insect",
+      "definition": "A natural resin secreted by the female lac insect. Used as a glaze on candies (jelly beans, M&Ms), pharmaceutical pills, and waxed fruit.",
+      "common_sources": [
+        { "name": "Lac insect (Kerria lacca) secretion", "note": "Disputed across schools — insect-derived" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Resin secreted by the lac insect, used as a glaze on candies and pills. Scholarly opinions differ on insect-derived substances. Many community lists treat shellac as mushbooh; conservative scholars advise avoidance.",
+          "explanation": "Like E120 carmine, shellac is insect-derived and scholarly opinions differ on its permissibility. Many community lists classify it as mushbooh; conservative scholars advise avoidance. Classified as mushbooh with disagreement flagged.",
           "disputed": true,
           "confidence": "medium",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution", "note": "Differs by school of thought" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution", "note": "Differs by school of thought" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:e920",
       "names": ["E920", "L-Cysteine", "L-Cysteine Hydrochloride"],
       "e_number": "E920",
       "category": "additive",
+      "definition": "An amino acid used as a dough conditioner to make commercial bread softer and easier to machine. Common in bagels, pizza crust, and packaged bread.",
+      "common_sources": [
+        { "name": "Human hair (industrial extraction, mainly China)", "note": "Haram (human origin)" },
+        { "name": "Duck or chicken feathers",                          "note": "Mushbooh; halal only if poultry was halal-slaughtered" },
+        { "name": "Synthetic / microbial fermentation",                "note": "Halal" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Amino acid used as a dough conditioner. Industrial sources include human hair, duck feathers, and synthetic/microbial fermentation. Source must be verified; only synthetic or microbial origin is unambiguously halal.",
+          "explanation": "Industrial L-cysteine has been extracted from human hair, duck feathers, and synthetic/microbial fermentation. Only synthetic or microbial origin is unambiguously halal. Labels do not declare the source; classified as mushbooh until verified.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution", "note": "Often from human hair or duck feathers" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution", "note": "Often from human hair or duck feathers" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:ethanol",
       "names": ["Ethanol", "Alcohol", "Ethyl Alcohol"],
       "e_number": null,
       "category": "alcohol",
+      "definition": "The type of alcohol produced by fermentation and present in alcoholic beverages. Also used industrially as a solvent for flavorings, extracts, and pharmaceuticals.",
+      "common_sources": [
+        { "name": "Fermentation of sugars or grains", "note": "Haram as an added ingredient" },
+        { "name": "Trace amounts in fermented foods", "note": "Disputed; some scholars permit trace amounts from natural fermentation" },
+        { "name": "Industrial / pharmaceutical use",  "note": "Disputed for non-beverage applications" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "forbidden",
-          "explanation": "Intoxicating alcohol is forbidden as a drink. As an ingredient, most scholars consider it haram; some permit trace residues from fermentation or natural occurrence. Conservative ruling treats added ethanol as haram.",
+          "explanation": "Intoxicating alcohol is forbidden. Added ethanol on an ingredient label is generally haram. Scholars differ on trace residues from natural fermentation; the conservative view treats added ethanol as haram regardless of concentration.",
           "disputed": true,
           "confidence": "high",
           "opinions": [
-            { "source": "Quran 5:90", "type": "scripture", "status": "forbidden", "note": "Intoxicants are forbidden" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "forbidden", "note": "Trace residues debated" }
+            { "source": "Quran 5:90",                                         "type": "scripture", "status": "forbidden", "note": "Intoxicants are forbidden" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "forbidden", "note": "Trace residues debated" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:gelatin",
       "names": ["Gelatin", "Gelatine"],
       "e_number": "E441",
       "category": "additive",
+      "definition": "A protein extracted from animal collagen. Used as a gelling agent in candy, marshmallows, gummies, capsules, yogurt, and many desserts.",
+      "common_sources": [
+        { "name": "Porcine (pig skin and bone)", "note": "Haram. Most common commercial source in EU and US." },
+        { "name": "Bovine (cow hide and bone)",  "note": "Halal only if from a halal-slaughtered animal" },
+        { "name": "Fish",                        "note": "Generally halal" },
+        { "name": "Halal-certified bovine",      "note": "Halal" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Source must be verified. Porcine gelatin is haram. Bovine or fish gelatin is halal only if the source animal was slaughtered according to Islamic requirements. Most commercial gelatin in EU/US markets is porcine unless explicitly marked halal.",
+          "explanation": "Gelatin is classified as mushbooh because the source is rarely declared on the label. The default commercial source in EU and US markets is porcine, which is haram. Bovine and fish gelatin exist but are usually labeled when used. Treat as haram unless the product carries a halal certification.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution", "note": "Source-dependent; often porcine" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution", "note": "Source-dependent; often porcine" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:lard",
       "names": ["Lard", "Pork Fat", "Rendered Pork Fat"],
       "e_number": null,
       "category": "meat",
+      "definition": "Rendered fat from pork. Used as a cooking fat and as an ingredient in pastries, refried beans, and traditional European baking.",
+      "common_sources": [
+        { "name": "Pork (pig)", "note": "Haram" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "forbidden",
-          "explanation": "Rendered fat from pork. Forbidden under the general prohibition of pork and its derivatives.",
+          "explanation": "Lard is rendered fat from pork and is forbidden under the general prohibition of pork and its derivatives.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "Quran 2:173", "type": "scripture", "status": "forbidden", "note": "Pork prohibited" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "forbidden" }
+            { "source": "Quran 2:173",                                       "type": "scripture", "status": "forbidden", "note": "Pork prohibited" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "forbidden" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:lecithin",
       "names": ["Lecithin"],
       "e_number": "E322",
       "category": "additive",
+      "definition": "An emulsifier used to blend oils and water in chocolate, baked goods, margarine, and many processed foods.",
+      "common_sources": [
+        { "name": "Soybean",        "note": "Halal" },
+        { "name": "Sunflower",      "note": "Halal" },
+        { "name": "Egg yolk",       "note": "Halal (not vegan)" },
+        { "name": "Animal tissue",  "note": "Haram if from porcine or non-halal-slaughtered source" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Emulsifier. Commercial lecithin is most often derived from soybeans (halal) or sunflower (halal), but can also be from eggs or, less commonly, animal sources. Soy lecithin is the typical default. When the source is unspecified, treat as mushbooh.",
+          "explanation": "Lecithin is classified as mushbooh because the source is rarely declared on the label. Most commercial lecithin is plant-derived (soybean or sunflower) and halal, but unlabeled lecithin must be verified with the manufacturer. Soy lecithin and sunflower lecithin are halal; lecithin from non-halal animal sources is haram.",
           "disputed": false,
-          "confidence": "medium",
+          "confidence": "high",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution", "note": "Usually soy but source-dependent" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution", "note": "Usually soy but source-dependent" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:mono-and-diglycerides-of-fatty-acids",
       "names": ["Mono- and Diglycerides of Fatty Acids", "Mono and Diglycerides"],
       "e_number": "E471",
       "category": "additive",
+      "definition": "An emulsifier derived from glycerol and fatty acids. Used to blend oils and water in bread, margarine, ice cream, peanut butter, and many processed foods.",
+      "common_sources": [
+        { "name": "Plant oils (soybean, palm, sunflower)", "note": "Halal" },
+        { "name": "Beef tallow",                           "note": "Halal only if from a halal-slaughtered animal" },
+        { "name": "Lard (pork fat)",                       "note": "Haram" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Emulsifier derived from glycerol and fatty acids. Source can be plant oils (halal) or animal fats (potentially haram, especially if porcine). The source is rarely declared on the label; verify with the manufacturer.",
+          "explanation": "Classified as mushbooh because the source fat is almost never declared on the label. Many manufacturers use plant oils (halal), but animal fats including lard are also used. Verification with the manufacturer is the only way to know.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "WorldOfIslam E-number list", "type": "community", "status": "caution" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution" }
+            { "source": "WorldOfIslam E-number list",                        "type": "community", "status": "caution" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:natural-flavoring",
       "names": ["Natural Flavoring", "Natural Flavor", "Natural Flavour", "Natural Flavours"],
       "e_number": null,
       "category": "other",
+      "definition": "A regulatory umbrella term for any flavoring derived from a natural source — plant, animal, or microbial. The label does not name the underlying ingredients.",
+      "common_sources": [
+        { "name": "Plant-derived (most common)",        "note": "Halal" },
+        { "name": "Animal-derived (incl. pork, non-halal-slaughtered)", "note": "Mushbooh or haram depending on source" },
+        { "name": "Alcohol-based extraction (carrier)", "note": "Disputed; many scholars treat any added ethanol as haram" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Regulatory term covering any flavoring derived from a natural source — including animal products and alcohol-based extracts. The label rarely specifies the underlying ingredients. Treat as mushbooh by default and verify with the manufacturer.",
+          "explanation": "\"Natural flavoring\" is an opaque ingredient category that can hide animal products, alcohol-extracted compounds, or other haram inputs. Classified as mushbooh by default; the only way to know is to ask the manufacturer.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution", "note": "Opaque ingredient category" }
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution", "note": "Opaque ingredient category" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:pork",
       "names": ["Pork", "Pig", "Ham", "Bacon", "Swine"],
       "e_number": null,
       "category": "meat",
+      "definition": "Meat from pigs and any product derived from pigs (bacon, ham, prosciutto, salami, pancetta).",
+      "common_sources": [
+        { "name": "Pig (any cut or preparation)", "note": "Haram" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "forbidden",
-          "explanation": "Pork and all pork derivatives are explicitly forbidden in Islam.",
+          "explanation": "Pork and all pork derivatives are explicitly forbidden in Islam by direct scriptural ruling.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "Quran 2:173", "type": "scripture", "status": "forbidden" },
-            { "source": "Quran 5:3", "type": "scripture", "status": "forbidden" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "forbidden" }
+            { "source": "Quran 2:173",                                       "type": "scripture", "status": "forbidden" },
+            { "source": "Quran 5:3",                                         "type": "scripture", "status": "forbidden" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "forbidden" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:rennet",
       "names": ["Rennet", "Animal Rennet"],
       "e_number": null,
       "category": "additive",
+      "definition": "An enzyme complex used to coagulate milk into cheese curds. Traditionally extracted from the stomach lining of young ruminant animals.",
+      "common_sources": [
+        { "name": "Calf stomach (traditional)",                  "note": "Halal only if from a halal-slaughtered animal" },
+        { "name": "Adult cow / sheep stomach",                   "note": "Halal only if from a halal-slaughtered animal" },
+        { "name": "Microbial (fungal or bacterial fermentation)","note": "Halal" },
+        { "name": "Vegetable rennet (thistle, nettle, fig)",     "note": "Halal" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Enzyme complex used in cheese-making. Animal rennet (typically from calf stomach) is halal only if the source animal was slaughtered according to Islamic requirements. Microbial or vegetable rennet is unambiguously halal but is normally labeled as such.",
+          "explanation": "When a product simply lists \"rennet\" without qualifying it, the default assumption is animal rennet from a non-halal-slaughtered animal — mushbooh. Microbial and vegetable rennet are halal but are typically labeled as such when used.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution", "note": "Animal vs microbial source must be verified" }
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution", "note": "Animal vs microbial source must be verified" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:salt",
       "names": ["Salt", "Sodium Chloride", "Sea Salt", "Table Salt"],
       "e_number": null,
       "category": "mineral",
+      "definition": "Sodium chloride. A mineral used as a seasoning and preservative.",
+      "common_sources": [
+        { "name": "Sea salt",            "note": "Halal" },
+        { "name": "Rock salt / mined",   "note": "Halal" },
+        { "name": "Himalayan pink salt", "note": "Halal" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Mineral with no animal or alcohol involvement in production.",
+          "explanation": "Pure salt is a mineral with no animal or alcohol involvement in production. Halal under all schools.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "allowed" }
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "allowed" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:soy-lecithin",
       "names": ["Soy Lecithin", "Soya Lecithin"],
       "e_number": "E322",
       "category": "additive",
+      "definition": "Plant-derived emulsifier extracted from soybeans. Used to blend oils and water in chocolate, baked goods, and processed foods.",
+      "common_sources": [
+        { "name": "Soybean", "note": "Halal" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Plant-derived emulsifier extracted from soybeans. Halal in standard production.",
+          "explanation": "Soy lecithin is plant-derived with no animal or alcohol involvement. Halal under all schools.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "allowed" }
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "allowed" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:sugar",
       "names": ["Sugar", "Sucrose", "Cane Sugar", "Beet Sugar"],
       "e_number": null,
       "category": "plant",
+      "definition": "Sucrose extracted from sugar cane or sugar beets, used as a sweetener.",
+      "common_sources": [
+        { "name": "Sugar beet",                                  "note": "Halal" },
+        { "name": "Sugar cane (often bone-char filtered in US)", "note": "Halal — bone char is a filter, not an ingredient" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Plant-derived sweetener. Standard production is halal. (A small number of scholars discuss bone-char filtration of certain cane sugars; this is an edge case and the resulting sugar contains no animal matter.)",
+          "explanation": "Plant-derived sweetener. Standard production is halal. A small number of scholars discuss bone-char filtration of US cane sugar; the consensus is that the resulting sugar contains no animal matter and is halal as a consumed product.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "allowed" }
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "allowed" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:vanilla-extract",
       "names": ["Vanilla Extract", "Natural Vanilla Extract"],
       "e_number": null,
       "category": "other",
+      "definition": "A flavoring made by macerating vanilla beans in ethanol — typically 35% alcohol by volume per US FDA standard.",
+      "common_sources": [
+        { "name": "Vanilla beans in ethanol (standard)", "note": "Disputed — alcohol is the carrier" },
+        { "name": "Alcohol-free vanilla flavoring",      "note": "Halal" },
+        { "name": "Glycerin-based vanilla extract",      "note": "Halal" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Standard vanilla extract is produced by macerating vanilla beans in ethanol (typically 35%+). Scholars differ: many treat any added ethanol as haram, others permit trace residues from extraction. Alcohol-free vanilla flavoring is unambiguously halal.",
+          "explanation": "Standard vanilla extract is made with ethanol as the extraction carrier. Many scholars treat any added ethanol as haram regardless of concentration; others permit trace residues from extraction. Alcohol-free vanilla flavoring is unambiguously halal but is rarely the default on labels.",
           "disputed": true,
           "confidence": "high",
           "opinions": [
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution", "note": "Alcohol carrier; views differ on trace amounts" }
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution", "note": "Alcohol carrier; views differ on trace amounts" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:water",
       "names": ["Water", "Aqua"],
       "e_number": null,
       "category": "mineral",
+      "definition": "H2O. Used as an ingredient, solvent, and base in nearly all processed foods and beverages.",
+      "common_sources": [
+        { "name": "Any source", "note": "Halal" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Water is halal.",
+          "explanation": "Water is halal under all schools.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "allowed" }
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "allowed" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:whey",
-      "names": ["Whey", "Whey Powder", "Whey Protein"],
+      "names": ["Whey", "Whey Powder", "Whey Protein", "Whey Protein Concentrate", "Whey Protein Isolate"],
       "e_number": null,
       "category": "dairy",
+      "definition": "Liquid byproduct of cheese-making, often dried into powder for protein supplements, infant formula, and processed foods.",
+      "common_sources": [
+        { "name": "Cheese made with microbial rennet",               "note": "Halal" },
+        { "name": "Cheese made with halal-slaughtered animal rennet","note": "Halal" },
+        { "name": "Cheese made with non-halal animal rennet",        "note": "Mushbooh or haram" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "caution",
-          "explanation": "Byproduct of cheese-making. The cheese-making process typically uses rennet; if animal rennet from a non-halal-slaughtered animal was used, the resulting whey is mushbooh. Microbial-rennet whey is halal but is rarely labeled as such.",
+          "explanation": "Whey is the byproduct of cheese-making, and the cheese was usually made with rennet. If animal rennet from a non-halal-slaughtered animal was used, the resulting whey inherits the mushbooh status. Whey from microbial-rennet cheese is halal but is rarely labeled that way.",
           "disputed": false,
           "confidence": "medium",
           "opinions": [
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "caution", "note": "Depends on rennet source" }
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "caution", "note": "Depends on rennet source" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     },
     {
       "id": "en:wine",
       "names": ["Wine", "Red Wine", "White Wine", "Cooking Wine"],
       "e_number": null,
       "category": "alcohol",
+      "definition": "Fermented grape juice. An alcoholic beverage and, in cooking wine form, an ingredient in sauces, marinades, and stews.",
+      "common_sources": [
+        { "name": "Fermented grape juice",      "note": "Haram (intoxicant)" },
+        { "name": "Cooking wine",               "note": "Haram even if alcohol burns off during cooking" },
+        { "name": "Non-alcoholic wine vinegar", "note": "Disputed; some scholars permit if the alcohol has fully converted to acetic acid" }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "forbidden",
-          "explanation": "Wine is an intoxicant and is explicitly forbidden. This applies to cooking wine as well, even though some alcohol evaporates during cooking.",
+          "explanation": "Wine is an intoxicant and is explicitly forbidden, including cooking wine and wine added to sauces. The general principle is that any wine added to a product makes that product haram.",
           "disputed": false,
           "confidence": "high",
           "opinions": [
-            { "source": "Quran 5:90", "type": "scripture", "status": "forbidden" },
-            { "source": "Community consensus (halal-checker resources)", "type": "community", "status": "forbidden" }
+            { "source": "Quran 5:90",                                        "type": "scripture", "status": "forbidden" },
+            { "source": "Community consensus across halal-checker resources", "type": "community", "status": "forbidden" }
           ]
         }
       },
-      "last_reviewed": "2026-06-01"
+      "last_reviewed": "2026-06-02"
     }
   ]
 }

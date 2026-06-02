@@ -44,6 +44,16 @@
           "type": "string",
           "enum": ["additive", "meat", "dairy", "plant", "fish", "egg", "alcohol", "insect", "mineral", "other"]
         },
+        "definition": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Plain-language description of what the ingredient is. Optional but recommended for hand-curated entries."
+        },
+        "common_sources": {
+          "type": "array",
+          "description": "Typical origins of this ingredient with a short per-source halal note. Optional but recommended for hand-curated entries.",
+          "items": { "$ref": "#/$defs/commonSource" }
+        },
         "rulings": {
           "type": "object",
           "minProperties": 1,
@@ -56,6 +66,15 @@
           }
         },
         "last_reviewed": { "type": "string", "format": "date" }
+      }
+    },
+    "commonSource": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "note": { "type": "string", "description": "Short halal note for this source (e.g. \"Halal\", \"Haram if porcine\")." }
       }
     },
     "ruling": {
