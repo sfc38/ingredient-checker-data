@@ -22,3 +22,6 @@ venv/
 build/
 dist/
 *.tmp
+
+# Bootstrap scratch space (downloaded OFF taxonomy, etc.)
+scripts/cache/
