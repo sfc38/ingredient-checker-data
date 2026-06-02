@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-02.3",
+  "version": "2026-06-02.4",
   "profiles": [
     "halal"
   ],
@@ -140,6 +140,45 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:e100",
+      "names": [
+        "E100",
+        "Curcumin",
+        "Turmeric Yellow"
+      ],
+      "e_number": "E100",
+      "category": "additive",
+      "definition": "A bright yellow-orange colorant extracted from the rhizomes of turmeric (Curcuma longa). Used in curry, mustard, butter, cheese, and confectionery.",
+      "common_sources": [
+        {
+          "name": "Turmeric root",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Plant-derived natural colorant. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Curcumin"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
       "id": "en:e120",
       "names": [
         "E120",
@@ -228,6 +267,364 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:e160a",
+      "names": [
+        "E160a",
+        "Carotenes",
+        "Beta-Carotene",
+        "Alpha-Carotene"
+      ],
+      "e_number": "E160a",
+      "category": "additive",
+      "definition": "A natural orange-yellow colorant. Found in carrots, palm oil, algae, and many fruits and vegetables. Used in margarine, butter, dairy, and beverages.",
+      "common_sources": [
+        {
+          "name": "Plant extracts (carrot, palm oil, algae)",
+          "note": "Halal"
+        },
+        {
+          "name": "Synthetic",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Plant-derived or synthetically produced. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Carotene"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e160b",
+      "names": [
+        "E160b",
+        "Annatto",
+        "Bixin",
+        "Norbixin"
+      ],
+      "e_number": "E160b",
+      "category": "additive",
+      "definition": "A natural orange-red colorant extracted from the seeds of the achiote tree (Bixa orellana). Common in cheese, butter, snack foods, and rice.",
+      "common_sources": [
+        {
+          "name": "Achiote tree seeds",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Plant-derived natural colorant. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Annatto"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e160c",
+      "names": [
+        "E160c",
+        "Paprika Extract",
+        "Paprika Oleoresin",
+        "Capsanthin"
+      ],
+      "e_number": "E160c",
+      "category": "additive",
+      "definition": "A red-orange colorant extracted from red bell peppers. Used in sauces, snacks, cheese, and processed meats.",
+      "common_sources": [
+        {
+          "name": "Red bell peppers (Capsicum annuum)",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Plant-derived. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Capsanthin"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e162",
+      "names": [
+        "E162",
+        "Beetroot Red",
+        "Betanin"
+      ],
+      "e_number": "E162",
+      "category": "additive",
+      "definition": "A purple-red colorant extracted from beetroot (Beta vulgaris). Used in yogurts, ice cream, sausages, and confectionery.",
+      "common_sources": [
+        {
+          "name": "Beetroot",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Plant-derived. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Betanin"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e200",
+      "names": [
+        "E200",
+        "Sorbic Acid"
+      ],
+      "e_number": "E200",
+      "category": "additive",
+      "definition": "A preservative that inhibits mold, yeast, and fungi. Used in cheese, dried fruits, baked goods, wines, and dressings.",
+      "common_sources": [
+        {
+          "name": "Synthetic from petrochemicals or microbial fermentation",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Synthetically produced. No animal or alcohol involvement. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Sorbic_acid"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e202",
+      "names": [
+        "E202",
+        "Potassium Sorbate"
+      ],
+      "e_number": "E202",
+      "category": "additive",
+      "definition": "The potassium salt of sorbic acid (E200). A preservative against mold and yeast. Common in wine, dried meats, cheese, dips, and baked goods.",
+      "common_sources": [
+        {
+          "name": "Synthetic",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Synthetically produced. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Potassium_sorbate"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e211",
+      "names": [
+        "E211",
+        "Sodium Benzoate"
+      ],
+      "e_number": "E211",
+      "category": "additive",
+      "definition": "A common preservative against bacteria, yeast, and fungi. Found in soft drinks, fruit juices, salad dressings, and pickles.",
+      "common_sources": [
+        {
+          "name": "Synthetic from petrochemicals",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Synthetically produced. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Sodium_benzoate"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e220",
+      "names": [
+        "E220",
+        "Sulfur Dioxide",
+        "Sulphur Dioxide"
+      ],
+      "e_number": "E220",
+      "category": "additive",
+      "definition": "A preservative and antioxidant. Used in dried fruits, fruit juices, vinegars, wines, and processed potatoes.",
+      "common_sources": [
+        {
+          "name": "Synthetic / industrial production",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "The additive itself is halal. Note that some products that use sulfur dioxide (e.g. wine) are themselves haram for other reasons — sulfur dioxide in dried fruits, juices, or vinegar does not make those products haram.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Sulfur_dioxide"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e270",
+      "names": [
+        "E270",
+        "Lactic Acid"
+      ],
+      "e_number": "E270",
+      "category": "additive",
+      "definition": "An organic acid found naturally in fermented foods and produced commercially by bacterial fermentation. Used as an acidifier and preservative in beverages, dairy, pickles, and cured meats.",
+      "common_sources": [
+        {
+          "name": "Plant carbohydrate fermentation (corn, sugar — modern standard)",
+          "note": "Halal"
+        },
+        {
+          "name": "Dairy whey fermentation (traditional)",
+          "note": "Halal — whey is permissible"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "The 'lactic' name is misleading — commercial lactic acid is produced by bacterial fermentation of plant sugars, not extracted from milk. The bacteria are grown on plant or whey substrates; both are halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Lactic_acid"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
       "id": "en:e300",
       "names": [
         "E300",
@@ -255,6 +652,92 @@
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e301",
+      "names": [
+        "E301",
+        "Sodium Ascorbate"
+      ],
+      "e_number": "E301",
+      "category": "additive",
+      "definition": "The sodium salt of ascorbic acid (Vitamin C). Used as an antioxidant in processed meats, baked goods, and beverages.",
+      "common_sources": [
+        {
+          "name": "Synthetic / fermentation from glucose",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Same source as E300 (ascorbic acid). Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Sodium_ascorbate"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e306",
+      "names": [
+        "E306",
+        "Tocopherols",
+        "Vitamin E",
+        "Mixed Tocopherols"
+      ],
+      "e_number": "E306",
+      "category": "additive",
+      "definition": "A natural antioxidant (Vitamin E). Commercial sources are mostly vegetable-oil derived (soybean, sunflower); rarely from animal fat.",
+      "common_sources": [
+        {
+          "name": "Vegetable oils (soybean, sunflower, rice bran)",
+          "note": "Halal"
+        },
+        {
+          "name": "Animal fat",
+          "note": "Mushbooh — verify"
+        },
+        {
+          "name": "Synthetic",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Most commercial tocopherols are vegetable-derived (halal), but animal-fat-derived tocopherols also exist. The label rarely declares the source; treat as mushbooh until verified.",
+          "disputed": false,
+          "confidence": "medium",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Tocopherol"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
             }
           ]
         }
@@ -294,6 +777,123 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:e331",
+      "names": [
+        "E331",
+        "Sodium Citrate",
+        "Trisodium Citrate"
+      ],
+      "e_number": "E331",
+      "category": "additive",
+      "definition": "The sodium salt of citric acid. Used as an acidity regulator, emulsifier (in processed cheese), and flavor enhancer.",
+      "common_sources": [
+        {
+          "name": "Synthetic from citric acid (plant fermentation)",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Derived from citric acid (E330). Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Sodium_citrate"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e338",
+      "names": [
+        "E338",
+        "Phosphoric Acid",
+        "Orthophosphoric Acid"
+      ],
+      "e_number": "E338",
+      "category": "additive",
+      "definition": "An inorganic acid used to acidify foods and beverages. Best known as the acid in cola drinks. Also used in baking powder and processed cheese.",
+      "common_sources": [
+        {
+          "name": "Synthetic / industrial production from phosphate rock",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Inorganic acid, industrially produced from phosphate rock. No animal or alcohol involvement. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Phosphoric_acid"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e406",
+      "names": [
+        "E406",
+        "Agar",
+        "Agar-Agar"
+      ],
+      "e_number": "E406",
+      "category": "additive",
+      "definition": "A gelling agent extracted from red algae (Gelidium and Gracilaria species). Common alternative to gelatin in vegetarian desserts and Asian cuisine.",
+      "common_sources": [
+        {
+          "name": "Red algae",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Seaweed-derived. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Agar"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
       "id": "en:e407",
       "names": [
         "E407",
@@ -316,6 +916,45 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e410",
+      "names": [
+        "E410",
+        "Locust Bean Gum",
+        "Carob Bean Gum"
+      ],
+      "e_number": "E410",
+      "category": "additive",
+      "definition": "A thickener extracted from the seeds of the carob tree. Used in ice cream, dairy products, and pet food.",
+      "common_sources": [
+        {
+          "name": "Carob tree seeds (Ceratonia siliqua)",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Plant-derived polysaccharide. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Locust_bean_gum"
+            },
             {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
@@ -384,6 +1023,92 @@
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e420",
+      "names": [
+        "E420",
+        "Sorbitol"
+      ],
+      "e_number": "E420",
+      "category": "additive",
+      "definition": "A sugar alcohol used as a sweetener and humectant. Found naturally in fruits and produced commercially by hydrogenation of corn syrup.",
+      "common_sources": [
+        {
+          "name": "Hydrogenated corn syrup",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Plant-derived sugar alcohol. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Sorbitol"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e422",
+      "names": [
+        "E422",
+        "Glycerin",
+        "Glycerol",
+        "Glycerine"
+      ],
+      "e_number": "E422",
+      "category": "additive",
+      "definition": "A sweet, viscous polyol used as a humectant, sweetener, and solvent. Found in baked goods, low-fat foods, beverages, and confectionery.",
+      "common_sources": [
+        {
+          "name": "Plant oils (most common — saponification byproduct)",
+          "note": "Halal"
+        },
+        {
+          "name": "Animal fats",
+          "note": "Mushbooh; haram if porcine"
+        },
+        {
+          "name": "Synthetic from petroleum",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Glycerin can be produced from plant oils (halal), animal fats (mushbooh, haram if porcine), or synthetic petroleum-based processes (halal). The label rarely declares the source. Verify with the manufacturer when in doubt.",
+          "disputed": false,
+          "confidence": "medium",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Glycerol"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
             }
           ]
         }
@@ -472,6 +1197,126 @@
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e450",
+      "names": [
+        "E450",
+        "Diphosphates",
+        "Sodium Pyrophosphate",
+        "Disodium Pyrophosphate"
+      ],
+      "e_number": "E450",
+      "category": "additive",
+      "definition": "A family of inorganic phosphate salts. Used as raising agents in baking powder, emulsifiers in processed cheese, and moisture binders in cured meats.",
+      "common_sources": [
+        {
+          "name": "Synthetic / industrial production",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Inorganic phosphate salt. No animal involvement. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Pyrophosphate"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e460",
+      "names": [
+        "E460",
+        "Cellulose",
+        "Microcrystalline Cellulose",
+        "Powdered Cellulose"
+      ],
+      "e_number": "E460",
+      "category": "additive",
+      "definition": "Refined plant cellulose. Used as a thickener, anti-caking agent, and fiber additive in cheese, ice cream, and processed foods.",
+      "common_sources": [
+        {
+          "name": "Wood pulp, cotton fibers",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Plant cell-wall material. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Cellulose"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e466",
+      "names": [
+        "E466",
+        "Carboxymethyl Cellulose",
+        "Sodium Carboxymethyl Cellulose",
+        "CMC"
+      ],
+      "e_number": "E466",
+      "category": "additive",
+      "definition": "A modified cellulose used as a thickener and stabilizer. Found in ice cream, baked goods, gluten-free flours, and toothpaste.",
+      "common_sources": [
+        {
+          "name": "Wood pulp / cotton (chemically modified)",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Modified plant cellulose. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Carboxymethyl_cellulose"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
             }
           ]
         }
@@ -723,6 +1568,46 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:e500",
+      "names": [
+        "E500",
+        "Sodium Bicarbonate",
+        "Baking Soda",
+        "Sodium Carbonate"
+      ],
+      "e_number": "E500",
+      "category": "additive",
+      "definition": "Inorganic salts. E500ii is sodium bicarbonate (baking soda), used as a raising agent and acidity regulator. Found in baked goods, effervescent tablets, and processed foods.",
+      "common_sources": [
+        {
+          "name": "Mineral / industrial synthesis",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Mineral salt. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Sodium_bicarbonate"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
       "id": "en:e542",
       "names": [
         "E542",
@@ -771,6 +1656,122 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:e551",
+      "names": [
+        "E551",
+        "Silicon Dioxide",
+        "Silica"
+      ],
+      "e_number": "E551",
+      "category": "additive",
+      "definition": "An anti-caking agent. Used in powdered foods (spices, coffee creamer, salt, supplements) to prevent clumping.",
+      "common_sources": [
+        {
+          "name": "Mineral (sand, quartz)",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Inorganic mineral. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Silicon_dioxide"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e575",
+      "names": [
+        "E575",
+        "Glucono Delta-Lactone",
+        "GDL"
+      ],
+      "e_number": "E575",
+      "category": "additive",
+      "definition": "An acidifier produced by fermentation of glucose. Used in baking powders, processed cheese, and tofu coagulation.",
+      "common_sources": [
+        {
+          "name": "Glucose fermentation",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Plant-fermentation product. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Glucono_delta-lactone"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e620",
+      "names": [
+        "E620",
+        "Glutamic Acid"
+      ],
+      "e_number": "E620",
+      "category": "additive",
+      "definition": "A free amino acid used as a flavor enhancer. The acid form of MSG (E621). Produced by bacterial fermentation of plant sugars.",
+      "common_sources": [
+        {
+          "name": "Bacterial fermentation of plant carbohydrates",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Modern production is bacterial fermentation of plant sugars. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Glutamic_acid"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
       "id": "en:e621",
       "names": [
         "E621",
@@ -798,6 +1799,52 @@
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e627",
+      "names": [
+        "E627",
+        "Disodium Guanylate"
+      ],
+      "e_number": "E627",
+      "category": "additive",
+      "definition": "A flavor enhancer commonly paired with MSG. Often labeled as part of the blend E635 (disodium ribonucleotides).",
+      "common_sources": [
+        {
+          "name": "Fish-derived",
+          "note": "Generally halal"
+        },
+        {
+          "name": "Yeast extract / bacterial fermentation",
+          "note": "Halal"
+        },
+        {
+          "name": "Meat-derived (incl. porcine)",
+          "note": "Mushbooh; haram if porcine"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Like E631, the source can be fish, yeast, or animal (potentially porcine). Modern industrial production favors yeast extract or fermentation (halal), but labels do not specify. Treat as mushbooh until verified.",
+          "disputed": false,
+          "confidence": "medium",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Disodium_guanylate"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
             }
           ]
         }
@@ -976,6 +2023,159 @@
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e950",
+      "names": [
+        "E950",
+        "Acesulfame K",
+        "Acesulfame Potassium"
+      ],
+      "e_number": "E950",
+      "category": "additive",
+      "definition": "A synthetic sweetener about 200 times sweeter than sugar. Used in diet drinks, sugar-free desserts, and tabletop sweeteners.",
+      "common_sources": [
+        {
+          "name": "Synthetic / industrial production",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Synthetic sweetener. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Acesulfame_potassium"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e951",
+      "names": [
+        "E951",
+        "Aspartame"
+      ],
+      "e_number": "E951",
+      "category": "additive",
+      "definition": "A synthetic sweetener about 200 times sweeter than sugar. Made by joining the amino acids aspartic acid and phenylalanine. Common in diet sodas and sugar-free gum.",
+      "common_sources": [
+        {
+          "name": "Synthetic / chemical synthesis from amino acids",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Aspartame is a synthetic peptide. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Aspartame"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e955",
+      "names": [
+        "E955",
+        "Sucralose"
+      ],
+      "e_number": "E955",
+      "category": "additive",
+      "definition": "A synthetic sweetener about 600 times sweeter than sugar, made by chlorinating sucrose. Used in diet beverages, sugar-free baked goods, and tabletop sweeteners.",
+      "common_sources": [
+        {
+          "name": "Synthetic from sucrose",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Synthetically produced from sugar. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Sucralose"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:e961",
+      "names": [
+        "E961",
+        "Neotame"
+      ],
+      "e_number": "E961",
+      "category": "additive",
+      "definition": "A synthetic sweetener derived from aspartame, about 8000 times sweeter than sugar.",
+      "common_sources": [
+        {
+          "name": "Synthetic",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Synthetic sweetener. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Neotame"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
             }
           ]
         }

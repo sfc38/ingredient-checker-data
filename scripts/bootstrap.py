@@ -379,6 +379,12 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
     if ruling is None:
         return None
 
+    # Attach the OFF ingredient page URL as a tappable source ref.
+    off_page_url = f"https://world.openfoodfacts.org/ingredient/{off_id}"
+    for op in ruling.get("opinions", []):
+        if op.get("source") == "Open Food Facts taxonomy" and "ref" not in op:
+            op["ref"] = off_page_url
+
     names = collect_names(entry)
     if not names:
         # Generate a placeholder name from the id
