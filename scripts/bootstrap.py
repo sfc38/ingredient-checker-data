@@ -257,20 +257,24 @@ def heuristic_halal_ruling(vegan: str | None, vegetarian: str | None) -> dict | 
         }
     if vegan == "no" and vegetarian == "yes":
         return {
-            "effective_status": "caution",
+            "effective_status": "allowed",
             "explanation": (
                 "Open Food Facts classifies this ingredient as non-vegan but "
-                "vegetarian (vegan: no, vegetarian: yes) — typically dairy- "
-                "or egg-derived. Generally halal, but verification with the "
-                "manufacturer is recommended for products with mixed sources."
+                "vegetarian (vegan: no, vegetarian: yes) — typically dairy "
+                "or egg. Milk, butter, eggs, yogurt, and standard dairy "
+                "products are halal under Islamic dietary law. Caveat: "
+                "cheese (and whey from cheese-making) made with animal "
+                "rennet from a non-halal-slaughtered animal is mushbooh; "
+                "if this product contains specific cheese with unclear "
+                "rennet, verify with the manufacturer."
             ),
             "disputed": False,
             "confidence": "low",
             "opinions": [{
                 "source": "Open Food Facts taxonomy",
                 "type": "community",
-                "status": "caution",
-                "note": "vegan: no (dairy or egg)",
+                "status": "allowed",
+                "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
             }],
         }
     if vegan == "maybe" or vegetarian == "maybe":
@@ -444,8 +448,10 @@ def main() -> None:
     bad = [i["id"] for i in merged if not i["rulings"]["halal"]["opinions"]]
     assert not bad, f"Entries missing opinions: {bad}"
 
+    # Build output version: take seed's version (assumed to be the latest
+    # hand-curated bump) so the bootstrap output tracks seed changes.
     output = {
-        "version": f"{date.today()}.2",
+        "version": seed.get("version", str(date.today())),
         "profiles": ["halal"],
         "ingredients": merged,
     }
