@@ -294,7 +294,81 @@ def heuristic_halal_ruling(vegan: str | None, vegetarian: str | None) -> dict | 
     return None
 
 
-def build_bootstrap_entry(off_id: str, entry: dict, off: dict) -> dict | None:
+def find_seed_ancestor(off_id: str, off: dict, seed_ids: set[str],
+                       max_depth: int = 8) -> str | None:
+    """BFS through OFF parents to find the nearest ancestor that is in seed.
+    Returns the seed ancestor id or None. Used to inherit hand-curated
+    rulings to derivative ingredients (en:cane-sugar -> en:sugar)."""
+    visited = {off_id}
+    queue: list[tuple[str, int]] = [(off_id, 0)]
+    while queue:
+        current, depth = queue.pop(0)
+        if depth >= max_depth:
+            continue
+        entry = off.get(current, {})
+        if not isinstance(entry, dict):
+            continue
+        parents = entry.get("parents", [])
+        if not isinstance(parents, list):
+            continue
+        for p in parents:
+            if not isinstance(p, str) or p in visited:
+                continue
+            visited.add(p)
+            if p in seed_ids:
+                return p
+            queue.append((p, depth + 1))
+    return None
+
+
+def inherited_ruling_from_seed(seed_id: str, seed_by_id: dict, off_id: str) -> dict:
+    """Build a ruling that inherits the seed's effective_status, with an
+    explanation citing the inheritance."""
+    seed_entry = seed_by_id[seed_id]
+    seed_ruling = seed_entry["rulings"]["halal"]
+    seed_name = seed_entry["names"][0] if seed_entry.get("names") else seed_id
+    return {
+        "effective_status": seed_ruling["effective_status"],
+        "explanation": (
+            f"Inherits its halal ruling from {seed_name} ({seed_id}), which "
+            f"is a hand-curated entry in our database. "
+            f"{seed_ruling['explanation']}"
+        ),
+        "disputed": seed_ruling.get("disputed", False),
+        "confidence": "medium",
+        "opinions": [{
+            "source": f"Inherited from curated entry {seed_id}",
+            "type": "community",
+            "status": seed_ruling["effective_status"],
+            "note": f"Derivative ingredient of {seed_name}",
+        }],
+    }
+
+
+def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
+                          seed_ids: set[str] | None = None,
+                          seed_by_id: dict | None = None) -> dict | None:
+    # 1. Check if any ancestor is in the seed — inherit if so.
+    if seed_ids and seed_by_id:
+        seed_ancestor = find_seed_ancestor(off_id, off, seed_ids)
+        if seed_ancestor is not None:
+            ruling = inherited_ruling_from_seed(seed_ancestor, seed_by_id, off_id)
+            names = collect_names(entry) or [off_id.split(":", 1)[-1].replace("-", " ").capitalize()]
+            raw_desc = get_lang_value(entry.get("description"))
+            definition = clean_definition(raw_desc, names)
+            result = {
+                "id": off_id,
+                "names": names,
+                "e_number": extract_e_number(off_id, entry),
+                "category": derive_category(off_id, entry),
+            }
+            if definition:
+                result["definition"] = definition
+            result["rulings"] = {"halal": ruling}
+            result["last_reviewed"] = str(date.today())
+            return result
+
+    # 2. Otherwise fall back to OFF vegan/vegetarian heuristic.
     vegan = get_inherited_flag(off_id, off, "vegan")
     vegetarian = get_inherited_flag(off_id, off, "vegetarian")
     ruling = heuristic_halal_ruling(vegan, vegetarian)
@@ -327,6 +401,7 @@ def main() -> None:
     print(f"Loading seed (hand-curated entries) from {SEED.name} ...")
     seed = json.loads(SEED.read_text(encoding="utf-8"))
     seed_ids = {i["id"] for i in seed["ingredients"]}
+    seed_by_id = {i["id"]: i for i in seed["ingredients"]}
     print(f"  {len(seed_ids)} hand-curated entries (kept as-is)")
 
     print("Fetching OFF ingredient taxonomy ...")
@@ -348,7 +423,7 @@ def main() -> None:
         if not off_id.startswith("en:"):
             no_id_filter += 1
             continue
-        built = build_bootstrap_entry(off_id, entry, off)
+        built = build_bootstrap_entry(off_id, entry, off, seed_ids, seed_by_id)
         if built is None:
             no_ruling += 1
             continue
