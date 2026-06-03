@@ -665,8 +665,15 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
                     wiki_canonical_title = urlparse.unquote(raw).replace("_", " ")
                 break
 
+    # Apply halal-aware pattern heuristics BEFORE we expand names[] with
+    # Wikipedia redirects. Reason: a Wikipedia redirect for "Almond" can
+    # include "Almond extract", which would otherwise falsely flag the
+    # raw almond entry as containing alcohol.
+    apply_halal_patterns(names, ruling)
+
     # Pull Wikipedia redirect titles into names[] — gives us
     # crowd-curated synonyms (e.g. "Pepita" -> "Pumpkin seed").
+    # Skipped for halal pattern matching above.
     if wiki_canonical_title and wiki_cache is not None:
         redirects = fetch_wiki_redirects(wiki_canonical_title, wiki_cache)
         if redirects:
@@ -675,12 +682,6 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
                 if r.lower() not in seen:
                     names.append(r)
                     seen.add(r.lower())
-
-    # Apply halal-aware pattern heuristics — catches "natural flavor",
-    # "vanilla extract", "hydrolyzed * protein", "modified * starch",
-    # wine vinegars, etc. that OFF flags as halal-fine but have
-    # alcohol/enzyme/source concerns.
-    apply_halal_patterns(names, ruling)
 
     # Merge WorldOfIslam community opinion if available for this E-number.
     if e_num and worldofislam:

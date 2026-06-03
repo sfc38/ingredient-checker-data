@@ -1983,15 +1983,15 @@
       "definition": "The almond -Prunus amygdalus, syn. Prunus dulcis- is a species of tree native to Iran and surrounding countries, but widely cultivated elsewhere. The almond is also the name of the edible and widely cultivated seed of this tree.",
       "rulings": {
         "halal": {
-          "effective_status": "caution",
-          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": true,
+          "effective_status": "allowed",
+          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": false,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "caution",
+              "status": "allowed",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Almond"
             },
@@ -2001,13 +2001,6 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:almond"
-            },
-            {
-              "source": "Ingredient-checker halal pattern heuristic",
-              "type": "scientific",
-              "status": "caution",
-              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
-              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -2117,15 +2110,15 @@
       "definition": "The almond is a species of tree from the genus Prunus. Along with the peach, it is classified in the subgenus Amygdalus, distinguished from the other subgenera by corrugations on the woody shell (endocarp) surrounding the seed.",
       "rulings": {
         "halal": {
-          "effective_status": "caution",
-          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": true,
+          "effective_status": "allowed",
+          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": false,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "caution",
+              "status": "allowed",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Almond"
             },
@@ -2135,13 +2128,6 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:almond-oil"
-            },
-            {
-              "source": "Ingredient-checker halal pattern heuristic",
-              "type": "scientific",
-              "status": "caution",
-              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
-              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -11817,15 +11803,15 @@
       "definition": "The almond is a species of tree from the genus Prunus. Along with the peach, it is classified in the subgenus Amygdalus, distinguished from the other subgenera by corrugations on the woody shell (endocarp) surrounding the seed.",
       "rulings": {
         "halal": {
-          "effective_status": "caution",
-          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": true,
+          "effective_status": "allowed",
+          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": false,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "caution",
+              "status": "allowed",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Almond"
             },
@@ -11835,13 +11821,6 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:bitter-almond"
-            },
-            {
-              "source": "Ingredient-checker halal pattern heuristic",
-              "type": "scientific",
-              "status": "caution",
-              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
-              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -96061,15 +96040,15 @@
       "definition": "Hydrolyzed vegetable protein (HVP) products are foodstuffs obtained by the hydrolysis of protein, and have a meaty, savory taste similar to broth (bouillon).",
       "rulings": {
         "halal": {
-          "effective_status": "caution",
-          "explanation": "Hydrolyzed proteins are processed with enzymes. The enzyme source can be microbial (halal) or animal (mushbooh); the label rarely declares which. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": true,
+          "effective_status": "allowed",
+          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": false,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "caution",
+              "status": "allowed",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Hydrolyzed_vegetable_protein"
             },
@@ -96079,13 +96058,6 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:hydrolysed-vegetable-protein"
-            },
-            {
-              "source": "Ingredient-checker halal pattern heuristic",
-              "type": "scientific",
-              "status": "caution",
-              "note": "Hydrolyzed proteins are processed with enzymes. The enzyme source can be microbial (halal) or animal (mushbooh); the label rarely declares which.",
-              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#hydrolyzed-protein"
             }
           ]
         }
@@ -110547,15 +110519,15 @@
       "definition": "The almond is a species of tree from the genus Prunus. Along with the peach, it is classified in the subgenus Amygdalus, distinguished from the other subgenera by corrugations on the woody shell (endocarp) surrounding the seed.",
       "rulings": {
         "halal": {
-          "effective_status": "caution",
-          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": true,
+          "effective_status": "allowed",
+          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": false,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "caution",
+              "status": "allowed",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Almond"
             },
@@ -110565,13 +110537,6 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:marcona-almond"
-            },
-            {
-              "source": "Ingredient-checker halal pattern heuristic",
-              "type": "scientific",
-              "status": "caution",
-              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
-              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -172413,15 +172378,15 @@
       "definition": "The almond is a species of tree from the genus Prunus. Along with the peach, it is classified in the subgenus Amygdalus, distinguished from the other subgenera by corrugations on the woody shell (endocarp) surrounding the seed.",
       "rulings": {
         "halal": {
-          "effective_status": "caution",
-          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": true,
+          "effective_status": "allowed",
+          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": false,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "caution",
+              "status": "allowed",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Almond"
             },
@@ -172431,13 +172396,6 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:sweet-almond"
-            },
-            {
-              "source": "Ingredient-checker halal pattern heuristic",
-              "type": "scientific",
-              "status": "caution",
-              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
-              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
