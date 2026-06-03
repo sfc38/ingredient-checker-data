@@ -39,6 +39,14 @@ CACHE_DIR.mkdir(parents=True, exist_ok=True)
 OFF_TAXONOMY_URL = "https://static.openfoodfacts.org/data/taxonomies/ingredients.json"
 OFF_CACHE = CACHE_DIR / "off-ingredients.json"
 
+WIKI_API = "https://en.wikipedia.org/api/rest_v1/page/summary/"
+WIKI_CACHE = CACHE_DIR / "wikipedia.json"
+WIKI_USER_AGENT = (
+    "IngredientCheck/2.2 "
+    "(https://github.com/sfc38/ingredient-checker-data; "
+    "fatihcatpinar@gmail.com)"
+)
+
 CATEGORY_HINTS = {
     "additive": ["en:additive", "en:emulsifier", "en:stabiliser", "en:preservative",
                  "en:colour", "en:thickener", "en:antioxidant", "en:acidifier",
@@ -53,6 +61,66 @@ CATEGORY_HINTS = {
     "mineral":  ["en:mineral", "en:water", "en:salt"],
     "insect":   ["en:insect"],
 }
+
+
+def load_wiki_cache() -> dict:
+    if WIKI_CACHE.exists():
+        try:
+            return json.loads(WIKI_CACHE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            return {}
+    return {}
+
+
+def save_wiki_cache(cache: dict) -> None:
+    WIKI_CACHE.write_text(
+        json.dumps(cache, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+
+def _is_useful_wiki_entry(entry: dict) -> bool:
+    """Filter out entries that redirected to the generic 'E number' article
+    (Wikipedia's catch-all when no dedicated page exists for the E-number)."""
+    if not isinstance(entry, dict) or "extract" not in entry:
+        return False
+    url = (entry.get("url") or "").lower()
+    if url.endswith("/e_number") or url.endswith("/e_numbers") or "/wiki/e_number" in url:
+        return False
+    extract_lower = entry["extract"].lower()
+    if extract_lower.startswith("e numbers") or extract_lower.startswith("e number,"):
+        return False
+    return True
+
+
+def fetch_wiki(title: str, cache: dict) -> dict | None:
+    """Return {'extract': ..., 'url': ...} for a Wikipedia title, or None.
+    Caches responses on disk between runs. Returns None when the lookup
+    redirected to the generic 'E number' article (i.e. no dedicated page)."""
+    if title not in cache:
+        import urllib.parse as urlparse
+        url = WIKI_API + urlparse.quote(title, safe="")
+        req = urllib.request.Request(url, headers={"User-Agent": WIKI_USER_AGENT})
+        try:
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            extract = data.get("extract")
+            page_url = (
+                data.get("content_urls", {})
+                    .get("desktop", {})
+                    .get("page")
+            )
+            if extract and page_url:
+                entry = {"extract": extract.strip(), "url": page_url}
+            else:
+                entry = {"error": "no extract"}
+        except Exception as e:  # network error, 404, etc.
+            entry = {"error": str(e)}
+        cache[title] = entry
+        save_wiki_cache(cache)
+
+    entry = cache[title]
+    return entry if _is_useful_wiki_entry(entry) else None
 
 
 def fetch_off_taxonomy(force: bool = False) -> dict:
@@ -351,7 +419,8 @@ def inherited_ruling_from_seed(seed_id: str, seed_by_id: dict, off_id: str) -> d
 
 def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
                           seed_ids: set[str] | None = None,
-                          seed_by_id: dict | None = None) -> dict | None:
+                          seed_by_id: dict | None = None,
+                          wiki_cache: dict | None = None) -> dict | None:
     # 1. Check if any ancestor is in the seed — inherit if so.
     if seed_ids and seed_by_id:
         seed_ancestor = find_seed_ancestor(off_id, off, seed_ids)
@@ -409,16 +478,45 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
     raw_desc = get_lang_value(entry.get("description"))
     definition = clean_definition(raw_desc, names)
 
+    e_num = extract_e_number(off_id, entry)
+
+    # If no OFF description, try Wikipedia for a definition.
+    # For E-numbers: first the "E<num>" page, then fall back to the
+    # primary English ingredient name. For non-E ingredients: try the
+    # primary name directly.
+    wiki_url_for_definition: str | None = None
+    if definition is None and wiki_cache is not None:
+        candidate_titles: list[str] = []
+        if e_num:
+            candidate_titles.append(e_num)
+        if names:
+            # Use the first (English) name as a fallback / primary
+            candidate_titles.append(names[0])
+        for title in candidate_titles:
+            wiki = fetch_wiki(title, wiki_cache)
+            if wiki and wiki.get("extract"):
+                definition = wiki["extract"]
+                wiki_url_for_definition = wiki.get("url")
+                break
+
     result = {
         "id": off_id,
         "names": names,
-        "e_number": extract_e_number(off_id, entry),
+        "e_number": e_num,
         "category": derive_category(off_id, entry),
     }
     if definition:
         result["definition"] = definition
     result["rulings"] = {"halal": ruling}
     result["last_reviewed"] = str(date.today())
+
+    if wiki_url_for_definition:
+        # Override the generic E<num> Wikipedia URL with the actual
+        # post-redirect page URL we now have.
+        for op in result["rulings"]["halal"].get("opinions", []):
+            if op.get("source") == "Wikipedia":
+                op["ref"] = wiki_url_for_definition
+
     return result
 
 
@@ -432,6 +530,10 @@ def main() -> None:
     print("Fetching OFF ingredient taxonomy ...")
     off = fetch_off_taxonomy()
     print(f"  {len(off)} entries in OFF taxonomy")
+
+    print("Loading Wikipedia cache ...")
+    wiki_cache = load_wiki_cache()
+    print(f"  {len(wiki_cache)} cached Wikipedia summaries")
 
     print("Building bootstrap entries ...")
     new_entries: list[dict] = []
@@ -448,7 +550,7 @@ def main() -> None:
         if not off_id.startswith("en:"):
             no_id_filter += 1
             continue
-        built = build_bootstrap_entry(off_id, entry, off, seed_ids, seed_by_id)
+        built = build_bootstrap_entry(off_id, entry, off, seed_ids, seed_by_id, wiki_cache)
         if built is None:
             no_ruling += 1
             continue
