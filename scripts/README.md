@@ -63,6 +63,62 @@ When that pass adds opinions to entries that *already* have a seed entry, the co
 
 - **Kaggle datasets** — no per-entry citation, provenance not verifiable.
 
+## Halal-aware pattern heuristics
+
+Some ingredients pass Open Food Facts' `vegan: yes` / `vegetarian: yes` check (no animal products) but still have a halal-specific concern that OFF doesn't model — most often alcohol-as-solvent in natural flavorings, or enzyme-source ambiguity in hydrolyzed proteins.
+
+`bootstrap.py` applies the following regex patterns after the OFF heuristic. When a pattern matches an entry whose current ruling is `allowed`, an opinion of type `scientific` is appended (citing this section) and the `effective_status` is downgraded to `caution`. The opinion text explains why.
+
+The patterns are intentionally conservative — they push toward caution; they never overrule an already-cautious or forbidden ruling.
+
+### natural-flavor-extract
+
+Match: `\bnatural\s+\w*\s*flavou?r`
+
+Examples: *Natural Vanilla Flavor*, *Natural Strawberry Flavour*, *Natural Cherry Flavor*.
+
+Reasoning: natural flavors are typically extracted using ethyl alcohol as a carrier. The underlying ingredient is usually halal, but the alcohol carrier is disputed across madhhabs.
+
+### alcohol-extract
+
+Match: `\b(vanilla|almond|lemon|orange|peppermint|coffee|coconut|maple)\s+extract\b`
+
+Examples: *Vanilla Extract*, *Almond Extract*.
+
+Reasoning: extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.
+
+### hydrolyzed-protein
+
+Match: `\bhydrolyzed\s+\w+\s+protein\b`
+
+Examples: *Hydrolyzed Soy Protein*, *Hydrolyzed Vegetable Protein*, *Hydrolyzed Whey Protein*.
+
+Reasoning: hydrolyzed proteins are processed with enzymes. The enzyme source can be microbial (halal) or animal (mushbooh); the label rarely declares which.
+
+### modified-starch
+
+Match: `\bmodified\s+\w*\s*(starch|corn\s+starch|food\s+starch)\b`
+
+Examples: *Modified Corn Starch*, *Modified Food Starch*.
+
+Reasoning: starch modification can involve enzymes; the enzyme source is usually unspecified.
+
+### wine-vinegar
+
+Match: `\b(wine\s+vinegar|red\s+wine\s+vinegar|white\s+wine\s+vinegar)\b`
+
+Examples: *Wine Vinegar*, *Red Wine Vinegar*.
+
+Reasoning: wine vinegars are produced from wine. Most scholars permit the vinegar after full acetic-acid conversion; others avoid any wine-derived product. Disputed.
+
+### opaque-flavoring
+
+Match: `^(natural|artificial)\s+(colou?r|flavou?ring|flavou?r)s?$`
+
+Examples: *Natural Flavoring*, *Artificial Flavor*, *Natural Color*.
+
+Reasoning: generic flavoring/coloring labels are opaque — the underlying ingredient can be plant, animal, or alcohol-extracted.
+
 ## How to add a new source
 
 1. Add a fetcher (e.g. `bootstrap_worldofislam.py`) that produces `cache/<source>.json` keyed by OFF canonical id.

@@ -1,9 +1,87 @@
 {
-  "version": "2026-06-03.3",
+  "version": "2026-06-03.4",
   "profiles": [
     "halal"
   ],
   "ingredients": [
+    {
+      "id": "en:annatto",
+      "names": [
+        "Annatto",
+        "Annatto Extract",
+        "Bixin"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Annatto is an orange-red natural colorant from the seeds of the achiote tree (Bixa orellana). Used in cheese, butter, snack foods, and rice dishes.",
+      "common_sources": [
+        {
+          "name": "Achiote tree seeds",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Annatto is a plant-derived natural colorant. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Annatto"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
+      "id": "en:apple-cider-vinegar",
+      "names": [
+        "Apple Cider Vinegar",
+        "Cider Vinegar",
+        "ACV"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Apple cider vinegar is vinegar made by fermenting apple juice. Two-stage fermentation: yeast converts sugars to alcohol, then bacteria convert alcohol to acetic acid.",
+      "common_sources": [
+        {
+          "name": "Fermented apple juice",
+          "note": "Halal — the alcohol intermediate is fully converted"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Apple cider vinegar is the result of complete two-stage fermentation; the alcohol intermediate is fully converted to acetic acid. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Apple_cider_vinegar"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
     {
       "id": "en:beef",
       "names": [
@@ -50,6 +128,47 @@
         }
       },
       "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:casein",
+      "names": [
+        "Casein",
+        "Caseinate",
+        "Sodium Caseinate",
+        "Calcium Caseinate",
+        "Potassium Caseinate"
+      ],
+      "e_number": null,
+      "category": "dairy",
+      "definition": "Casein is the main protein in mammalian milk. Used as a binder, emulsifier, and protein additive in processed foods, supplements, and adhesives.",
+      "common_sources": [
+        {
+          "name": "Milk (separated using acid or rennet)",
+          "note": "Halal if microbial rennet; mushbooh if non-halal animal rennet"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Casein is extracted from milk by precipitating it with acid (halal) or with rennet (depends on the rennet source). Most modern industrial casein uses microbial rennet or acid — likely halal — but the label does not declare the method.",
+          "disputed": false,
+          "confidence": "medium",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Casein"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
     },
     {
       "id": "en:cheese",
@@ -156,6 +275,170 @@
         }
       },
       "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:cocoa-butter",
+      "names": [
+        "Cocoa Butter",
+        "Theobroma Oil"
+      ],
+      "e_number": null,
+      "category": "plant",
+      "definition": "Cocoa butter is the natural fat extracted from cocoa beans during chocolate production. Used in chocolate, cosmetics, and pharmaceuticals.",
+      "common_sources": [
+        {
+          "name": "Cocoa beans (Theobroma cacao)",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Cocoa butter is a plant-derived fat from cocoa beans. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Cocoa_butter"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
+      "id": "en:cocoa-powder",
+      "names": [
+        "Cocoa Powder",
+        "Cocoa",
+        "Cacao Powder",
+        "Unsweetened Cocoa"
+      ],
+      "e_number": null,
+      "category": "plant",
+      "definition": "Cocoa powder is the dry remnant of cocoa beans after most of the cocoa butter is pressed out. Used in baking, beverages, and confectionery.",
+      "common_sources": [
+        {
+          "name": "Cocoa beans (Theobroma cacao)",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Cocoa powder is plant-derived. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Cocoa_solids"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
+      "id": "en:cysteine",
+      "names": [
+        "Cysteine",
+        "L-Cysteine"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Cysteine is a sulfur-containing amino acid used as a dough conditioner in commercial bread and as a flavor in processed foods.",
+      "common_sources": [
+        {
+          "name": "Synthetic / microbial fermentation",
+          "note": "Halal"
+        },
+        {
+          "name": "Human hair (industrial extraction)",
+          "note": "Haram"
+        },
+        {
+          "name": "Duck or chicken feathers",
+          "note": "Mushbooh; depends on slaughter"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Industrial L-cysteine has been extracted from human hair, duck feathers, and synthetic/microbial fermentation. Only synthetic or microbial origin is unambiguously halal. Labels do not declare the source.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Cysteine"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
+      "id": "en:distilled-vinegar",
+      "names": [
+        "Distilled Vinegar",
+        "White Vinegar",
+        "Spirit Vinegar",
+        "Distilled White Vinegar"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Distilled vinegar is produced by fermenting and then distilling a grain-based alcohol into acetic acid.",
+      "common_sources": [
+        {
+          "name": "Grain fermentation (corn, barley, etc.)",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Distilled vinegar undergoes complete fermentation; no residual alcohol. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Vinegar"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
     },
     {
       "id": "en:e100",
@@ -2392,6 +2675,44 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:ethyl-vanillin",
+      "names": [
+        "Ethyl Vanillin",
+        "Ethylvanillin"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Ethyl vanillin is a synthetic flavor compound, more intense than vanillin. Used in chocolate, ice cream, and confectionery.",
+      "common_sources": [
+        {
+          "name": "Synthetic",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Ethyl vanillin is synthetic. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Ethylvanillin"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:flavoring",
       "names": [
         "Flavoring",
@@ -2498,6 +2819,179 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:glucose-syrup",
+      "names": [
+        "Glucose Syrup",
+        "Glucose",
+        "Dextrose Syrup",
+        "Corn Syrup",
+        "Light Corn Syrup"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Glucose syrup is a sweet liquid produced by hydrolyzing starch (usually corn). Used in candies, baked goods, and many processed foods.",
+      "common_sources": [
+        {
+          "name": "Corn starch hydrolysis",
+          "note": "Halal"
+        },
+        {
+          "name": "Wheat starch hydrolysis",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Glucose syrup is plant-derived from starch hydrolysis. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Glucose_syrup"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
+      "id": "en:high-fructose-corn-syrup",
+      "names": [
+        "High Fructose Corn Syrup",
+        "HFCS",
+        "Glucose-Fructose Syrup",
+        "Isoglucose"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "HFCS is a sweetener made from corn starch processed by enzymes to convert some glucose to fructose. Common in sodas, dressings, and processed foods.",
+      "common_sources": [
+        {
+          "name": "Corn starch processed with microbial enzymes",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "HFCS is plant-derived; the enzymes used in production are microbial. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/High-fructose_corn_syrup"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
+      "id": "en:honey",
+      "names": [
+        "Honey",
+        "Raw Honey",
+        "Pasteurized Honey"
+      ],
+      "e_number": null,
+      "category": "other",
+      "definition": "Honey is the sweet substance produced by honeybees from flower nectar. Used as a sweetener, flavoring, and in traditional medicine.",
+      "common_sources": [
+        {
+          "name": "Honeybees (Apis mellifera)",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Honey"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
+      "id": "en:hydrolyzed-vegetable-protein",
+      "names": [
+        "Hydrolyzed Vegetable Protein",
+        "Hydrolyzed Soy Protein",
+        "HVP",
+        "HSP",
+        "Hydrolyzed Plant Protein"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Hydrolyzed vegetable protein is a flavoring made by chemically or enzymatically breaking plant proteins into amino acids and peptides. Common in soups, savory snacks, and gravies.",
+      "common_sources": [
+        {
+          "name": "Chemical (acid) hydrolysis",
+          "note": "Halal — no enzymes"
+        },
+        {
+          "name": "Microbial enzyme hydrolysis",
+          "note": "Halal"
+        },
+        {
+          "name": "Animal-source enzyme hydrolysis",
+          "note": "Mushbooh — enzyme source matters"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Hydrolyzed protein is produced by acids or enzymes. Acid hydrolysis is halal. Enzyme hydrolysis depends on the enzyme source (microbial = halal, animal = mushbooh). Labels rarely declare the method; treat as mushbooh until verified.",
+          "disputed": false,
+          "confidence": "medium",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Hydrolyzed_protein"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:lard",
       "names": [
         "Lard",
@@ -2597,6 +3091,55 @@
         }
       },
       "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:maltodextrin",
+      "names": [
+        "Maltodextrin"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Maltodextrin is a starch-derived polysaccharide used as a thickener, filler, and preservative.",
+      "common_sources": [
+        {
+          "name": "Corn starch",
+          "note": "Halal"
+        },
+        {
+          "name": "Wheat starch",
+          "note": "Halal"
+        },
+        {
+          "name": "Potato starch",
+          "note": "Halal"
+        },
+        {
+          "name": "Rice starch",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Maltodextrin is produced by hydrolyzing plant starches. Halal under standard commercial production.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Maltodextrin"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
     },
     {
       "id": "en:mono-and-diglycerides-of-fatty-acids",
@@ -2748,6 +3291,43 @@
       "last_reviewed": "2026-06-03"
     },
     {
+      "id": "en:pepsin",
+      "names": [
+        "Pepsin"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Pepsin is a digestive enzyme extracted from the stomach lining of pigs. Used in cheese-making, leather processing, and protein hydrolysis.",
+      "common_sources": [
+        {
+          "name": "Porcine stomach (standard commercial source)",
+          "note": "Haram"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "forbidden",
+          "explanation": "Commercial pepsin is overwhelmingly extracted from porcine (pig) stomachs. Treat any product listing 'pepsin' as haram unless the manufacturer explicitly confirms a non-porcine or microbial source.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "forbidden",
+              "ref": "https://en.wikipedia.org/wiki/Pepsin"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "forbidden"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:pork",
       "names": [
         "Pork",
@@ -2848,6 +3428,43 @@
         }
       },
       "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:saffron",
+      "names": [
+        "Saffron"
+      ],
+      "e_number": null,
+      "category": "plant",
+      "definition": "Saffron is the dried stigmas of the Crocus sativus flower, used as a spice and natural colorant.",
+      "common_sources": [
+        {
+          "name": "Crocus sativus flower stigmas",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Saffron is a plant-derived spice. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Saffron"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
     },
     {
       "id": "en:salt",
@@ -2980,6 +3597,93 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:tallow",
+      "names": [
+        "Tallow",
+        "Beef Tallow",
+        "Mutton Tallow",
+        "Rendered Tallow"
+      ],
+      "e_number": null,
+      "category": "meat",
+      "definition": "Tallow is rendered fat from cattle, sheep, or other ruminants. Used as a cooking fat, in soaps, candles, and (historically) in fried foods.",
+      "common_sources": [
+        {
+          "name": "Beef tallow (halal-slaughtered cattle)",
+          "note": "Halal"
+        },
+        {
+          "name": "Beef tallow (non-halal-slaughtered cattle)",
+          "note": "Mushbooh — most observant Muslims avoid"
+        },
+        {
+          "name": "Mixed sources (commercial)",
+          "note": "Mushbooh; sometimes contains pork fat"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Tallow is rendered animal fat. Halal only if from a halal-slaughtered animal. Commercial tallow rarely declares its source and may include pork fat. Treat as mushbooh unless the manufacturer confirms a halal source.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Tallow"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
+      "id": "en:turmeric",
+      "names": [
+        "Turmeric",
+        "Curcuma",
+        "Indian Saffron"
+      ],
+      "e_number": null,
+      "category": "plant",
+      "definition": "Turmeric is the rhizome of the Curcuma longa plant, used as a spice, colorant, and traditional medicine. The source of curcumin (E100).",
+      "common_sources": [
+        {
+          "name": "Curcuma longa rhizome",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Turmeric is a plant root. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Turmeric"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:vanilla",
       "names": [
         "Vanilla",
@@ -3064,6 +3768,53 @@
         }
       },
       "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:vanillin",
+      "names": [
+        "Vanillin",
+        "Synthetic Vanillin",
+        "Methyl vanillin"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Vanillin is the primary aromatic compound of vanilla. Commercial vanillin is synthesized from guaiacol or lignin, not extracted from vanilla beans.",
+      "common_sources": [
+        {
+          "name": "Synthetic from guaiacol (petrochemical)",
+          "note": "Halal"
+        },
+        {
+          "name": "Synthetic from lignin (wood pulp)",
+          "note": "Halal"
+        },
+        {
+          "name": "Biosynthesized via fermentation",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Vanillin is synthetic or fermentation-derived. Unlike natural vanilla extract, it does not use ethyl alcohol as a solvent. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Vanillin"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
     },
     {
       "id": "en:water",
@@ -3205,6 +3956,98 @@
         }
       },
       "last_reviewed": "2026-06-02"
+    },
+    {
+      "id": "en:wine-vinegar",
+      "names": [
+        "Wine Vinegar",
+        "Red Wine Vinegar",
+        "White Wine Vinegar",
+        "Sherry Vinegar",
+        "Champagne Vinegar"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Wine vinegar is vinegar made by oxidizing wine. Acetic acid bacteria convert the alcohol in wine into acetic acid.",
+      "common_sources": [
+        {
+          "name": "Fully fermented wine vinegar",
+          "note": "Most scholars permit — alcohol converted"
+        },
+        {
+          "name": "Incompletely fermented wine vinegar",
+          "note": "Mushbooh — residual alcohol"
+        },
+        {
+          "name": "Any wine-derived product",
+          "note": "Some scholars avoid regardless of conversion"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Wine vinegar is produced from wine. The majority view is that once acetic-acid conversion is complete, the resulting vinegar is halal. A conservative minority avoids any wine-derived product. Treat as mushbooh and follow your school of jurisprudence.",
+          "disputed": true,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Vinegar"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
+      "id": "en:yeast-extract",
+      "names": [
+        "Yeast Extract",
+        "Hefeextrakt",
+        "Extrait de levure"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Yeast extract is a flavor enhancer produced by breaking down yeast cells. Used in soups, sauces, snacks, and savory foods.",
+      "common_sources": [
+        {
+          "name": "Saccharomyces cerevisiae (modern industrial)",
+          "note": "Halal"
+        },
+        {
+          "name": "Historical industrial processes (rare)",
+          "note": "Mushbooh — porcine media historically"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Yeast extract is fermentation-derived from baker's yeast (Saccharomyces cerevisiae). Modern industrial production is unambiguously halal. Historical concerns about porcine fat in fermentation media are obsolete in commercial production.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Yeast_extract"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
     }
   ]
 }

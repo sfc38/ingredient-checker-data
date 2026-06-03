@@ -38,6 +38,74 @@ CACHE_DIR = ROOT / "scripts" / "cache"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
 WORLDOFISLAM_URL = "https://special.worldofislam.info/Food/numbers.html"
+HEURISTICS_URL = "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics"
+
+# Patterns that flag halal-specific concerns OFF's vegan/vegetarian
+# flags don't capture. Each entry is (regex, short note shown to users,
+# pattern_id for the citation). Patterns only apply when the entry's
+# current ruling is "allowed" — they push toward caution; they never
+# overrule an already-cautious or forbidden ruling.
+import re as _re
+HALAL_CAUTION_PATTERNS: list[tuple[_re.Pattern, str, str]] = [
+    (_re.compile(r'\bnatural\s+\w*\s*flavou?r', _re.IGNORECASE),
+     "Natural flavors are typically extracted using ethyl alcohol as a "
+     "carrier. The underlying ingredient is usually halal, but the "
+     "alcohol carrier is disputed across madhhabs.",
+     "natural-flavor-extract"),
+    (_re.compile(r'\b(vanilla|almond|lemon|orange|peppermint|coffee|coconut|maple)\s+extract\b', _re.IGNORECASE),
+     "Extracts typically use ethyl alcohol as a solvent. Whether trace "
+     "residual alcohol is halal is disputed across madhhabs.",
+     "alcohol-extract"),
+    (_re.compile(r'\bhydrolyzed\s+\w+\s+protein\b', _re.IGNORECASE),
+     "Hydrolyzed proteins are processed with enzymes. The enzyme source "
+     "can be microbial (halal) or animal (mushbooh); the label rarely "
+     "declares which.",
+     "hydrolyzed-protein"),
+    (_re.compile(r'\bmodified\s+\w*\s*(starch|corn\s+starch|food\s+starch)\b', _re.IGNORECASE),
+     "Starch modification can involve enzymes; the enzyme source is "
+     "usually unspecified on the label.",
+     "modified-starch"),
+    (_re.compile(r'\b(wine\s+vinegar|red\s+wine\s+vinegar|white\s+wine\s+vinegar)\b', _re.IGNORECASE),
+     "Wine vinegars are produced from wine. Most scholars permit the "
+     "vinegar after full acetic-acid conversion; others avoid any "
+     "wine-derived product. Disputed.",
+     "wine-vinegar"),
+    (_re.compile(r'^(natural|artificial)\s+(colou?r|flavou?ring|flavou?r)s?$', _re.IGNORECASE),
+     "Generic 'flavoring' or 'coloring' labels are opaque — the "
+     "underlying ingredient can be plant, animal, or alcohol-extracted.",
+     "opaque-flavoring"),
+]
+
+
+def apply_halal_patterns(name_candidates: list[str], ruling: dict) -> bool:
+    """If any candidate name matches a halal-caution pattern, append a
+    pattern-source opinion to ruling.opinions[] and force the
+    effective_status to 'caution' if it was 'allowed'.
+    Returns True if a pattern fired."""
+    if ruling.get("effective_status") not in ("allowed", None):
+        return False
+    for name in name_candidates:
+        if not isinstance(name, str):
+            continue
+        for pattern, reason, pid in HALAL_CAUTION_PATTERNS:
+            if pattern.search(name):
+                ruling["opinions"].append({
+                    "source": "Ingredient-checker halal pattern heuristic",
+                    "type": "scientific",
+                    "status": "caution",
+                    "note": reason,
+                    "ref": HEURISTICS_URL + "#" + pid,
+                })
+                if ruling.get("effective_status") == "allowed":
+                    ruling["effective_status"] = "caution"
+                    ruling["disputed"] = True
+                    # Also tighten the explanation so the chip's
+                    # detail sheet leads with the halal concern.
+                    ruling["explanation"] = (
+                        reason + " " + ruling.get("explanation", "")
+                    ).strip()
+                return True
+    return False
 
 OFF_TAXONOMY_URL = "https://static.openfoodfacts.org/data/taxonomies/ingredients.json"
 OFF_CACHE = CACHE_DIR / "off-ingredients.json"
@@ -607,6 +675,12 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
                 if r.lower() not in seen:
                     names.append(r)
                     seen.add(r.lower())
+
+    # Apply halal-aware pattern heuristics — catches "natural flavor",
+    # "vanilla extract", "hydrolyzed * protein", "modified * starch",
+    # wine vinegars, etc. that OFF flags as halal-fine but have
+    # alcohol/enzyme/source concerns.
+    apply_halal_patterns(names, ruling)
 
     # Merge WorldOfIslam community opinion if available for this E-number.
     if e_num and worldofislam:

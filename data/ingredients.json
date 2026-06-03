@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-03.3",
+  "version": "2026-06-03.4",
   "profiles": [
     "halal"
   ],
@@ -15,16 +15,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Cocoa Powder (en:cocoa-powder), which is a hand-curated entry in our database. Cocoa powder is plant-derived. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:cocoa-powder",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:3-fat-reduced-cocoa-powder"
+              "note": "Derivative ingredient of Cocoa Powder"
             }
           ]
         }
@@ -445,16 +444,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:acacia-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -476,16 +474,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:acacia-honey-from-france"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -1986,15 +1983,15 @@
       "definition": "The almond -Prunus amygdalus, syn. Prunus dulcis- is a species of tree native to Iran and surrounding countries, but widely cultivated elsewhere. The almond is also the name of the edible and widely cultivated seed of this tree.",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
+              "status": "caution",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Almond"
             },
@@ -2004,6 +2001,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:almond"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -2113,15 +2117,15 @@
       "definition": "The almond is a species of tree from the genus Prunus. Along with the peach, it is classified in the subgenus Amygdalus, distinguished from the other subgenera by corrugations on the woody shell (endocarp) surrounding the seed.",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
+              "status": "caution",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Almond"
             },
@@ -2131,6 +2135,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:almond-oil"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -3423,6 +3434,45 @@
       "last_reviewed": "2026-06-03"
     },
     {
+      "id": "en:annatto",
+      "names": [
+        "Annatto",
+        "Annatto Extract",
+        "Bixin"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Annatto is an orange-red natural colorant from the seeds of the achiote tree (Bixa orellana). Used in cheese, butter, snack foods, and rice dishes.",
+      "common_sources": [
+        {
+          "name": "Achiote tree seeds",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Annatto is a plant-derived natural colorant. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Annatto"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:apple",
       "names": [
         "apple",
@@ -3569,50 +3619,36 @@
     {
       "id": "en:apple-cider-vinegar",
       "names": [
-        "apple cider vinegar",
-        "Apfelweinessig",
-        "vinaigre de cidre de pomme",
-        "vinagre de sidra de manzana",
-        "aceto di sidro di mele",
-        "appelciderazijn",
-        "eplecidereddik",
-        "æblecidereddike",
-        "яблучний оцет",
-        "Giấm táo",
-        "আপেল সিডার ভিনেগার",
-        "јабуково сирће",
-        "ocet z cydru jabłkowego",
-        "苹果醋片",
-        "חומץ תפוחים",
-        "almaecet",
-        "äppelcidervinäger",
-        "사과식초",
-        "omenasiiderietikka",
-        "яблочный уксус"
+        "Apple Cider Vinegar",
+        "Cider Vinegar",
+        "ACV"
       ],
       "e_number": null,
-      "category": "other",
-      "definition": "Apple cider vinegar, or cider vinegar, is a vinegar made from cider, and used in salad dressings, marinades, vinaigrettes, food preservatives, and chutneys. It is made from crushed apples, and the juice that is squeezed out. The apple juice is then fermented by yeast which converts the sugars in the juice to ethanol. In a second fermentation step, the ethanol is converted into acetic acid by acetic acid-forming bacteria, yielding cider vinegar. The acetic acid, together with the malic acid naturally present in apple juice, contribute to the sour taste of this vinegar.",
+      "category": "additive",
+      "definition": "Apple cider vinegar is vinegar made by fermenting apple juice. Two-stage fermentation: yeast converts sugars to alcohol, then bacteria convert alcohol to acetic acid.",
+      "common_sources": [
+        {
+          "name": "Fermented apple juice",
+          "note": "Halal — the alcohol intermediate is fully converted"
+        }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Apple cider vinegar is the result of complete two-stage fermentation; the alcohol intermediate is fully converted to acetic acid. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "high",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
               "status": "allowed",
-              "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Apple_cider_vinegar"
             },
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Community consensus across halal-checker resources",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:apple-cider-vinegar"
+              "status": "allowed"
             }
           ]
         }
@@ -4772,9 +4808,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -4783,6 +4819,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:arabica-coffee-extract"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -6421,27 +6464,18 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "Yeast extracts consist of the cell contents of yeast without the cell walls; they are used as food additives or flavorings, or as nutrients for bacterial culture media. They are often used to create savoury flavors and umami taste sensations and can be found in a large variety of packaged foods including frozen meals, crackers, snack foods, gravy, stock and more. They are rich in B vitamins. Yeast extracts and fermented foods contain glutamic acid, an amino acid which adds an umami flavor. Glutamic acid is found in meat, cheese, fungi and vegetables—such as broccoli and tomatoes. A number of other substances found in yeast extract provide aromas, some meat-like, when allowed to react under heat.",
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Yeast Extract (en:yeast-extract), which is a hand-curated entry in our database. Yeast extract is fermentation-derived from baker's yeast (Saccharomyces cerevisiae). Modern industrial production is unambiguously halal. Historical concerns about porcine fat in fermentation media are obsolete in commercial production.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Wikipedia",
-              "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/Yeast_extract"
-            },
-            {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:yeast-extract",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:autolyzed-yeast-extract"
+              "note": "Derivative ingredient of Yeast Extract"
             }
           ]
         }
@@ -9347,16 +9381,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:bee-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -11784,15 +11817,15 @@
       "definition": "The almond is a species of tree from the genus Prunus. Along with the peach, it is classified in the subgenus Amygdalus, distinguished from the other subgenera by corrugations on the woody shell (endocarp) surrounding the seed.",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
+              "status": "caution",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Almond"
             },
@@ -11802,6 +11835,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:bitter-almond"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -14203,16 +14243,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:blend-of-eu-and-non-eu-honeys"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -14234,16 +14273,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:blend-of-eu-honeys"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -14267,16 +14305,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:blend-of-honeys"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -14298,16 +14335,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:blend-of-non-eu-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -16349,9 +16385,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Natural flavors are typically extracted using ethyl alcohol as a carrier. The underlying ingredient is usually halal, but the alcohol carrier is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -16360,6 +16396,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:bourbon-vanilla-natural-flavouring"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Natural flavors are typically extracted using ethyl alcohol as a carrier. The underlying ingredient is usually halal, but the alcohol carrier is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#natural-flavor-extract"
             }
           ]
         }
@@ -18975,27 +19018,18 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "Monofloral honey is a type of honey which has a distinctive flavor or other attribute due to its being predominantly from the nectar of a single plant species. It is stored and labeled separately so as to command a premium price. While there may never be an absolute monofloral type, some honeys are relatively pure due to the prodigious nectar production of a particular species, such as citrus, or there may be little else in bloom at the time.",
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Wikipedia",
-              "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/Monofloral_honey"
-            },
-            {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:buckwheat-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -24289,51 +24323,37 @@
       "id": "en:casein",
       "names": [
         "Casein",
-        "Caséine",
-        "Caseína",
-        "Caseina",
-        "Caseïne",
-        "Kazein",
-        "كازين",
-        "Kasein",
-        "カゼイン",
-        "کازئین",
-        "Казеин",
-        "केसीन",
-        "Caseïna",
-        "Казеїн",
-        "Cáiséin",
-        "Kazeino",
-        "Kazeīns",
-        "酪蛋白",
-        "เคซีน",
-        "Kaseina",
-        "Կազեին",
-        "Καζεΐνη",
-        "카세인",
-        "קזאין",
-        "Казеін",
-        "Kazeina",
-        "Cazeină",
-        "Kaseiin",
-        "Kaseiini"
+        "Caseinate",
+        "Sodium Caseinate",
+        "Calcium Caseinate",
+        "Potassium Caseinate"
       ],
       "e_number": null,
-      "category": "other",
-      "definition": "A family of related phosphoproteins. These proteins are commonly found in mammalian milk, comprising c. 80% of the proteins in cow's milk and between 20% and 45% of the proteins in human milk.",
+      "category": "dairy",
+      "definition": "Casein is the main protein in mammalian milk. Used as a binder, emulsifier, and protein additive in processed foods, supplements, and adhesives.",
+      "common_sources": [
+        {
+          "name": "Milk (separated using acid or rennet)",
+          "note": "Halal if microbial rennet; mushbooh if non-halal animal rennet"
+        }
+      ],
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "effective_status": "caution",
+          "explanation": "Casein is extracted from milk by precipitating it with acid (halal) or with rennet (depends on the rennet source). Most modern industrial casein uses microbial rennet or acid — likely halal — but the label does not declare the method.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Casein"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:casein"
+              "status": "caution"
             }
           ]
         }
@@ -33101,27 +33121,18 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "Monofloral honey is a type of honey which has a distinctive flavor or other attribute due to its being predominantly from the nectar of a single plant species. It is stored and labeled separately so as to command a premium price. While there may never be an absolute monofloral type, some honeys are relatively pure due to the prodigious nectar production of a particular species, such as citrus, or there may be little else in bloom at the time.",
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Wikipedia",
-              "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/Monofloral_honey"
-            },
-            {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:clover-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -33487,72 +33498,35 @@
     {
       "id": "en:cocoa-butter",
       "names": [
-        "cocoa butter",
-        "Kakaobutter",
-        "beurre de cacao",
-        "manteca de cacao",
-        "burro di cacao",
-        "manteiga de cacau",
-        "cacaoboter",
-        "kakao yağı",
-        "زبدة الكاكاو",
-        "Budidaya kakao",
-        "Mentega koko",
-        "βούτυρο κακάου",
-        "kakavos sviestas",
-        "Kakao moyi",
-        "kakao sviests",
-        "kakaosmør",
-        "Kakaóvaj",
-        "Kakao-gurin",
-        "kakaové máslo",
-        "เนยโกโก้",
-        "kakao maslac",
-        "Какао-олія",
-        "kakósmjör",
-        "масло какао",
-        "ココアバター",
-        "какао майы",
-        "کره کاکائو",
-        "Какаово масло",
-        "Kakavovo maslo",
-        "mantega de cacau",
-        "kakaa butero",
-        "равгани какао",
-        "kaakaovoi",
-        "kakaovõi",
-        "Gjalpa e kakaos",
-        "unt de cacao",
-        "kakaosmör",
-        "카카오 버터",
-        "kakaové maslo",
-        "Manteiga de cacao",
-        "masło kakaowe",
-        "חמאת קקאו"
+        "Cocoa Butter",
+        "Theobroma Oil"
       ],
       "e_number": null,
-      "category": "other",
-      "definition": "Cocoa butter, also called theobroma oil, is a pale-yellow, edible fat extracted from the cocoa bean. It is used to make chocolate, as well as some ointments, toiletries, and pharmaceuticals. Cocoa butter has a cocoa flavor and aroma. Its melting point is slightly below human body temperature. It is an essential ingredient of chocolate and related confectionary products. Cocoa butter does not contain butter or other animal products; it is vegan.",
+      "category": "plant",
+      "definition": "Cocoa butter is the natural fat extracted from cocoa beans during chocolate production. Used in chocolate, cosmetics, and pharmaceuticals.",
+      "common_sources": [
+        {
+          "name": "Cocoa beans (Theobroma cacao)",
+          "note": "Halal"
+        }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Cocoa butter is a plant-derived fat from cocoa beans. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "high",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
               "status": "allowed",
-              "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Cocoa_butter"
             },
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Community consensus across halal-checker resources",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:cocoa-butter"
+              "status": "allowed"
             }
           ]
         }
@@ -33755,16 +33729,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Cocoa Butter (en:cocoa-butter), which is a hand-curated entry in our database. Cocoa butter is a plant-derived fat from cocoa beans. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:cocoa-butter",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:cocoa-mass-and-cocoa-butter"
+              "note": "Derivative ingredient of Cocoa Butter"
             }
           ]
         }
@@ -33899,59 +33872,37 @@
     {
       "id": "en:cocoa-powder",
       "names": [
-        "cocoa powder",
-        "Kakaopulver",
-        "poudre de cacao",
-        "cacao en polvo",
-        "cacao in polvere",
-        "cacau em pó",
-        "cacaopoeder",
-        "kakao tozu",
-        "مسحوق الكاكاو",
-        "Kakao padat",
-        "Pepejal koko",
-        "какао на прах",
-        "какао во прав",
-        "אבקת קקאו",
-        "cacau en pols",
-        "Какава-парашок",
-        "kakao w proszku",
-        "какао-порошок",
-        "코코아 가루",
-        "پودر کاکائو",
-        "ココアパウダー",
-        "pudră de cacao",
-        "Kakaový prášek",
-        "kakaópor",
-        "kaakaojauhe",
-        "kakao pulveris",
-        "kakaopulber",
-        "kakavos milteliai",
-        "σκόνη κακάο"
+        "Cocoa Powder",
+        "Cocoa",
+        "Cacao Powder",
+        "Unsweetened Cocoa"
       ],
       "e_number": null,
-      "category": "other",
-      "definition": "Cocoa powder, often simply cocoa, is an aromatic powder derived from the seeds of the Theobroma cacao tree. It is produced by roasting and grinding the seeds, referred to as cocoa beans, and then removing most of the cocoa butter from the resulting paste. Usually sold as a fine powder, cocoa is widely used in baking and beverages, notably hot cocoa, because of its intense chocolate flavor without most of the fat found in cocoa beans. The two main types are natural cocoa powder and Dutch-processed cocoa powder, both of which are available in various fat percentages.",
+      "category": "plant",
+      "definition": "Cocoa powder is the dry remnant of cocoa beans after most of the cocoa butter is pressed out. Used in baking, beverages, and confectionery.",
+      "common_sources": [
+        {
+          "name": "Cocoa beans (Theobroma cacao)",
+          "note": "Halal"
+        }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Cocoa powder is plant-derived. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "high",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
               "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/Cocoa_powder"
+              "ref": "https://en.wikipedia.org/wiki/Cocoa_solids"
             },
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Community consensus across halal-checker resources",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:cocoa-powder"
+              "status": "allowed"
             }
           ]
         }
@@ -33973,16 +33924,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Cocoa Powder (en:cocoa-powder), which is a hand-curated entry in our database. Cocoa powder is plant-derived. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:cocoa-powder",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:cocoa-powder-processed-with-alkali"
+              "note": "Derivative ingredient of Cocoa Powder"
             }
           ]
         }
@@ -34000,16 +33950,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Cocoa Powder (en:cocoa-powder), which is a hand-curated entry in our database. Cocoa powder is plant-derived. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:cocoa-powder",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:cocoa-powder-with-reduced-cocoa-butter-content"
+              "note": "Derivative ingredient of Cocoa Powder"
             }
           ]
         }
@@ -37076,9 +37025,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -37087,6 +37036,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:concentrated-lemon-extract"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -37284,9 +37240,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -37295,6 +37251,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:concentrated-orange-extract"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -40512,16 +40475,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Maltodextrin (en:maltodextrin), which is a hand-curated entry in our database. Maltodextrin is produced by hydrolyzing plant starches. Halal under standard commercial production.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:maltodextrin",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:corn-maltodextrin"
+              "note": "Derivative ingredient of Maltodextrin"
             }
           ]
         }
@@ -42855,16 +42817,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:creamy-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -44575,6 +44536,52 @@
       "last_reviewed": "2026-06-03"
     },
     {
+      "id": "en:cysteine",
+      "names": [
+        "Cysteine",
+        "L-Cysteine"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Cysteine is a sulfur-containing amino acid used as a dough conditioner in commercial bread and as a flavor in processed foods.",
+      "common_sources": [
+        {
+          "name": "Synthetic / microbial fermentation",
+          "note": "Halal"
+        },
+        {
+          "name": "Human hair (industrial extraction)",
+          "note": "Haram"
+        },
+        {
+          "name": "Duck or chicken feathers",
+          "note": "Mushbooh; depends on slaughter"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Industrial L-cysteine has been extracted from human hair, duck feathers, and synthetic/microbial fermentation. Only synthetic or microbial origin is unambiguously halal. Labels do not declare the source.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Cysteine"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:cytidine-monophosphate",
       "names": [
         "Cytidine monophosphate",
@@ -46060,16 +46067,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Glucose Syrup (en:glucose-syrup), which is a hand-curated entry in our database. Glucose syrup is plant-derived from starch hydrolysis. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:glucose-syrup",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:dehydrated-glucose-syrup"
+              "note": "Derivative ingredient of Glucose Syrup"
             }
           ]
         }
@@ -47636,32 +47642,37 @@
     {
       "id": "en:distilled-vinegar",
       "names": [
-        "distilled vinegar",
-        "destillierter Essig",
-        "vinaigre distillé",
-        "vinagre destilado",
-        "aceto distillato",
-        "дестилиран оцет",
-        "Destilovaný ocet",
-        "חומץ מזוקק",
-        "Ocet destylowany",
-        "destilirani ocat"
+        "Distilled Vinegar",
+        "White Vinegar",
+        "Spirit Vinegar",
+        "Distilled White Vinegar"
       ],
       "e_number": null,
-      "category": "other",
+      "category": "additive",
+      "definition": "Distilled vinegar is produced by fermenting and then distilling a grain-based alcohol into acetic acid.",
+      "common_sources": [
+        {
+          "name": "Grain fermentation (corn, barley, etc.)",
+          "note": "Halal"
+        }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Distilled vinegar undergoes complete fermentation; no residual alcohol. Halal.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "high",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
-              "type": "community",
+              "source": "Wikipedia",
+              "type": "scientific",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:distilled-vinegar"
+              "ref": "https://en.wikipedia.org/wiki/Vinegar"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
             }
           ]
         }
@@ -75604,6 +75615,44 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:ethyl-vanillin",
+      "names": [
+        "Ethyl Vanillin",
+        "Ethylvanillin"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Ethyl vanillin is a synthetic flavor compound, more intense than vanillin. Used in chocolate, ice cream, and confectionery.",
+      "common_sources": [
+        {
+          "name": "Synthetic",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Ethyl vanillin is synthetic. Halal.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Ethylvanillin"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:ethylvanillin",
       "names": [
         "ethylvanillin",
@@ -75619,27 +75668,18 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "Ethylvanillin is the organic compound with the formula (C2H5O)(HO)C6H3CHO. This colorless solid consists of a benzene ring with hydroxyl, ethoxy, and formyl groups on the 4, 3, and 1 positions, respectively. It is a homologue of vanillin, differing on the 3 position.",
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Vanillin (en:vanillin), which is a hand-curated entry in our database. Vanillin is synthetic or fermentation-derived. Unlike natural vanilla extract, it does not use ethyl alcohol as a solvent. Halal.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Wikipedia",
-              "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/Ethylvanillin"
-            },
-            {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:vanillin",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:ethylvanillin"
+              "note": "Derivative ingredient of Vanillin"
             }
           ]
         }
@@ -75690,27 +75730,18 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "Eucalyptus honey is a type of honey made by honeybees that forage on the nectar of eucalyptus tree flowers. Eucalyptus honey is prized for its natural health benefits including antibacterial properties, antifungal properties, high antioxidant levels and ability to relieve coughs, sore throats, and respiratory ailments.",
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Wikipedia",
-              "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/Eucalyptus_honey"
-            },
-            {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:eucalyptus-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -77472,16 +77503,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Cocoa Powder (en:cocoa-powder), which is a hand-curated entry in our database. Cocoa powder is plant-derived. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:cocoa-powder",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:fat-reduced-cocoa-powder"
+              "note": "Derivative ingredient of Cocoa Powder"
             }
           ]
         }
@@ -80729,27 +80759,18 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "Monofloral honey is a type of honey which has a distinctive flavor or other attribute due to its being predominantly from the nectar of a single plant species. It is stored and labeled separately so as to command a premium price. While there may never be an absolute monofloral type, some honeys are relatively pure due to the prodigious nectar production of a particular species, such as citrus, or there may be little else in bloom at the time.",
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Wikipedia",
-              "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/Monofloral_honey"
-            },
-            {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:flower-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -81302,16 +81323,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:forest-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -82899,16 +82919,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Glucose Syrup (en:glucose-syrup), which is a hand-curated entry in our database. Glucose syrup is plant-derived from starch hydrolysis. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:glucose-syrup",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:fructose-free-glucose-syrup"
+              "note": "Derivative ingredient of Glucose Syrup"
             }
           ]
         }
@@ -86378,59 +86397,42 @@
     {
       "id": "en:glucose-syrup",
       "names": [
-        "glucose syrup",
-        "Glukosesirup",
-        "sirop de glucose",
-        "jarabe de glucosa",
-        "sciroppo di glucosio",
-        "xarope de glicose",
-        "glucosestroop",
-        "glikoz şurubu",
-        "glükoosisiirup",
-        "glukoosisiirappi",
-        "glikozes sīrups",
-        "shurup glukoze",
-        "glukozni sirup",
-        "glukózový sirup",
-        "Almibar",
-        "glükózszirup",
-        "σιρόπι γλυκόζης",
-        "gliukozės sirupas",
-        "水飴",
-        "Сироп глюкозы",
-        "glukossirap",
-        "글루코스 시럽",
-        "סירופ גלוקוז",
-        "syrop glukozowy",
-        "xarop de glucosa",
-        "глюкозен сироп",
-        "Almibre",
-        "glúkósasiróp",
-        "sirop de glucoză"
+        "Glucose Syrup",
+        "Glucose",
+        "Dextrose Syrup",
+        "Corn Syrup",
+        "Light Corn Syrup"
       ],
       "e_number": null,
-      "category": "other",
-      "definition": "Glucose syrup, also known as confectioner's glucose, is a syrup made from the hydrolysis of starch. Glucose is a sugar. Maize (corn) is commonly used as the source of the starch in the United States where the syrup is called \"corn syrup\", but glucose syrup is also made from potatoes and wheat, and less often from barley, rice and cassava.",
+      "category": "additive",
+      "definition": "Glucose syrup is a sweet liquid produced by hydrolyzing starch (usually corn). Used in candies, baked goods, and many processed foods.",
+      "common_sources": [
+        {
+          "name": "Corn starch hydrolysis",
+          "note": "Halal"
+        },
+        {
+          "name": "Wheat starch hydrolysis",
+          "note": "Halal"
+        }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Glucose syrup is plant-derived from starch hydrolysis. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "high",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
               "status": "allowed",
-              "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Glucose_syrup"
             },
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Community consensus across halal-checker resources",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:glucose-syrup"
+              "status": "allowed"
             }
           ]
         }
@@ -93696,49 +93698,37 @@
     {
       "id": "en:high-fructose-corn-syrup",
       "names": [
-        "high fructose corn syrup",
-        "Maissirup mit hohem Fruktosegehalt",
-        "sirop de maïs à haute teneur en fructose",
-        "Jarabe de maíz de alta fructosa",
-        "Sciroppo di mais ad alto contenuto di fruttosio",
-        "maïsglucose-fructosestroop",
-        "σιρόπι ισογλυκόζης",
-        "Високофруктозни кукурузни сируп",
-        "Izocukor",
-        "izoglukózový sirup",
-        "Високо-фруктозен сироп от царевица",
-        "Syrop kukurydziany o wysokiej zawartości fruktozy",
-        "visokofruktozni kukuruzni sirup",
-        "Xarop de blat de moro alt en fructosa",
-        "高果糖浆",
-        "Isoglukos",
-        "고과당 옥수수 시럽",
-        "isoglukoosi",
-        "異性化糖"
+        "High Fructose Corn Syrup",
+        "HFCS",
+        "Glucose-Fructose Syrup",
+        "Isoglucose"
       ],
       "e_number": null,
-      "category": "other",
-      "definition": "High-fructose corn syrup (HFCS), also known as glucose–fructose syrup, and isoglucose, is a sweetener made from corn starch. As in the production of conventional corn syrup, the starch is broken down into glucose by enzymes. To make HFCS, the corn syrup is further processed with the enzyme D-xylose isomerase to convert some of its glucose into fructose. HFCS was first marketed in the early 1970s by the Clinton Corn Processing Company, together with the Japanese Agency of Industrial Science and Technology, where the enzyme was discovered in 1965.",
+      "category": "additive",
+      "definition": "HFCS is a sweetener made from corn starch processed by enzymes to convert some glucose to fructose. Common in sodas, dressings, and processed foods.",
+      "common_sources": [
+        {
+          "name": "Corn starch processed with microbial enzymes",
+          "note": "Halal"
+        }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "HFCS is plant-derived; the enzymes used in production are microbial. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "high",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
               "status": "allowed",
-              "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/High-fructose_corn_syrup"
             },
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Community consensus across halal-checker resources",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:high-fructose-corn-syrup"
+              "status": "allowed"
             }
           ]
         }
@@ -94032,143 +94022,36 @@
     {
       "id": "en:honey",
       "names": [
-        "honey",
-        "Honig",
-        "miel",
-        "miele",
-        "mel",
-        "honing",
-        "Bal",
-        "عسل النحل",
-        "Madu",
-        "Malab",
-        "мєдъ",
-        "Med",
-        "Eirete",
-        "miód",
-        "Anyitsi",
-        "ပျားရည်",
-        "벌꿀",
-        "honung",
-        "شہد",
-        "miere",
-        "თაფლი",
-        "huning",
-        "honning",
-        "Mêl",
-        "मधु",
-        "Mật ong",
-        "މާމުއި",
-        "ମହୁ",
-        "mjalti",
-        "Mafúta ma nzói",
-        "hunaja",
-        "Siwo",
-        "missuuttagaq",
-        "Асал",
-        "mielo",
-        "miehta",
-        "муд",
-        "Meli",
-        "пчелиный мёд",
-        "عسل",
-        "Бал",
-        "האניג",
-        "Hingiv",
-        "தேன்",
-        "hunangur",
-        "Пыл",
-        "ацха",
-        "мед",
-        "ទឹកឃ្មុំ",
-        "mele",
-        "Hunneg",
-        "Mil",
-        "Ezti",
-        "3wu)",
-        "蜂蜜",
-        "น้ำผึ้ง",
-        "melle",
-        "Asal",
-        "తేనె",
-        "Medus",
-        "گبين",
-        "মধু",
-        "මී පැණි",
-        "Heuning",
-        "דבש",
-        "Ара балы",
-        "мёд",
-        "Lachiwa misk'i",
-        "Pulot-pukyutan",
-        "Зөгийн бал",
-        "തേൻ",
-        "मध",
-        "મધુ",
-        "ماکي",
-        "Asali",
-        "ھەسەل",
-        "Damma",
-        "Misk'i",
-        "mesi",
-        "Ubuki",
-        "Mèl",
-        "ማር",
-        "Huchi",
-        "mill",
-        "ಜೇನು",
-        "Hunang",
-        "għasel",
-        "Tsísʼná bitłʼizh",
-        "ਸ਼ਹਿਦ",
-        "ມະທຸ",
-        "méz",
-        "Låme",
-        "मह",
-        "lem",
-        "μέλι",
-        "Մեղր",
-        "Honeys",
-        "Honeyed",
-        "Antibacterial effects of honey",
-        "Raw honey",
-        "Regional honeys",
-        "Honey varieties",
-        "Honeyed water",
-        "Heather honey",
-        "🍯",
-        "Health effects of honey",
-        "Clover Honey",
-        "Health benefits of honey",
-        "Honey collector",
-        "Honey collection",
-        "Honey fraud",
-        "Honey butter",
-        "Honeydew honey"
+        "Honey",
+        "Raw Honey",
+        "Pasteurized Honey"
       ],
       "e_number": null,
       "category": "other",
-      "definition": "A sweet, viscous food substance produced by bees and some related insects.",
+      "definition": "Honey is the sweet substance produced by honeybees from flower nectar. Used as a sweetener, flavoring, and in traditional medicine.",
+      "common_sources": [
+        {
+          "name": "Honeybees (Apis mellifera)",
+          "note": "Halal"
+        }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "high",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
               "status": "allowed",
-              "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Honey"
             },
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Community consensus across halal-checker resources",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:honey"
+              "status": "allowed"
             }
           ]
         }
@@ -94220,16 +94103,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:honey-from-france"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -94252,16 +94134,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:honey-from-new-zealand"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -94282,16 +94163,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:honey-from-spain"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -94310,16 +94190,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:honey-from-the-gatinais"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -94340,16 +94219,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:honey-from-the-provence"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -96183,15 +96061,15 @@
       "definition": "Hydrolyzed vegetable protein (HVP) products are foodstuffs obtained by the hydrolysis of protein, and have a meaty, savory taste similar to broth (bouillon).",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Hydrolyzed proteins are processed with enzymes. The enzyme source can be microbial (halal) or animal (mushbooh); the label rarely declares which. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
+              "status": "caution",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Hydrolyzed_vegetable_protein"
             },
@@ -96201,6 +96079,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:hydrolysed-vegetable-protein"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Hydrolyzed proteins are processed with enzymes. The enzyme source can be microbial (halal) or animal (mushbooh); the label rarely declares which.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#hydrolyzed-protein"
             }
           ]
         }
@@ -96252,6 +96137,55 @@
       "last_reviewed": "2026-06-03"
     },
     {
+      "id": "en:hydrolyzed-vegetable-protein",
+      "names": [
+        "Hydrolyzed Vegetable Protein",
+        "Hydrolyzed Soy Protein",
+        "HVP",
+        "HSP",
+        "Hydrolyzed Plant Protein"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Hydrolyzed vegetable protein is a flavoring made by chemically or enzymatically breaking plant proteins into amino acids and peptides. Common in soups, savory snacks, and gravies.",
+      "common_sources": [
+        {
+          "name": "Chemical (acid) hydrolysis",
+          "note": "Halal — no enzymes"
+        },
+        {
+          "name": "Microbial enzyme hydrolysis",
+          "note": "Halal"
+        },
+        {
+          "name": "Animal-source enzyme hydrolysis",
+          "note": "Mushbooh — enzyme source matters"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Hydrolyzed protein is produced by acids or enzymes. Acid hydrolysis is halal. Enzyme hydrolysis depends on the enzyme source (microbial = halal, animal = mushbooh). Labels rarely declare the method; treat as mushbooh until verified.",
+          "disputed": false,
+          "confidence": "medium",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Hydrolyzed_protein"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:hydrolyzed-wheat-protein",
       "names": [
         "hydrolyzed wheat protein",
@@ -96270,9 +96204,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Hydrolyzed proteins are processed with enzymes. The enzyme source can be microbial (halal) or animal (mushbooh); the label rarely declares which. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -96281,6 +96215,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:hydrolyzed-wheat-protein"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Hydrolyzed proteins are processed with enzymes. The enzyme source can be microbial (halal) or animal (mushbooh); the label rarely declares which.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#hydrolyzed-protein"
             }
           ]
         }
@@ -102140,16 +102081,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:lavander-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -102171,16 +102111,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:lavander-honey-from-the-provence"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -103011,15 +102950,15 @@
       "definition": "An extract (essence) is a substance made by extracting a part of a raw material, often by using a solvent such as ethanol, oil or water. Extracts may be sold as tinctures or absolutes or dried and powdered.",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
+              "status": "caution",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Extract"
             },
@@ -103029,6 +102968,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:lemon-extract"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -104925,16 +104871,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:linden-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -105551,16 +105496,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:liquid-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -109108,52 +109052,46 @@
     {
       "id": "en:maltodextrin",
       "names": [
-        "maltodextrin",
-        "Maltodextrines",
-        "Maltodextrinas",
-        "Maltodestrine",
-        "Maltodextrine",
-        "maltodekstrinas",
-        "Μαλτοδεξτρίνες",
-        "Maltodextriny",
-        "麦芽糊精",
-        "maltodekstrin",
-        "maltodekstriini",
-        "maltodekstrīns",
-        "maltodekstriin",
-        "maltodextrină",
-        "maltódextrín",
-        "Малтодекстрин",
-        "מלטודקסטרינים",
-        "Maltodextrina",
-        "Maltodekstryny",
-        "Мальтодекстрин",
-        "Maltodextriner",
-        "マルトデキストリン"
+        "Maltodextrin"
       ],
       "e_number": null,
-      "category": "other",
-      "definition": "Maltodextrin is a name shared by two different families of chemicals. Both families are glucose polymers, but have little chemical or nutritional similarity.",
+      "category": "additive",
+      "definition": "Maltodextrin is a starch-derived polysaccharide used as a thickener, filler, and preservative.",
+      "common_sources": [
+        {
+          "name": "Corn starch",
+          "note": "Halal"
+        },
+        {
+          "name": "Wheat starch",
+          "note": "Halal"
+        },
+        {
+          "name": "Potato starch",
+          "note": "Halal"
+        },
+        {
+          "name": "Rice starch",
+          "note": "Halal"
+        }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Maltodextrin is produced by hydrolyzing plant starches. Halal under standard commercial production.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "high",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
               "status": "allowed",
-              "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Maltodextrin"
             },
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Community consensus across halal-checker resources",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:maltodextrin"
+              "status": "allowed"
             }
           ]
         }
@@ -110221,27 +110159,18 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "Mānuka honey is a monofloral honey produced from the nectar of the mānuka tree, Leptospermum scoparium.",
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Wikipedia",
-              "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/M%C4%81nuka_honey"
-            },
-            {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:manuka-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -110618,15 +110547,15 @@
       "definition": "The almond is a species of tree from the genus Prunus. Along with the peach, it is classified in the subgenus Amygdalus, distinguished from the other subgenera by corrugations on the woody shell (endocarp) surrounding the seed.",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
+              "status": "caution",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Almond"
             },
@@ -110636,6 +110565,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:marcona-almond"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -115178,16 +115114,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:mix-of-flower-honeys"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -115529,9 +115464,7 @@
         "水飴",
         "میزوآمه",
         "ਮਿਜ਼ੂਆਮੇ",
-        "麦水飴",
-        "Barley mizuame",
-        "Millet jelly"
+        "麦水飴"
       ],
       "e_number": null,
       "category": "other",
@@ -115539,23 +115472,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Glucose Syrup (en:glucose-syrup), which is a hand-curated entry in our database. Glucose syrup is plant-derived from starch hydrolysis. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Wikipedia",
-              "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/Mizuame"
-            },
-            {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:glucose-syrup",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:mizuame"
+              "note": "Derivative ingredient of Glucose Syrup"
             }
           ]
         }
@@ -115723,15 +115648,15 @@
       "definition": "Modified starch, also called starch derivatives, is prepared by physically, enzymatically, or chemically treating native starch to change its properties. Modified starches are used in practically all starch applications, such as in food products as a thickening agent, stabilizer or emulsifier; in pharmaceuticals as a disintegrant; or as binder in coated paper. They are also used in many other applications.",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
+              "status": "caution",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Modified_starch"
             },
@@ -115741,6 +115666,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:modified-corn-starch"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#modified-starch"
             }
           ]
         }
@@ -115841,15 +115773,15 @@
       "definition": "Potato starch is starch extracted from potatoes. The cells of the root tubers of the potato plant contain leucoplasts. To extract the starch, the potatoes are crushed, and the starch grains are released from the destroyed cells. The starch is then left to settle out of solution or separated by hydrocyclones, then dried to powder.",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
+              "status": "caution",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Potato_starch"
             },
@@ -115859,6 +115791,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:modified-potato-starch"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#modified-starch"
             }
           ]
         }
@@ -115915,9 +115854,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -115926,6 +115865,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:modified-rice-starch"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#modified-starch"
             }
           ]
         }
@@ -115973,15 +115919,15 @@
       "definition": "Modified starch, also called starch derivatives, is prepared by physically, enzymatically, or chemically treating native starch to change its properties. Modified starches are used in practically all starch applications, such as in food products as a thickening agent, stabilizer or emulsifier; in pharmaceuticals as a disintegrant; or as binder in coated paper. They are also used in many other applications.",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
+              "status": "caution",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Modified_starch"
             },
@@ -115991,6 +115937,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:modified-starch"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#modified-starch"
             }
           ]
         }
@@ -116019,9 +115972,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -116030,6 +115983,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:modified-tapioca-starch"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#modified-starch"
             }
           ]
         }
@@ -116117,9 +116077,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -116128,6 +116088,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:modified-wheat-starch"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#modified-starch"
             }
           ]
         }
@@ -116734,16 +116701,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:mountain-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -120020,9 +119986,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Natural flavors are typically extracted using ethyl alcohol as a carrier. The underlying ingredient is usually halal, but the alcohol carrier is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -120031,6 +119997,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:natural-hops-flavour"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Natural flavors are typically extracted using ethyl alcohol as a carrier. The underlying ingredient is usually halal, but the alcohol carrier is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#natural-flavor-extract"
             }
           ]
         }
@@ -120187,9 +120160,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Natural flavors are typically extracted using ethyl alcohol as a carrier. The underlying ingredient is usually halal, but the alcohol carrier is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -120198,6 +120171,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:natural-lemon-flavouring"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Natural flavors are typically extracted using ethyl alcohol as a carrier. The underlying ingredient is usually halal, but the alcohol carrier is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#natural-flavor-extract"
             }
           ]
         }
@@ -120384,9 +120364,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Natural flavors are typically extracted using ethyl alcohol as a carrier. The underlying ingredient is usually halal, but the alcohol carrier is disputed across madhhabs. Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -120395,6 +120375,13 @@
               "status": "allowed",
               "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
               "ref": "https://world.openfoodfacts.org/ingredient/en:natural-milk-flavouring"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Natural flavors are typically extracted using ethyl alcohol as a carrier. The underlying ingredient is usually halal, but the alcohol carrier is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#natural-flavor-extract"
             }
           ]
         }
@@ -122059,9 +122046,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Natural flavors are typically extracted using ethyl alcohol as a carrier. The underlying ingredient is usually halal, but the alcohol carrier is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -122070,6 +122057,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:natural-vanilla-flavouring"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Natural flavors are typically extracted using ethyl alcohol as a carrier. The underlying ingredient is usually halal, but the alcohol carrier is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#natural-flavor-extract"
             }
           ]
         }
@@ -126303,16 +126297,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:orange-blossom-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -126436,9 +126429,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -126447,6 +126440,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:orange-extract"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -127457,16 +127457,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Cocoa Butter (en:cocoa-butter), which is a hand-curated entry in our database. Cocoa butter is a plant-derived fat from cocoa beans. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:cocoa-butter",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:organic-cocoa-mass-and-organic-cocoa-butter"
+              "note": "Derivative ingredient of Cocoa Butter"
             }
           ]
         }
@@ -127981,16 +127980,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:organic-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -128009,16 +128007,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:organic-honey-from-romania"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -128328,16 +128325,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:organic-mixed-flower-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -128358,16 +128354,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:organic-mountain-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -131916,9 +131911,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -131927,6 +131922,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:partially-modified-corn-starch"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#modified-starch"
             }
           ]
         }
@@ -131946,9 +131948,9 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
@@ -131957,6 +131959,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:partially-modified-wheat-starch"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Starch modification can involve enzymes; the enzyme source is usually unspecified on the label.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#modified-starch"
             }
           ]
         }
@@ -135243,6 +135252,43 @@
               "status": "caution",
               "note": "vegetarian: no",
               "ref": "https://world.openfoodfacts.org/ingredient/en:pepperoni"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
+      "id": "en:pepsin",
+      "names": [
+        "Pepsin"
+      ],
+      "e_number": null,
+      "category": "additive",
+      "definition": "Pepsin is a digestive enzyme extracted from the stomach lining of pigs. Used in cheese-making, leather processing, and protein hydrolysis.",
+      "common_sources": [
+        {
+          "name": "Porcine stomach (standard commercial source)",
+          "note": "Haram"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "forbidden",
+          "explanation": "Commercial pepsin is overwhelmingly extracted from porcine (pig) stomachs. Treat any product listing 'pepsin' as haram unless the manufacturer explicitly confirms a non-porcine or microbial source.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "forbidden",
+              "ref": "https://en.wikipedia.org/wiki/Pepsin"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "forbidden"
             }
           ]
         }
@@ -141382,16 +141428,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Glucose Syrup (en:glucose-syrup), which is a hand-curated entry in our database. Glucose syrup is plant-derived from starch hydrolysis. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:glucose-syrup",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:potato-glucose-syrup"
+              "note": "Derivative ingredient of Glucose Syrup"
             }
           ]
         }
@@ -141416,16 +141461,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Maltodextrin (en:maltodextrin), which is a hand-curated entry in our database. Maltodextrin is produced by hydrolyzing plant starches. Halal under standard commercial production.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:maltodextrin",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:potato-maltodextrin"
+              "note": "Derivative ingredient of Maltodextrin"
             }
           ]
         }
@@ -143982,16 +144026,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Cocoa Butter (en:cocoa-butter), which is a hand-curated entry in our database. Cocoa butter is a plant-derived fat from cocoa beans. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:cocoa-butter",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:pure-cocoa-butter"
+              "note": "Derivative ingredient of Cocoa Butter"
             }
           ]
         }
@@ -147020,16 +147063,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Cocoa Butter (en:cocoa-butter), which is a hand-curated entry in our database. Cocoa butter is a plant-derived fat from cocoa beans. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:cocoa-butter",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:raw-cacao-butter"
+              "note": "Derivative ingredient of Cocoa Butter"
             }
           ]
         }
@@ -147050,16 +147092,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Cocoa Powder (en:cocoa-powder), which is a hand-curated entry in our database. Cocoa powder is plant-derived. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:cocoa-powder",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:raw-cacao-powder"
+              "note": "Derivative ingredient of Cocoa Powder"
             }
           ]
         }
@@ -150160,15 +150201,15 @@
       "definition": "Vinegar is an odorous aqueous solution of diluted acetic acid and trace compounds that may include flavorings or naturally occurring organic compounds. Vinegar typically contains from 4% to 18% acetic acid by volume.",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Wine vinegars are produced from wine. Most scholars permit the vinegar after full acetic-acid conversion; others avoid any wine-derived product. Disputed. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
+              "status": "caution",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Vinegar"
             },
@@ -150178,6 +150219,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:red-wine-vinegar"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Wine vinegars are produced from wine. Most scholars permit the vinegar after full acetic-acid conversion; others avoid any wine-derived product. Disputed.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#wine-vinegar"
             }
           ]
         }
@@ -152107,16 +152155,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Glucose Syrup (en:glucose-syrup), which is a hand-curated entry in our database. Glucose syrup is plant-derived from starch hydrolysis. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:glucose-syrup",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:rice-glucose-syrup"
+              "note": "Derivative ingredient of Glucose Syrup"
             }
           ]
         }
@@ -154229,16 +154276,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:rosemary-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -155936,6 +155982,43 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:safflower-oil"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
+      "id": "en:saffron",
+      "names": [
+        "Saffron"
+      ],
+      "e_number": null,
+      "category": "plant",
+      "definition": "Saffron is the dried stigmas of the Crocus sativus flower, used as a spice and natural colorant.",
+      "common_sources": [
+        {
+          "name": "Crocus sativus flower stigmas",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Saffron is a plant-derived spice. Halal under all schools.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Saffron"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
             }
           ]
         }
@@ -161817,16 +161900,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Cocoa Powder (en:cocoa-powder), which is a hand-curated entry in our database. Cocoa powder is plant-derived. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:cocoa-powder",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:skimmed-cocoa-powder"
+              "note": "Derivative ingredient of Cocoa Powder"
             }
           ]
         }
@@ -167908,17 +167990,16 @@
       "category": "other",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
-          "confidence": "low",
+          "effective_status": "caution",
+          "explanation": "Inherits its halal ruling from Wine Vinegar (en:wine-vinegar), which is a hand-curated entry in our database. Wine vinegar is produced from wine. The majority view is that once acetic-acid conversion is complete, the resulting vinegar is halal. A conservative minority avoids any wine-derived product. Treat as mushbooh and follow your school of jurisprudence.",
+          "disputed": true,
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:wine-vinegar",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:spirit-and-white-wine-vinegar"
+              "status": "caution",
+              "note": "Derivative ingredient of Wine Vinegar"
             }
           ]
         }
@@ -168187,16 +168268,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:spring-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -171476,27 +171556,18 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "Monofloral honey is a type of honey which has a distinctive flavor or other attribute due to its being predominantly from the nectar of a single plant species. It is stored and labeled separately so as to command a premium price. While there may never be an absolute monofloral type, some honeys are relatively pure due to the prodigious nectar production of a particular species, such as citrus, or there may be little else in bloom at the time.",
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Wikipedia",
-              "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/Monofloral_honey"
-            },
-            {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:sunflower-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -172342,15 +172413,15 @@
       "definition": "The almond is a species of tree from the genus Prunus. Along with the peach, it is classified in the subgenus Amygdalus, distinguished from the other subgenera by corrugations on the woody shell (endocarp) surrounding the seed.",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
+          "effective_status": "caution",
+          "explanation": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs. Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "disputed": true,
           "confidence": "low",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
+              "status": "caution",
               "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Almond"
             },
@@ -172360,6 +172431,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:sweet-almond"
+            },
+            {
+              "source": "Ingredient-checker halal pattern heuristic",
+              "type": "scientific",
+              "status": "caution",
+              "note": "Extracts typically use ethyl alcohol as a solvent. Whether trace residual alcohol is halal is disputed across madhhabs.",
+              "ref": "https://github.com/sfc38/ingredient-checker-data/blob/main/scripts/README.md#halal-aware-pattern-heuristics#alcohol-extract"
             }
           ]
         }
@@ -173883,6 +173961,54 @@
       "last_reviewed": "2026-06-03"
     },
     {
+      "id": "en:tallow",
+      "names": [
+        "Tallow",
+        "Beef Tallow",
+        "Mutton Tallow",
+        "Rendered Tallow"
+      ],
+      "e_number": null,
+      "category": "meat",
+      "definition": "Tallow is rendered fat from cattle, sheep, or other ruminants. Used as a cooking fat, in soaps, candles, and (historically) in fried foods.",
+      "common_sources": [
+        {
+          "name": "Beef tallow (halal-slaughtered cattle)",
+          "note": "Halal"
+        },
+        {
+          "name": "Beef tallow (non-halal-slaughtered cattle)",
+          "note": "Mushbooh — most observant Muslims avoid"
+        },
+        {
+          "name": "Mixed sources (commercial)",
+          "note": "Mushbooh; sometimes contains pork fat"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Tallow is rendered animal fat. Halal only if from a halal-slaughtered animal. Commercial tallow rarely declares its source and may include pork fat. Treat as mushbooh unless the manufacturer confirms a halal source.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Tallow"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:tamari",
       "names": [
         "tamari",
@@ -174316,16 +174442,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Maltodextrin (en:maltodextrin), which is a hand-curated entry in our database. Maltodextrin is produced by hydrolyzing plant starches. Halal under standard commercial production.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:maltodextrin",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:tapioca-maltodextrin"
+              "note": "Derivative ingredient of Maltodextrin"
             }
           ]
         }
@@ -176113,16 +176238,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:thyme-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -178335,84 +178459,36 @@
     {
       "id": "en:turmeric",
       "names": [
-        "turmeric",
-        "Kurkuma",
-        "curcuma",
-        "cúrcuma",
-        "zerdeçal",
-        "كركم",
-        "kunyit",
-        "ciberžolė",
-        "పసుపు",
-        "කහ",
-        "হলুদ",
-        "کورکمن",
-        "curcuma longa",
-        "κουρκουμάς",
-        "ขมิ้น",
-        "薑黃",
-        "gurkemeie",
-        "बेसार",
-        "kurkumo",
-        "kúrkúma",
-        "மஞ்சள்",
-        "куркума",
-        "ਹਲਦੀ",
-        "kunir",
-        "tuirmeiric",
-        "konéng",
-        "हल्दी",
-        "ಅರಿಸಿನ",
-        "ウコン",
-        "زردچوبه",
-        "ango",
-        "gurkemeje",
-        "зардчӯба",
-        "እርድ",
-        "manjano",
-        "ହଳଦୀ",
-        "ރީނދޫ",
-        "kurkum",
-        "हळद",
-        "curcumă",
-        "nghệ",
-        "ھيڊ",
-        "हरिद्रा",
-        "હળદર",
-        "כורכום",
-        "borrie",
-        "huruud",
-        "rea tahiti",
-        "മഞ്ഞൾ",
-        "ہلدی",
-        "울금",
-        "gurkmeja",
-        "နနွင်း",
-        "luyang-dilaw"
+        "Turmeric",
+        "Curcuma",
+        "Indian Saffron"
       ],
       "e_number": null,
       "category": "plant",
-      "definition": "Turmeric, or Curcuma longa, is a flowering plant in the ginger family Zingiberaceae. It is a perennial, rhizomatous, herbaceous plant native to the Indian subcontinent and Southeast Asia that requires temperatures between 20 and 30 °C and high annual rainfall to thrive. Plants are gathered each year for their rhizomes, some for propagation in the following season and some for consumption or dyeing.",
+      "definition": "Turmeric is the rhizome of the Curcuma longa plant, used as a spice, colorant, and traditional medicine. The source of curcumin (E100).",
+      "common_sources": [
+        {
+          "name": "Curcuma longa rhizome",
+          "note": "Halal"
+        }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Turmeric is a plant root. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "high",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
               "status": "allowed",
-              "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Turmeric"
             },
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Community consensus across halal-checker resources",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:turmeric"
+              "status": "allowed"
             }
           ]
         }
@@ -178433,27 +178509,18 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "Turmeric, or Curcuma longa, is a flowering plant in the ginger family Zingiberaceae. It is a perennial, rhizomatous, herbaceous plant native to the Indian subcontinent and Southeast Asia that requires temperatures between 20 and 30 °C and high annual rainfall to thrive. Plants are gathered each year for their rhizomes, some for propagation in the following season and some for consumption or dyeing.",
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Turmeric (en:turmeric), which is a hand-curated entry in our database. Turmeric is a plant root. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Wikipedia",
-              "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/Turmeric"
-            },
-            {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:turmeric",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:turmeric-powder"
+              "note": "Derivative ingredient of Turmeric"
             }
           ]
         }
@@ -179556,47 +179623,44 @@
     {
       "id": "en:vanillin",
       "names": [
-        "vanillin",
-        "vanilline",
-        "vainillina",
-        "vanillina",
-        "vanilina",
-        "Vanilin",
-        "فانيلين",
-        "Ванилин",
-        "바닐린",
-        "バニリン",
-        "وانیلین",
-        "ונילין",
-        "Wanilina",
-        "Ванілін",
-        "vanilliini",
-        "vanillīns",
-        "vanilliin",
-        "Bainilina",
-        "香草醛",
-        "วานิลลิน",
-        "Vanilino",
-        "βανιλλίνη",
-        "Վանիլին",
-        "vanilinas"
+        "Vanillin",
+        "Synthetic Vanillin",
+        "Methyl vanillin"
       ],
       "e_number": null,
-      "category": "other",
-      "definition": "An organic compound with the molecular formula C8H8O3.",
+      "category": "additive",
+      "definition": "Vanillin is the primary aromatic compound of vanilla. Commercial vanillin is synthesized from guaiacol or lignin, not extracted from vanilla beans.",
+      "common_sources": [
+        {
+          "name": "Synthetic from guaiacol (petrochemical)",
+          "note": "Halal"
+        },
+        {
+          "name": "Synthetic from lignin (wood pulp)",
+          "note": "Halal"
+        },
+        {
+          "name": "Biosynthesized via fermentation",
+          "note": "Halal"
+        }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Vanillin is synthetic or fermentation-derived. Unlike natural vanilla extract, it does not use ethyl alcohol as a solvent. Halal.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "high",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
-              "type": "community",
+              "source": "Wikipedia",
+              "type": "scientific",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:vanillin"
+              "ref": "https://en.wikipedia.org/wiki/Vanillin"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
             }
           ]
         }
@@ -184471,16 +184535,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Glucose Syrup (en:glucose-syrup), which is a hand-curated entry in our database. Glucose syrup is plant-derived from starch hydrolysis. Halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:glucose-syrup",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:wheat-glucose-syrup"
+              "note": "Derivative ingredient of Glucose Syrup"
             }
           ]
         }
@@ -184696,16 +184759,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Maltodextrin (en:maltodextrin), which is a hand-curated entry in our database. Maltodextrin is produced by hydrolyzing plant starches. Halal under standard commercial production.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:maltodextrin",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:wheat-maltodextrin"
+              "note": "Derivative ingredient of Maltodextrin"
             }
           ]
         }
@@ -186367,16 +186429,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Distilled Vinegar (en:distilled-vinegar), which is a hand-curated entry in our database. Distilled vinegar undergoes complete fermentation; no residual alcohol. Halal.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:distilled-vinegar",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:white-distilled-vinegar"
+              "note": "Derivative ingredient of Distilled Vinegar"
             }
           ]
         }
@@ -187572,27 +187633,18 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "Vinegar is an odorous aqueous solution of diluted acetic acid and trace compounds that may include flavorings or naturally occurring organic compounds. Vinegar typically contains from 4% to 18% acetic acid by volume.",
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
-          "confidence": "low",
+          "effective_status": "caution",
+          "explanation": "Inherits its halal ruling from Wine Vinegar (en:wine-vinegar), which is a hand-curated entry in our database. Wine vinegar is produced from wine. The majority view is that once acetic-acid conversion is complete, the resulting vinegar is halal. A conservative minority avoids any wine-derived product. Treat as mushbooh and follow your school of jurisprudence.",
+          "disputed": true,
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Wikipedia",
-              "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
-              "ref": "https://en.wikipedia.org/wiki/Vinegar"
-            },
-            {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:wine-vinegar",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:white-wine-vinegar"
+              "status": "caution",
+              "note": "Derivative ingredient of Wine Vinegar"
             }
           ]
         }
@@ -190969,16 +191021,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as non-vegan but vegetarian (vegan: no, vegetarian: yes) — typically dairy or egg. Milk, butter, eggs, yogurt, and standard dairy products are halal under Islamic dietary law. Caveat: cheese (and whey from cheese-making) made with animal rennet from a non-halal-slaughtered animal is mushbooh; if this product contains specific cheese with unclear rennet, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Honey (en:honey), which is a hand-curated entry in our database. Honey is explicitly mentioned as beneficial in the Quran (16:69) and is halal under all schools.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:honey",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:wildflower-honey"
+              "note": "Derivative ingredient of Honey"
             }
           ]
         }
@@ -191073,49 +191124,46 @@
     {
       "id": "en:wine-vinegar",
       "names": [
-        "wine vinegar",
-        "Weinessig",
-        "vinaigre de vin",
-        "vinagre de vino",
-        "aceto di vino",
-        "vinagre de vinho",
-        "wijnazijn",
-        "vinski ocat",
-        "Vinagre de vi",
-        "ocet winny",
-        "vinný ocet",
-        "винен оцет",
-        "borecet",
-        "ワインビネガー",
-        "viinietikka",
-        "Винный уксус",
-        "vinsvinäger",
-        "Vineddike",
-        "oțet din vin"
+        "Wine Vinegar",
+        "Red Wine Vinegar",
+        "White Wine Vinegar",
+        "Sherry Vinegar",
+        "Champagne Vinegar"
       ],
       "e_number": null,
-      "category": "other",
-      "definition": "Vinegar is an odorous aqueous solution of diluted acetic acid and trace compounds that may include flavorings or naturally occurring organic compounds. Vinegar typically contains from 4% to 18% acetic acid by volume.",
+      "category": "additive",
+      "definition": "Wine vinegar is vinegar made by oxidizing wine. Acetic acid bacteria convert the alcohol in wine into acetic acid.",
+      "common_sources": [
+        {
+          "name": "Fully fermented wine vinegar",
+          "note": "Most scholars permit — alcohol converted"
+        },
+        {
+          "name": "Incompletely fermented wine vinegar",
+          "note": "Mushbooh — residual alcohol"
+        },
+        {
+          "name": "Any wine-derived product",
+          "note": "Some scholars avoid regardless of conversion"
+        }
+      ],
       "rulings": {
         "halal": {
-          "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
-          "disputed": false,
-          "confidence": "low",
+          "effective_status": "caution",
+          "explanation": "Wine vinegar is produced from wine. The majority view is that once acetic-acid conversion is complete, the resulting vinegar is halal. A conservative minority avoids any wine-derived product. Treat as mushbooh and follow your school of jurisprudence.",
+          "disputed": true,
+          "confidence": "high",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
-              "status": "allowed",
-              "note": "Source of the 'What it is' description",
+              "status": "caution",
               "ref": "https://en.wikipedia.org/wiki/Vinegar"
             },
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Community consensus across halal-checker resources",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:wine-vinegar"
+              "status": "caution"
             }
           ]
         }
@@ -191604,60 +191652,40 @@
     {
       "id": "en:yeast-extract",
       "names": [
-        "yeast extract",
+        "Yeast Extract",
         "Hefeextrakt",
-        "extrait de levure",
-        "extracto de levadura",
-        "estratto di lievito",
-        "extrato de levedura",
-        "gistextract",
-        "maya özütü",
-        "ekstrakt kvasca",
-        "Extracte de llevat",
-        "ekstrakt drożdżowy",
-        "izvlecek kvasa",
-        "екстракт от мая",
-        "酵母エキス",
-        "extrakt z droždia",
-        "Дрожжевой экстракт",
-        "jästextrakt",
-        "gjærekstrakt",
-        "gerseyði",
-        "extract de drojdie",
-        "Екстракт дріжджів",
-        "酵母抽提物",
-        "Výtažek z kvasnic",
-        "élesztőkivonat",
-        "pärmiekstrakt",
-        "hiivauute",
-        "rauga ekstrakts",
-        "mielių ekstraktas",
-        "gærekstrakt",
-        "εκχύλισμα μαιάς"
+        "Extrait de levure"
       ],
       "e_number": null,
-      "category": "other",
-      "definition": "Yeast extracts consist of the cell contents of yeast without the cell walls; they are used as food additives or flavorings, or as nutrients for bacterial culture media. They are often used to create savoury flavors and umami taste sensations and can be found in a large variety of packaged foods including frozen meals, crackers, snack foods, gravy, stock and more. They are rich in B vitamins. Yeast extracts and fermented foods contain glutamic acid, an amino acid which adds an umami flavor. Glutamic acid is found in meat, cheese, fungi and vegetables—such as broccoli and tomatoes. A number of other substances found in yeast extract provide aromas, some meat-like, when allowed to react under heat.",
+      "category": "additive",
+      "definition": "Yeast extract is a flavor enhancer produced by breaking down yeast cells. Used in soups, sauces, snacks, and savory foods.",
+      "common_sources": [
+        {
+          "name": "Saccharomyces cerevisiae (modern industrial)",
+          "note": "Halal"
+        },
+        {
+          "name": "Historical industrial processes (rare)",
+          "note": "Mushbooh — porcine media historically"
+        }
+      ],
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Yeast extract is fermentation-derived from baker's yeast (Saccharomyces cerevisiae). Modern industrial production is unambiguously halal. Historical concerns about porcine fat in fermentation media are obsolete in commercial production.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "high",
           "opinions": [
             {
               "source": "Wikipedia",
               "type": "scientific",
               "status": "allowed",
-              "note": "Source of the 'What it is' description",
               "ref": "https://en.wikipedia.org/wiki/Yeast_extract"
             },
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Community consensus across halal-checker resources",
               "type": "community",
-              "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:yeast-extract"
+              "status": "allowed"
             }
           ]
         }
@@ -191676,16 +191704,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Yeast Extract (en:yeast-extract), which is a hand-curated entry in our database. Yeast extract is fermentation-derived from baker's yeast (Saccharomyces cerevisiae). Modern industrial production is unambiguously halal. Historical concerns about porcine fat in fermentation media are obsolete in commercial production.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:yeast-extract",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:yeast-extract-aroma"
+              "note": "Derivative ingredient of Yeast Extract"
             }
           ]
         }
@@ -191711,16 +191738,15 @@
       "rulings": {
         "halal": {
           "effective_status": "allowed",
-          "explanation": "Open Food Facts classifies this ingredient as plant-based (vegan: yes). Plant-based ingredients are generally considered halal. This automated classification does not detect alcohol-derived ingredients — when in doubt, verify with the manufacturer.",
+          "explanation": "Inherits its halal ruling from Yeast Extract (en:yeast-extract), which is a hand-curated entry in our database. Yeast extract is fermentation-derived from baker's yeast (Saccharomyces cerevisiae). Modern industrial production is unambiguously halal. Historical concerns about porcine fat in fermentation media are obsolete in commercial production.",
           "disputed": false,
-          "confidence": "low",
+          "confidence": "medium",
           "opinions": [
             {
-              "source": "Open Food Facts taxonomy",
+              "source": "Inherited from curated entry en:yeast-extract",
               "type": "community",
               "status": "allowed",
-              "note": "vegan: yes",
-              "ref": "https://world.openfoodfacts.org/ingredient/en:yeast-extract-powder"
+              "note": "Derivative ingredient of Yeast Extract"
             }
           ]
         }
