@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-03.1",
+  "version": "2026-06-03.2",
   "profiles": [
     "halal"
   ],
@@ -231,7 +231,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "forbidden",
-              "note": "Insect-derived"
+              "note": "Insect-derived",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -1263,7 +1264,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
-              "note": "Source-dependent; often porcine"
+              "note": "Source-dependent; often porcine",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -1435,7 +1437,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -1483,7 +1486,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -1616,7 +1620,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -1663,7 +1668,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -1756,7 +1762,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "forbidden",
-              "note": "Animal bone, often porcine"
+              "note": "Animal bone, often porcine",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -2012,7 +2019,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
-              "note": "Source-dependent"
+              "note": "Source-dependent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -2063,7 +2071,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -2107,7 +2116,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -2161,7 +2171,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
-              "note": "Often from human hair or duck feathers"
+              "note": "Often from human hair or duck feathers",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -2424,7 +2435,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
-              "note": "Source-dependent; often porcine"
+              "note": "Source-dependent; often porcine",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -2524,7 +2536,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
-              "note": "Usually soy but source-dependent"
+              "note": "Usually soy but source-dependent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -2575,7 +2588,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",

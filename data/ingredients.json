@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-03.1",
+  "version": "2026-06-03.2",
   "profiles": [
     "halal"
   ],
@@ -47489,6 +47489,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e101"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if derived from pork liver/kidney",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -47522,6 +47529,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e101ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if derived from pork liver/kidney",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -47556,6 +47570,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e102"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -47622,6 +47643,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e104"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -47756,6 +47784,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e110"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -48035,7 +48070,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "forbidden",
-              "note": "Insect-derived"
+              "note": "Insect-derived",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -48329,6 +48365,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e122"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -48382,6 +48425,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e123"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -48415,6 +48465,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e124"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -48516,6 +48573,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e127"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -48669,6 +48733,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e131"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -48702,6 +48773,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e132"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Unless pork glycerin added as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -48783,6 +48861,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e140"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% powder or halal solvents",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -49011,6 +49096,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e140i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% powder or halal solvents",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -49045,6 +49137,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e140ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% powder or halal solvents",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -49079,6 +49178,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e141"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% powder or halal solvents",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -49276,6 +49382,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e141ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% powder or halal solvents",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -49309,6 +49422,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e142"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -49994,6 +50114,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e151"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -50264,6 +50391,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e153"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -50690,6 +50824,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e160d"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -50723,6 +50864,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e160e"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If dry powder or vegetable oil solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -50756,6 +50904,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e160f"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If dry powder or vegetable oil solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -50821,6 +50976,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e161a"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -50855,6 +51017,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e161b"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Unless pork gelatin/glycerin added",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -50888,6 +51057,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e161c"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -50921,6 +51097,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e161d"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -50954,6 +51137,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e161e"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -50987,6 +51177,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e161f"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51020,6 +51217,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e161g"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51195,6 +51399,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e163"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51517,6 +51728,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e170i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If from rock mineral",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51550,6 +51768,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e171"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51593,6 +51818,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e172"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51637,6 +51869,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e172i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51681,6 +51920,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e172ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51725,6 +51971,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e172iii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51758,6 +52011,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e173"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51818,6 +52078,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e174"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51851,6 +52118,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e175"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -51884,6 +52158,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e180"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If 100% dry color",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52027,6 +52308,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e201"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52098,6 +52386,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e203"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52164,6 +52459,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e210"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52235,6 +52537,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e212"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52268,6 +52577,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e213"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If mineral calcium",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52301,6 +52617,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e214"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Unless alcohol used as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52334,6 +52657,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e215"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Unless alcohol used as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52367,6 +52697,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e216"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Unless alcohol used as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52400,6 +52737,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e217"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Unless alcohol used as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52433,6 +52777,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e218"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Unless alcohol used as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52466,6 +52817,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e219"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Unless alcohol used as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52538,6 +52896,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e221"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52571,6 +52936,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e222"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52604,6 +52976,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e223"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52637,6 +53016,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e224"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52703,6 +53089,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e226"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52736,6 +53129,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e227"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If mineral calcium",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52811,6 +53211,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e230"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If no alcohol used as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52844,6 +53251,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e231"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If no alcohol used as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52877,6 +53291,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e232"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If no alcohol used as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -52910,6 +53331,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e233"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If no alcohol used as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53112,6 +53540,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e239"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53281,6 +53716,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e249"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53323,6 +53765,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e250"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53356,6 +53805,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e251"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53389,6 +53845,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e252"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53422,6 +53885,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e260"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53457,6 +53927,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e261"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53490,6 +53967,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e262"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53523,6 +54007,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e262i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53556,6 +54047,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e262ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53589,6 +54087,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e263"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53822,6 +54327,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e280"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53855,6 +54367,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e281"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53888,6 +54407,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e282"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If mineral calcium",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -53924,6 +54450,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e283"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -54040,6 +54573,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e290"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -54217,6 +54757,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e302"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If mineral calcium",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -54323,6 +54870,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e304"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Halal if plant-derived fatty acid; haram if pork",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -54356,6 +54910,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e304i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Halal if plant-derived fatty acid; haram if pork",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -54389,6 +54950,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e304ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Halal if plant-derived fatty acid; haram if pork",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -54470,6 +55038,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e307"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If all halal synthetic material",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -54600,6 +55175,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e308"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If all halal synthetic material",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -54634,6 +55216,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e309"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If all halal synthetic material",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -54667,6 +55256,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e310"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -54700,6 +55296,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e311"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If from nutgalls or plant secretion",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -54733,6 +55336,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e312"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Unless alcohol used as solvent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55006,6 +55616,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e320"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Halal if vegetable oil carrier; haram if pork",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55039,6 +55656,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e321"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Halal if vegetable oil carrier; haram if pork",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55087,6 +55711,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e322"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If from soy or egg yolk",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55136,6 +55767,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e322i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If from soy or egg yolk",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55185,6 +55823,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e322ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If from soy or egg yolk",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55284,6 +55929,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e325"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If from non-dairy source",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55317,6 +55969,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e326"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If from non-dairy source",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55350,6 +56009,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e327"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If non-dairy and mineral calcium",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55604,6 +56270,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e332"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55637,6 +56310,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e332i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55670,6 +56350,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e332ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55704,6 +56391,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e333"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from bones",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55737,6 +56431,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e333i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from bones",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55770,6 +56471,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e333ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from bones",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55803,6 +56511,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e333iii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from bones",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55836,6 +56551,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e334"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from wine by-product",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55869,6 +56591,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e335"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from wine by-product",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55902,6 +56631,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e335i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from wine by-product",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55935,6 +56671,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e335ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from wine by-product",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -55973,6 +56716,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e336"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from wine by-product",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56012,6 +56762,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e336i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from wine by-product",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56051,6 +56808,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e336ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from wine by-product",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56089,6 +56853,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e337"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If not from wine by-product",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56174,6 +56945,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e339"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56221,6 +56999,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e339i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56268,6 +57053,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e339iii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56301,6 +57093,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e340"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56335,6 +57134,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e340i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56368,6 +57174,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e340ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56401,6 +57214,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e340iii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56443,6 +57263,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e341"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If mineral calcium source",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56486,6 +57313,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e341i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If mineral calcium source",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56529,6 +57363,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e341ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If mineral calcium source",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -56572,6 +57413,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e341iii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If mineral calcium source",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -57889,6 +58737,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e400"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -57922,6 +58777,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e401"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -57955,6 +58817,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e402"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -57988,6 +58857,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e403"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -58021,6 +58897,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e404"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "If mineral calcium source",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -58054,6 +58937,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e405"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -58373,6 +59263,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e413"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -58406,6 +59303,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e414"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -58765,6 +59669,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e421"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -59562,6 +60473,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e440i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -59613,7 +60531,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
-              "note": "Source-dependent; often porcine"
+              "note": "Source-dependent; often porcine",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -60498,6 +61417,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e461"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -60564,6 +61490,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e463"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -60597,6 +61530,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e464"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -60630,6 +61570,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e465"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -60816,6 +61763,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e470"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if from pork fat",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -61023,7 +61977,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -61062,6 +62017,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e472"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if from pork fat",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -61235,7 +62197,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -61338,6 +62301,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e473"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if from pork fat",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -61403,6 +62373,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e474"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if from pork fat",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -61520,6 +62497,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e477"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if from pork fat",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -61626,7 +62610,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -61665,6 +62650,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e482"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if from pork fat",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -61706,7 +62698,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -62546,6 +63539,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e501"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -62579,6 +63579,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e501i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -62612,6 +63619,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e501ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -62677,6 +63691,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e503"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -62710,6 +63731,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e503i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -62743,6 +63771,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e503ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -62776,6 +63811,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e504"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -62809,6 +63851,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e504i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -62842,6 +63891,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e504ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -62908,6 +63964,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e507"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -62972,6 +64035,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e508"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63005,6 +64075,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e509"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63038,6 +64115,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e510"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63163,6 +64247,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e513"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63196,6 +64287,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e514"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63229,6 +64327,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e514i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63262,6 +64367,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e514ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63295,6 +64407,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e515"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63328,6 +64447,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e515i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63361,6 +64487,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e515ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63394,6 +64527,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e516"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63489,6 +64629,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e518"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63712,6 +64859,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e524"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63745,6 +64899,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e525"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63809,6 +64970,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e526"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63842,6 +65010,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e527"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63888,6 +65063,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e528"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63921,6 +65103,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e529"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63954,6 +65143,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e530"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -63987,6 +65183,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e535"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64020,6 +65223,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e536"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64150,6 +65360,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e540"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64183,6 +65400,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e541"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64216,6 +65440,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e541i"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64249,6 +65480,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e541ii"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64296,7 +65534,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "forbidden",
-              "note": "Animal bone, often porcine"
+              "note": "Animal bone, often porcine",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -64367,6 +65606,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e544"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if from pig bones",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64550,6 +65796,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e552"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64583,6 +65836,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e553"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64764,6 +66024,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e554"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64834,6 +66101,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e556"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if calcium from pig bones",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64900,6 +66174,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e558"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -64933,6 +66214,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e559"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -65022,6 +66310,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e570"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if from pork fat",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -65088,6 +66383,13 @@
               "status": "caution",
               "note": "source uncertain",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e572"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if from pork fat",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -65235,6 +66537,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e576"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -65269,6 +66578,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e577"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -65302,6 +66618,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e578"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -65525,6 +66848,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e622"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if culture media from pork fat",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -65558,6 +66888,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e623"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if culture media from pork fat",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -65864,7 +67201,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
-              "note": "Source-dependent"
+              "note": "Source-dependent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -66014,7 +67352,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -66053,6 +67392,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e636"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -66086,6 +67432,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e637"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -66501,6 +67854,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e900"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -66603,6 +67963,13 @@
               "status": "allowed",
               "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e901"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -66672,6 +68039,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e903"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -66710,7 +68084,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -66750,6 +68125,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e905"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -67119,6 +68501,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e907"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "caution",
+              "note": "Haram if from pork fat wax",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -67581,7 +68970,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
-              "note": "Often from human hair or duck feathers"
+              "note": "Often from human hair or duck feathers",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -67720,6 +69110,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e924"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -67786,6 +69183,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e925"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -67819,6 +69223,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e926"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -67852,6 +69263,13 @@
               "status": "allowed",
               "note": "vegan: yes",
               "ref": "https://world.openfoodfacts.org/ingredient/en:e927"
+            },
+            {
+              "source": "WorldOfIslam E-number list",
+              "type": "community",
+              "status": "allowed",
+              "note": "Universally acceptable",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             }
           ]
         }
@@ -79867,7 +81285,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
-              "note": "Source-dependent; often porcine"
+              "note": "Source-dependent; often porcine",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -96228,7 +97647,8 @@
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
-              "note": "Usually soy but source-dependent"
+              "note": "Usually soy but source-dependent",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",
@@ -109250,7 +110670,8 @@
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
-              "status": "caution"
+              "status": "caution",
+              "ref": "https://special.worldofislam.info/Food/numbers.html"
             },
             {
               "source": "Community consensus across halal-checker resources",

@@ -33,8 +33,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SEED = ROOT / "data" / "seed.json"           # source of truth (hand-curated)
 DATA = ROOT / "data" / "ingredients.json"    # build output (seed + bootstrap)
+SOURCES_DIR = ROOT / "sources"               # community + authority extracts
 CACHE_DIR = ROOT / "scripts" / "cache"
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+WORLDOFISLAM_URL = "https://special.worldofislam.info/Food/numbers.html"
 
 OFF_TAXONOMY_URL = "https://static.openfoodfacts.org/data/taxonomies/ingredients.json"
 OFF_CACHE = CACHE_DIR / "off-ingredients.json"
@@ -61,6 +64,41 @@ CATEGORY_HINTS = {
     "mineral":  ["en:mineral", "en:water", "en:salt"],
     "insect":   ["en:insect"],
 }
+
+
+def parse_worldofislam_md() -> dict[str, dict]:
+    """Parse sources/worldofislam.md into a dict keyed by E-number.
+    Returns: {"e100": {"name": "...", "status": "mushbooh|halal|haram|halal_or_haram", "reason": "..."}}"""
+    path = SOURCES_DIR / "worldofislam.md"
+    if not path.exists():
+        return {}
+    status_map = {
+        "halal": "allowed",
+        "haram": "forbidden",
+        "mushbooh": "caution",
+        "halal_or_haram": "caution",
+    }
+    result: dict[str, dict] = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line.startswith("|"):
+            continue
+        cells = [c.strip() for c in line.split("|")[1:-1]]
+        if len(cells) != 4:
+            continue
+        e_num, name, status, reason = cells
+        if not e_num.upper().startswith("E"):
+            continue
+        if status not in status_map:
+            continue
+        key = e_num.lower().replace(" ", "")  # "e100", "e160a"
+        result[key] = {
+            "name": name,
+            "status": status_map[status],
+            "raw_status": status,
+            "reason": reason,
+        }
+    return result
 
 
 def load_wiki_cache() -> dict:
@@ -452,7 +490,8 @@ def inherited_ruling_from_seed(seed_id: str, seed_by_id: dict, off_id: str) -> d
 def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
                           seed_ids: set[str] | None = None,
                           seed_by_id: dict | None = None,
-                          wiki_cache: dict | None = None) -> dict | None:
+                          wiki_cache: dict | None = None,
+                          worldofislam: dict | None = None) -> dict | None:
     # 1. Check if any ancestor is in the seed — inherit if so.
     if seed_ids and seed_by_id:
         seed_ancestor = find_seed_ancestor(off_id, off, seed_ids)
@@ -547,6 +586,18 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
                     names.append(r)
                     seen.add(r.lower())
 
+    # Merge WorldOfIslam community opinion if available for this E-number.
+    if e_num and worldofislam:
+        woi = worldofislam.get(e_num.lower())
+        if woi:
+            ruling["opinions"].append({
+                "source": "WorldOfIslam E-number list",
+                "type": "community",
+                "status": woi["status"],
+                "note": woi["reason"],
+                "ref": WORLDOFISLAM_URL,
+            })
+
     result = {
         "id": off_id,
         "names": names,
@@ -583,6 +634,10 @@ def main() -> None:
     wiki_cache = load_wiki_cache()
     print(f"  {len(wiki_cache)} cached Wikipedia summaries")
 
+    print("Loading WorldOfIslam community rulings ...")
+    worldofislam = parse_worldofislam_md()
+    print(f"  {len(worldofislam)} E-number rulings")
+
     print("Building bootstrap entries ...")
     new_entries: list[dict] = []
     no_id_filter = 0
@@ -598,7 +653,7 @@ def main() -> None:
         if not off_id.startswith("en:"):
             no_id_filter += 1
             continue
-        built = build_bootstrap_entry(off_id, entry, off, seed_ids, seed_by_id, wiki_cache)
+        built = build_bootstrap_entry(off_id, entry, off, seed_ids, seed_by_id, wiki_cache, worldofislam)
         if built is None:
             no_ruling += 1
             continue
