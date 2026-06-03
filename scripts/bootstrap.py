@@ -93,6 +93,38 @@ def _is_useful_wiki_entry(entry: dict) -> bool:
     return True
 
 
+def fetch_wiki_redirects(title: str, cache: dict) -> list[str]:
+    """Return all titles that redirect to this Wikipedia title.
+    e.g. for "Pumpkin seed" this returns ["Pepita", "Pumpkin kernel",
+    "Pepitas", ...] — Wikipedia-curated synonyms for free.
+    Cached on disk between runs."""
+    cache_key = f"_redirects::{title}"
+    if cache_key not in cache:
+        import urllib.parse as urlparse
+        api_url = (
+            "https://en.wikipedia.org/w/api.php"
+            "?action=query"
+            f"&titles={urlparse.quote(title, safe='')}"
+            "&prop=redirects&rdlimit=max&format=json"
+        )
+        req = urllib.request.Request(api_url, headers={"User-Agent": WIKI_USER_AGENT})
+        try:
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            pages = data.get("query", {}).get("pages", {})
+            titles: list[str] = []
+            for page_data in pages.values():
+                for r in page_data.get("redirects", []):
+                    t = r.get("title")
+                    if isinstance(t, str):
+                        titles.append(t)
+            cache[cache_key] = {"titles": titles}
+        except Exception as e:
+            cache[cache_key] = {"error": str(e), "titles": []}
+        save_wiki_cache(cache)
+    return cache[cache_key].get("titles") or []
+
+
 def fetch_wiki(title: str, cache: dict) -> dict | None:
     """Return {'extract': ..., 'url': ...} for a Wikipedia title, or None.
     Caches responses on disk between runs. Returns None when the lookup
@@ -480,24 +512,40 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
 
     e_num = extract_e_number(off_id, entry)
 
-    # If no OFF description, try Wikipedia for a definition.
-    # For E-numbers: first the "E<num>" page, then fall back to the
-    # primary English ingredient name. For non-E ingredients: try the
-    # primary name directly.
+    # Try Wikipedia for a definition. For E-numbers: first the "E<num>"
+    # page, then fall back to the primary English ingredient name.
+    # For non-E ingredients: try the primary name directly.
     wiki_url_for_definition: str | None = None
-    if definition is None and wiki_cache is not None:
+    wiki_canonical_title: str | None = None
+    if wiki_cache is not None:
         candidate_titles: list[str] = []
         if e_num:
             candidate_titles.append(e_num)
         if names:
-            # Use the first (English) name as a fallback / primary
             candidate_titles.append(names[0])
         for title in candidate_titles:
             wiki = fetch_wiki(title, wiki_cache)
             if wiki and wiki.get("extract"):
-                definition = wiki["extract"]
+                if definition is None:
+                    definition = wiki["extract"]
                 wiki_url_for_definition = wiki.get("url")
+                # Extract canonical Wikipedia title for redirect lookup
+                if wiki_url_for_definition and "/wiki/" in wiki_url_for_definition:
+                    import urllib.parse as urlparse
+                    raw = wiki_url_for_definition.rsplit("/wiki/", 1)[-1]
+                    wiki_canonical_title = urlparse.unquote(raw).replace("_", " ")
                 break
+
+    # Pull Wikipedia redirect titles into names[] — gives us
+    # crowd-curated synonyms (e.g. "Pepita" -> "Pumpkin seed").
+    if wiki_canonical_title and wiki_cache is not None:
+        redirects = fetch_wiki_redirects(wiki_canonical_title, wiki_cache)
+        if redirects:
+            seen = {n.lower() for n in names}
+            for r in redirects:
+                if r.lower() not in seen:
+                    names.append(r)
+                    seen.add(r.lower())
 
     result = {
         "id": off_id,
