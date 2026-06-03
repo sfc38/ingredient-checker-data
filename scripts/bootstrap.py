@@ -610,11 +610,23 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
     result["last_reviewed"] = str(date.today())
 
     if wiki_url_for_definition:
-        # Override the generic E<num> Wikipedia URL with the actual
-        # post-redirect page URL we now have.
-        for op in result["rulings"]["halal"].get("opinions", []):
-            if op.get("source") == "Wikipedia":
-                op["ref"] = wiki_url_for_definition
+        opinions = result["rulings"]["halal"].setdefault("opinions", [])
+        wiki_op = next((op for op in opinions if op.get("source") == "Wikipedia"), None)
+        if wiki_op:
+            # We already had a generic E<num> Wikipedia ref. Replace with
+            # the actual post-redirect article URL.
+            wiki_op["ref"] = wiki_url_for_definition
+        else:
+            # No Wikipedia opinion yet (typical for non-E-number entries
+            # like en:cocoa-powder). The definition came from Wikipedia,
+            # so attribute it.
+            opinions.insert(0, {
+                "source": "Wikipedia",
+                "type": "scientific",
+                "status": ruling["effective_status"],
+                "note": "Source of the 'What it is' description",
+                "ref": wiki_url_for_definition,
+            })
 
     return result
 
