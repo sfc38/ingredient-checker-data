@@ -415,6 +415,28 @@ def heuristic_halal_ruling(vegan: str | None, vegetarian: str | None) -> dict | 
                 "note": "vegan: no, vegetarian: yes — dairy/egg generally halal",
             }],
         }
+    if vegan == "maybe" and vegetarian == "yes":
+        # Chocolate, baked goods, etc. — vegetarian:yes means no meat/fish,
+        # vegan:maybe usually means "may contain milk or egg". Both are
+        # halal as a class.
+        return {
+            "effective_status": "allowed",
+            "explanation": (
+                "Open Food Facts marks this ingredient as vegetarian but "
+                "possibly non-vegan — meaning it may contain dairy or egg, "
+                "both of which are halal under Islamic dietary law. Halal "
+                "by default unless the product also contains forbidden "
+                "ingredients (alcohol, pork derivatives, etc.) elsewhere."
+            ),
+            "disputed": False,
+            "confidence": "low",
+            "opinions": [{
+                "source": "Open Food Facts taxonomy",
+                "type": "community",
+                "status": "allowed",
+                "note": "vegan: maybe, vegetarian: yes — may contain dairy/egg, both halal",
+            }],
+        }
     if vegan == "maybe" or vegetarian == "maybe":
         return {
             "effective_status": "caution",

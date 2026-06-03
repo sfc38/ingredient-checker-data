@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-03.2",
+  "version": "2026-06-03.3",
   "profiles": [
     "halal"
   ],
@@ -11,7 +11,7 @@
       ],
       "e_number": null,
       "category": "meat",
-      "definition": "Meat from cattle.",
+      "definition": "Beef — meat from cattle.",
       "common_sources": [
         {
           "name": "Halal-slaughtered (dhabihah)",
@@ -62,7 +62,7 @@
       ],
       "e_number": null,
       "category": "dairy",
-      "definition": "A dairy product made by coagulating milk proteins with an enzyme (rennet) or acid, then aging the resulting curd.",
+      "definition": "Cheese is a dairy product made by coagulating milk proteins with an enzyme (rennet) or acid, then aging the resulting curd.",
       "common_sources": [
         {
           "name": "Microbial rennet (modern, most common in EU)",
@@ -113,7 +113,7 @@
       ],
       "e_number": null,
       "category": "meat",
-      "definition": "Meat from domestic chicken or other poultry.",
+      "definition": "Chicken — meat from domestic chicken or other poultry.",
       "common_sources": [
         {
           "name": "Halal-slaughtered (dhabihah)",
@@ -166,7 +166,7 @@
       ],
       "e_number": "E100",
       "category": "additive",
-      "definition": "A bright yellow-orange colorant extracted from the rhizomes of turmeric (Curcuma longa). Used in curry, mustard, butter, cheese, and confectionery.",
+      "definition": "Curcumin (E100) is a bright yellow-orange colorant extracted from the rhizomes of turmeric (Curcuma longa). Used in curry, mustard, butter, cheese, and confectionery.",
       "common_sources": [
         {
           "name": "Turmeric root",
@@ -207,7 +207,7 @@
       ],
       "e_number": "E120",
       "category": "insect",
-      "definition": "A bright red colorant produced by crushing and processing dried cochineal insects.",
+      "definition": "Cochineal (E120) is a bright red colorant produced by crushing and processing dried cochineal insects.",
       "common_sources": [
         {
           "name": "Cochineal (Dactylopius coccus) insect",
@@ -255,7 +255,7 @@
       ],
       "e_number": "E150",
       "category": "additive",
-      "definition": "A brown food coloring produced by heating sugars (sucrose, glucose, or fructose). The four sub-types (E150a-d) differ by the production aid used. Used in cola, sauces, gravies, baked goods, and confectionery.",
+      "definition": "Caramel (E150) is a brown food coloring produced by heating sugars (sucrose, glucose, or fructose). The four sub-types (E150a-d) differ by the production aid used. Used in cola, sauces, gravies, baked goods, and confectionery.",
       "common_sources": [
         {
           "name": "Heated plant sugars (E150a — plain caramel)",
@@ -307,7 +307,7 @@
       ],
       "e_number": "E160a",
       "category": "additive",
-      "definition": "A natural orange-yellow colorant. Found in carrots, palm oil, algae, and many fruits and vegetables. Used in margarine, butter, dairy, and beverages.",
+      "definition": "Carotenes (E160a) is a natural orange-yellow colorant. Found in carrots, palm oil, algae, and many fruits and vegetables. Used in margarine, butter, dairy, and beverages.",
       "common_sources": [
         {
           "name": "Plant extracts (carrot, palm oil, algae)",
@@ -351,7 +351,7 @@
       ],
       "e_number": "E160b",
       "category": "additive",
-      "definition": "A natural orange-red colorant extracted from the seeds of the achiote tree (Bixa orellana). Common in cheese, butter, snack foods, and rice.",
+      "definition": "Annatto (E160b) is a natural orange-red colorant extracted from the seeds of the achiote tree (Bixa orellana). Common in cheese, butter, snack foods, and rice.",
       "common_sources": [
         {
           "name": "Achiote tree seeds",
@@ -391,7 +391,7 @@
       ],
       "e_number": "E160c",
       "category": "additive",
-      "definition": "A red-orange colorant extracted from red bell peppers. Used in sauces, snacks, cheese, and processed meats.",
+      "definition": "Paprika Extract (E160c) is a red-orange colorant extracted from red bell peppers. Used in sauces, snacks, cheese, and processed meats.",
       "common_sources": [
         {
           "name": "Red bell peppers (Capsicum annuum)",
@@ -430,7 +430,7 @@
       ],
       "e_number": "E162",
       "category": "additive",
-      "definition": "A purple-red colorant extracted from beetroot (Beta vulgaris). Used in yogurts, ice cream, sausages, and confectionery.",
+      "definition": "Beetroot Red (E162) is a purple-red colorant extracted from beetroot (Beta vulgaris). Used in yogurts, ice cream, sausages, and confectionery.",
       "common_sources": [
         {
           "name": "Beetroot",
@@ -468,7 +468,7 @@
       ],
       "e_number": "E200",
       "category": "additive",
-      "definition": "A preservative that inhibits mold, yeast, and fungi. Used in cheese, dried fruits, baked goods, wines, and dressings.",
+      "definition": "Sorbic Acid (E200) is a preservative that inhibits mold, yeast, and fungi. Used in cheese, dried fruits, baked goods, wines, and dressings.",
       "common_sources": [
         {
           "name": "Synthetic from petrochemicals or microbial fermentation",
@@ -506,7 +506,7 @@
       ],
       "e_number": "E202",
       "category": "additive",
-      "definition": "The potassium salt of sorbic acid (E200). A preservative against mold and yeast. Common in wine, dried meats, cheese, dips, and baked goods.",
+      "definition": "Potassium Sorbate (E202) is the potassium salt of sorbic acid (E200). A preservative against mold and yeast. Common in wine, dried meats, cheese, dips, and baked goods.",
       "common_sources": [
         {
           "name": "Synthetic",
@@ -544,7 +544,7 @@
       ],
       "e_number": "E211",
       "category": "additive",
-      "definition": "A common preservative against bacteria, yeast, and fungi. Found in soft drinks, fruit juices, salad dressings, and pickles.",
+      "definition": "Sodium Benzoate (E211) is a common preservative against bacteria, yeast, and fungi. Found in soft drinks, fruit juices, salad dressings, and pickles.",
       "common_sources": [
         {
           "name": "Synthetic from petrochemicals",
@@ -583,7 +583,7 @@
       ],
       "e_number": "E220",
       "category": "additive",
-      "definition": "A preservative and antioxidant. Used in dried fruits, fruit juices, vinegars, wines, and processed potatoes.",
+      "definition": "Sulfur Dioxide (E220) is a preservative and antioxidant. Used in dried fruits, fruit juices, vinegars, wines, and processed potatoes.",
       "common_sources": [
         {
           "name": "Synthetic / industrial production",
@@ -621,7 +621,7 @@
       ],
       "e_number": "E270",
       "category": "additive",
-      "definition": "An organic acid found naturally in fermented foods and produced commercially by bacterial fermentation. Used as an acidifier and preservative in beverages, dairy, pickles, and cured meats.",
+      "definition": "Lactic Acid (E270) is an organic acid found naturally in fermented foods and produced commercially by bacterial fermentation. Used as an acidifier and preservative in beverages, dairy, pickles, and cured meats.",
       "common_sources": [
         {
           "name": "Plant carbohydrate fermentation (corn, sugar — modern standard)",
@@ -665,7 +665,7 @@
       ],
       "e_number": "E300",
       "category": "additive",
-      "definition": "Vitamin C. Used as an antioxidant in fruit juices, cured meats, and baked goods, and as a dough conditioner.",
+      "definition": "Ascorbic Acid (E300) — vitamin C. Used as an antioxidant in fruit juices, cured meats, and baked goods, and as a dough conditioner.",
       "common_sources": [
         {
           "name": "Fermentation from glucose (commercial standard)",
@@ -703,7 +703,7 @@
       ],
       "e_number": "E301",
       "category": "additive",
-      "definition": "The sodium salt of ascorbic acid (Vitamin C). Used as an antioxidant in processed meats, baked goods, and beverages.",
+      "definition": "Sodium Ascorbate (E301) is the sodium salt of ascorbic acid (Vitamin C). Used as an antioxidant in processed meats, baked goods, and beverages.",
       "common_sources": [
         {
           "name": "Synthetic / fermentation from glucose",
@@ -743,7 +743,7 @@
       ],
       "e_number": "E306",
       "category": "additive",
-      "definition": "A natural antioxidant (Vitamin E). Commercial sources are mostly vegetable-oil derived (soybean, sunflower); rarely from animal fat.",
+      "definition": "Tocopherols (E306) is a natural antioxidant (Vitamin E). Commercial sources are mostly vegetable-oil derived (soybean, sunflower); rarely from animal fat.",
       "common_sources": [
         {
           "name": "Vegetable oils (soybean, sunflower, rice bran)",
@@ -789,7 +789,7 @@
       ],
       "e_number": "E330",
       "category": "additive",
-      "definition": "An organic acid found naturally in citrus fruits. Commercially produced by mold fermentation of carbohydrates. Used as an acidifier and preservative in soft drinks, candy, and processed foods.",
+      "definition": "Citric Acid (E330) is an organic acid found naturally in citrus fruits. Commercially produced by mold fermentation of carbohydrates. Used as an acidifier and preservative in soft drinks, candy, and processed foods.",
       "common_sources": [
         {
           "name": "Aspergillus niger mold fermentation of corn syrup or sugar",
@@ -828,7 +828,7 @@
       ],
       "e_number": "E331",
       "category": "additive",
-      "definition": "The sodium salt of citric acid. Used as an acidity regulator, emulsifier (in processed cheese), and flavor enhancer.",
+      "definition": "Sodium Citrate (E331) is the sodium salt of citric acid. Used as an acidity regulator, emulsifier (in processed cheese), and flavor enhancer.",
       "common_sources": [
         {
           "name": "Synthetic from citric acid (plant fermentation)",
@@ -867,7 +867,7 @@
       ],
       "e_number": "E338",
       "category": "additive",
-      "definition": "An inorganic acid used to acidify foods and beverages. Best known as the acid in cola drinks. Also used in baking powder and processed cheese.",
+      "definition": "Phosphoric Acid (E338) is an inorganic acid used to acidify foods and beverages. Best known as the acid in cola drinks. Also used in baking powder and processed cheese.",
       "common_sources": [
         {
           "name": "Synthetic / industrial production from phosphate rock",
@@ -906,7 +906,7 @@
       ],
       "e_number": "E406",
       "category": "additive",
-      "definition": "A gelling agent extracted from red algae (Gelidium and Gracilaria species). Common alternative to gelatin in vegetarian desserts and Asian cuisine.",
+      "definition": "Agar (E406) is a gelling agent extracted from red algae (Gelidium and Gracilaria species). Common alternative to gelatin in vegetarian desserts and Asian cuisine.",
       "common_sources": [
         {
           "name": "Red algae",
@@ -945,7 +945,7 @@
       ],
       "e_number": "E407",
       "category": "additive",
-      "definition": "A thickener and gelling agent extracted from red seaweed. Used in dairy products, plant milks, jellies, dressings, and ice cream.",
+      "definition": "Carrageenan (E407) is a thickener and gelling agent extracted from red seaweed. Used in dairy products, plant milks, jellies, dressings, and ice cream.",
       "common_sources": [
         {
           "name": "Red seaweed (Chondrus crispus, Eucheuma species)",
@@ -984,7 +984,7 @@
       ],
       "e_number": "E410",
       "category": "additive",
-      "definition": "A thickener extracted from the seeds of the carob tree. Used in ice cream, dairy products, and pet food.",
+      "definition": "Locust Bean Gum (E410) is a thickener extracted from the seeds of the carob tree. Used in ice cream, dairy products, and pet food.",
       "common_sources": [
         {
           "name": "Carob tree seeds (Ceratonia siliqua)",
@@ -1022,7 +1022,7 @@
       ],
       "e_number": "E412",
       "category": "additive",
-      "definition": "A thickener and stabilizer extracted from the seeds of the guar bean. Used in baked goods, sauces, ice cream, and gluten-free flour blends.",
+      "definition": "Guar Gum (E412) is a thickener and stabilizer extracted from the seeds of the guar bean. Used in baked goods, sauces, ice cream, and gluten-free flour blends.",
       "common_sources": [
         {
           "name": "Guar bean (Cyamopsis tetragonoloba)",
@@ -1060,7 +1060,7 @@
       ],
       "e_number": "E415",
       "category": "additive",
-      "definition": "A thickener produced by bacterial fermentation of sugar. Used in salad dressings, sauces, syrups, and gluten-free baking.",
+      "definition": "Xanthan Gum (E415) is a thickener produced by bacterial fermentation of sugar. Used in salad dressings, sauces, syrups, and gluten-free baking.",
       "common_sources": [
         {
           "name": "Bacterial fermentation (Xanthomonas campestris) of plant sugars",
@@ -1098,7 +1098,7 @@
       ],
       "e_number": "E420",
       "category": "additive",
-      "definition": "A sugar alcohol used as a sweetener and humectant. Found naturally in fruits and produced commercially by hydrogenation of corn syrup.",
+      "definition": "Sorbitol (E420) is a sugar alcohol used as a sweetener and humectant. Found naturally in fruits and produced commercially by hydrogenation of corn syrup.",
       "common_sources": [
         {
           "name": "Hydrogenated corn syrup",
@@ -1138,7 +1138,7 @@
       ],
       "e_number": "E422",
       "category": "additive",
-      "definition": "A sweet, viscous polyol used as a humectant, sweetener, and solvent. Found in baked goods, low-fat foods, beverages, and confectionery.",
+      "definition": "Glycerin (E422) is a sweet, viscous polyol used as a humectant, sweetener, and solvent. Found in baked goods, low-fat foods, beverages, and confectionery.",
       "common_sources": [
         {
           "name": "Plant oils (most common — saponification byproduct)",
@@ -1185,7 +1185,7 @@
       ],
       "e_number": "E440",
       "category": "additive",
-      "definition": "A natural gelling agent extracted from the cell walls of fruit (especially citrus peel and apple pomace). Used in jams, jellies, marmalades, confectionery, and yogurt.",
+      "definition": "Pectin (E440) is a natural gelling agent extracted from the cell walls of fruit (especially citrus peel and apple pomace). Used in jams, jellies, marmalades, confectionery, and yogurt.",
       "common_sources": [
         {
           "name": "Citrus peel",
@@ -1228,7 +1228,7 @@
       ],
       "e_number": "E441",
       "category": "additive",
-      "definition": "A protein extracted from animal collagen. Used as a gelling agent in candy, marshmallows, gummies, capsules, yogurt, and many desserts.",
+      "definition": "Gelatin (E441) is a protein extracted from animal collagen. Used as a gelling agent in candy, marshmallows, gummies, capsules, yogurt, and many desserts.",
       "common_sources": [
         {
           "name": "Porcine (pig skin and bone)",
@@ -1287,7 +1287,7 @@
       ],
       "e_number": "E450",
       "category": "additive",
-      "definition": "A family of inorganic phosphate salts. Used as raising agents in baking powder, emulsifiers in processed cheese, and moisture binders in cured meats.",
+      "definition": "Diphosphates (E450) is a family of inorganic phosphate salts. Used as raising agents in baking powder, emulsifiers in processed cheese, and moisture binders in cured meats.",
       "common_sources": [
         {
           "name": "Synthetic / industrial production",
@@ -1327,7 +1327,7 @@
       ],
       "e_number": "E460",
       "category": "additive",
-      "definition": "Refined plant cellulose. Used as a thickener, anti-caking agent, and fiber additive in cheese, ice cream, and processed foods.",
+      "definition": "Cellulose (E460) — refined plant cellulose. Used as a thickener, anti-caking agent, and fiber additive in cheese, ice cream, and processed foods.",
       "common_sources": [
         {
           "name": "Wood pulp, cotton fibers",
@@ -1367,7 +1367,7 @@
       ],
       "e_number": "E466",
       "category": "additive",
-      "definition": "A modified cellulose used as a thickener and stabilizer. Found in ice cream, baked goods, gluten-free flours, and toothpaste.",
+      "definition": "Carboxymethyl Cellulose (E466) is a modified cellulose used as a thickener and stabilizer. Found in ice cream, baked goods, gluten-free flours, and toothpaste.",
       "common_sources": [
         {
           "name": "Wood pulp / cotton (chemically modified)",
@@ -1406,7 +1406,7 @@
       ],
       "e_number": "E471",
       "category": "additive",
-      "definition": "An emulsifier derived from glycerol and fatty acids. Used to blend oils and water in bread, margarine, ice cream, peanut butter, and many processed foods.",
+      "definition": "Mono- and Diglycerides (E471) is an emulsifier derived from glycerol and fatty acids. Used to blend oils and water in bread, margarine, ice cream, peanut butter, and many processed foods.",
       "common_sources": [
         {
           "name": "Plant oils (soybean, palm, sunflower)",
@@ -1459,7 +1459,7 @@
       ],
       "e_number": "E472e",
       "category": "additive",
-      "definition": "A dough conditioner derived from glycerides. Common in industrial bread, rolls, and baked goods.",
+      "definition": "Mono- and Diacetyl Tartaric Acid Esters of Mono- and Diglycerides (E472e) is a dough conditioner derived from glycerides. Common in industrial bread, rolls, and baked goods.",
       "common_sources": [
         {
           "name": "Plant-derived glycerides",
@@ -1507,7 +1507,7 @@
       ],
       "e_number": "E475",
       "category": "additive",
-      "definition": "An emulsifier produced from glycerol and fatty acids. Used in cake batters, biscuits, and creamy fillings.",
+      "definition": "Polyglycerol Esters of Fatty Acids (E475) is an emulsifier produced from glycerol and fatty acids. Used in cake batters, biscuits, and creamy fillings.",
       "common_sources": [
         {
           "name": "Plant oils (most common)",
@@ -1550,7 +1550,7 @@
       ],
       "e_number": "E476",
       "category": "additive",
-      "definition": "An emulsifier used in chocolate (and chocolate-coated products) to reduce viscosity, letting manufacturers use less cocoa butter. Made from castor oil and polyglycerol.",
+      "definition": "Polyglycerol Polyricinoleate (E476) is an emulsifier used in chocolate (and chocolate-coated products) to reduce viscosity, letting manufacturers use less cocoa butter. Made from castor oil and polyglycerol.",
       "common_sources": [
         {
           "name": "Castor oil (from castor beans)",
@@ -1593,7 +1593,7 @@
       ],
       "e_number": "E481",
       "category": "additive",
-      "definition": "An emulsifier produced from stearic acid and lactic acid. Common in bread, cakes, and creamy fillings.",
+      "definition": "Sodium Stearoyl Lactylate (E481) is an emulsifier produced from stearic acid and lactic acid. Common in bread, cakes, and creamy fillings.",
       "common_sources": [
         {
           "name": "Plant-derived stearic acid",
@@ -1641,7 +1641,7 @@
       ],
       "e_number": "E483",
       "category": "additive",
-      "definition": "A flour treatment agent derived from stearyl alcohol and tartaric acid. Used to improve dough strength in commercial baking.",
+      "definition": "Stearyl Tartrate (E483) is a flour treatment agent derived from stearyl alcohol and tartaric acid. Used to improve dough strength in commercial baking.",
       "common_sources": [
         {
           "name": "Plant-derived stearyl alcohol",
@@ -1691,7 +1691,7 @@
       ],
       "e_number": "E500",
       "category": "additive",
-      "definition": "Inorganic salts. E500ii is sodium bicarbonate (baking soda), used as a raising agent and acidity regulator. Found in baked goods, effervescent tablets, and processed foods.",
+      "definition": "Sodium Bicarbonate (E500) — inorganic salts. E500ii is sodium bicarbonate (baking soda), used as a raising agent and acidity regulator. Found in baked goods, effervescent tablets, and processed foods.",
       "common_sources": [
         {
           "name": "Mineral / industrial synthesis",
@@ -1730,7 +1730,7 @@
       ],
       "e_number": "E542",
       "category": "additive",
-      "definition": "An anti-caking agent made from animal bone meal. Used in powdered foods, supplements, and toothpaste.",
+      "definition": "Bone Phosphate (E542) is an anti-caking agent made from animal bone meal. Used in powdered foods, supplements, and toothpaste.",
       "common_sources": [
         {
           "name": "Porcine bone",
@@ -1785,7 +1785,7 @@
       ],
       "e_number": "E551",
       "category": "additive",
-      "definition": "An anti-caking agent. Used in powdered foods (spices, coffee creamer, salt, supplements) to prevent clumping.",
+      "definition": "Silicon Dioxide (E551) is an anti-caking agent. Used in powdered foods (spices, coffee creamer, salt, supplements) to prevent clumping.",
       "common_sources": [
         {
           "name": "Mineral (sand, quartz)",
@@ -1824,7 +1824,7 @@
       ],
       "e_number": "E575",
       "category": "additive",
-      "definition": "An acidifier produced by fermentation of glucose. Used in baking powders, processed cheese, and tofu coagulation.",
+      "definition": "Glucono Delta-Lactone (E575) is an acidifier produced by fermentation of glucose. Used in baking powders, processed cheese, and tofu coagulation.",
       "common_sources": [
         {
           "name": "Glucose fermentation",
@@ -1862,7 +1862,7 @@
       ],
       "e_number": "E620",
       "category": "additive",
-      "definition": "A free amino acid used as a flavor enhancer. The acid form of MSG (E621). Produced by bacterial fermentation of plant sugars.",
+      "definition": "Glutamic Acid (E620) is a free amino acid used as a flavor enhancer. The acid form of MSG (E621). Produced by bacterial fermentation of plant sugars.",
       "common_sources": [
         {
           "name": "Bacterial fermentation of plant carbohydrates",
@@ -1902,7 +1902,7 @@
       ],
       "e_number": "E621",
       "category": "additive",
-      "definition": "A flavor enhancer used to add savory (umami) taste. Originally extracted from seaweed; modern commercial production is by bacterial fermentation of plant sugars.",
+      "definition": "Monosodium Glutamate (E621) is a flavor enhancer used to add savory (umami) taste. Originally extracted from seaweed; modern commercial production is by bacterial fermentation of plant sugars.",
       "common_sources": [
         {
           "name": "Bacterial fermentation of sugar beet molasses or corn starch",
@@ -1940,7 +1940,7 @@
       ],
       "e_number": "E627",
       "category": "additive",
-      "definition": "A flavor enhancer commonly paired with MSG. Often labeled as part of the blend E635 (disodium ribonucleotides).",
+      "definition": "Disodium Guanylate (E627) is a flavor enhancer commonly paired with MSG. Often labeled as part of the blend E635 (disodium ribonucleotides).",
       "common_sources": [
         {
           "name": "Fish-derived",
@@ -1987,7 +1987,7 @@
       ],
       "e_number": "E631",
       "category": "additive",
-      "definition": "A flavor enhancer commonly paired with MSG (E621) to intensify savory taste. Used in chips, instant noodles, and snacks.",
+      "definition": "Disodium Inosinate (E631) is a flavor enhancer commonly paired with MSG (E621) to intensify savory taste. Used in chips, instant noodles, and snacks.",
       "common_sources": [
         {
           "name": "Fish (sardines, anchovies)",
@@ -2040,7 +2040,7 @@
       ],
       "e_number": "E635",
       "category": "additive",
-      "definition": "A blend of E627 (disodium guanylate) and E631 (disodium inosinate) used as a flavor enhancer.",
+      "definition": "Disodium Ribonucleotides (E635) is a blend of E627 (disodium guanylate) and E631 (disodium inosinate) used as a flavor enhancer.",
       "common_sources": [
         {
           "name": "Fish-derived",
@@ -2093,7 +2093,7 @@
       ],
       "e_number": "E904",
       "category": "insect",
-      "definition": "A natural resin secreted by the female lac insect. Used as a glaze on candies (jelly beans, M&Ms), pharmaceutical pills, and waxed fruit.",
+      "definition": "Shellac (E904) is a natural resin secreted by the female lac insect. Used as a glaze on candies (jelly beans, M&Ms), pharmaceutical pills, and waxed fruit.",
       "common_sources": [
         {
           "name": "Lac insect (Kerria lacca) secretion",
@@ -2139,7 +2139,7 @@
       ],
       "e_number": "E920",
       "category": "additive",
-      "definition": "An amino acid used as a dough conditioner to make commercial bread softer and easier to machine. Common in bagels, pizza crust, and packaged bread.",
+      "definition": "L-Cysteine (E920) is an amino acid used as a dough conditioner to make commercial bread softer and easier to machine. Common in bagels, pizza crust, and packaged bread.",
       "common_sources": [
         {
           "name": "Human hair (industrial extraction, mainly China)",
@@ -2193,7 +2193,7 @@
       ],
       "e_number": "E950",
       "category": "additive",
-      "definition": "A synthetic sweetener about 200 times sweeter than sugar. Used in diet drinks, sugar-free desserts, and tabletop sweeteners.",
+      "definition": "Acesulfame K (E950) is a synthetic sweetener about 200 times sweeter than sugar. Used in diet drinks, sugar-free desserts, and tabletop sweeteners.",
       "common_sources": [
         {
           "name": "Synthetic / industrial production",
@@ -2231,7 +2231,7 @@
       ],
       "e_number": "E951",
       "category": "additive",
-      "definition": "A synthetic sweetener about 200 times sweeter than sugar. Made by joining the amino acids aspartic acid and phenylalanine. Common in diet sodas and sugar-free gum.",
+      "definition": "Aspartame (E951) is a synthetic sweetener about 200 times sweeter than sugar. Made by joining the amino acids aspartic acid and phenylalanine. Common in diet sodas and sugar-free gum.",
       "common_sources": [
         {
           "name": "Synthetic / chemical synthesis from amino acids",
@@ -2269,7 +2269,7 @@
       ],
       "e_number": "E955",
       "category": "additive",
-      "definition": "A synthetic sweetener about 600 times sweeter than sugar, made by chlorinating sucrose. Used in diet beverages, sugar-free baked goods, and tabletop sweeteners.",
+      "definition": "Sucralose (E955) is a synthetic sweetener about 600 times sweeter than sugar, made by chlorinating sucrose. Used in diet beverages, sugar-free baked goods, and tabletop sweeteners.",
       "common_sources": [
         {
           "name": "Synthetic from sucrose",
@@ -2307,7 +2307,7 @@
       ],
       "e_number": "E961",
       "category": "additive",
-      "definition": "A synthetic sweetener derived from aspartame, about 8000 times sweeter than sugar.",
+      "definition": "Neotame (E961) is a synthetic sweetener derived from aspartame, about 8000 times sweeter than sugar.",
       "common_sources": [
         {
           "name": "Synthetic",
@@ -2346,7 +2346,7 @@
       ],
       "e_number": null,
       "category": "alcohol",
-      "definition": "The type of alcohol produced by fermentation and present in alcoholic beverages. Also used industrially as a solvent for flavorings, extracts, and pharmaceuticals.",
+      "definition": "Ethanol is the type of alcohol produced by fermentation and present in alcoholic beverages. Also used industrially as a solvent for flavorings, extracts, and pharmaceuticals.",
       "common_sources": [
         {
           "name": "Fermentation of sugars or grains",
@@ -2392,6 +2392,55 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:flavoring",
+      "names": [
+        "Flavoring",
+        "Flavouring",
+        "Flavor",
+        "Flavour",
+        "Artificial Flavoring"
+      ],
+      "e_number": null,
+      "category": "other",
+      "definition": "Flavoring is a generic regulatory term covering any added taste — synthetic or natural, plant or animal, with or without alcohol carrier. The label does not name the underlying ingredients.",
+      "common_sources": [
+        {
+          "name": "Plant-derived (most common)",
+          "note": "Halal"
+        },
+        {
+          "name": "Alcohol-extracted",
+          "note": "Disputed"
+        },
+        {
+          "name": "Animal-derived",
+          "note": "Mushbooh or haram"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "An opaque ingredient category. May be plant-based and halal, or may use alcohol carriers, or rarely may include animal-derived components. Classified as mushbooh by default; verify with the manufacturer.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Flavoring"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:gelatin",
       "names": [
         "Gelatin",
@@ -2399,7 +2448,7 @@
       ],
       "e_number": "E441",
       "category": "additive",
-      "definition": "A protein extracted from animal collagen. Used as a gelling agent in candy, marshmallows, gummies, capsules, yogurt, and many desserts.",
+      "definition": "Gelatin (E441) is a protein extracted from animal collagen. Used as a gelling agent in candy, marshmallows, gummies, capsules, yogurt, and many desserts.",
       "common_sources": [
         {
           "name": "Porcine (pig skin and bone)",
@@ -2457,7 +2506,7 @@
       ],
       "e_number": null,
       "category": "meat",
-      "definition": "Rendered fat from pork. Used as a cooking fat and as an ingredient in pastries, refried beans, and traditional European baking.",
+      "definition": "Lard — rendered fat from pork. Used as a cooking fat and as an ingredient in pastries, refried beans, and traditional European baking.",
       "common_sources": [
         {
           "name": "Pork (pig)",
@@ -2500,7 +2549,7 @@
       ],
       "e_number": "E322",
       "category": "additive",
-      "definition": "An emulsifier used to blend oils and water in chocolate, baked goods, margarine, and many processed foods.",
+      "definition": "Lecithin (E322) is an emulsifier used to blend oils and water in chocolate, baked goods, margarine, and many processed foods.",
       "common_sources": [
         {
           "name": "Soybean",
@@ -2557,7 +2606,7 @@
       ],
       "e_number": "E471",
       "category": "additive",
-      "definition": "An emulsifier derived from glycerol and fatty acids. Used to blend oils and water in bread, margarine, ice cream, peanut butter, and many processed foods.",
+      "definition": "Mono- and Diglycerides of Fatty Acids (E471) is an emulsifier derived from glycerol and fatty acids. Used to blend oils and water in bread, margarine, ice cream, peanut butter, and many processed foods.",
       "common_sources": [
         {
           "name": "Plant oils (soybean, palm, sunflower)",
@@ -2611,7 +2660,7 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "A regulatory umbrella term for any flavoring derived from a natural source — plant, animal, or microbial. The label does not name the underlying ingredients.",
+      "definition": "Natural Flavoring is a regulatory umbrella term for any flavoring derived from a natural source — plant, animal, or microbial. The label does not name the underlying ingredients.",
       "common_sources": [
         {
           "name": "Plant-derived (most common)",
@@ -2651,6 +2700,54 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:natural-vanilla-flavor",
+      "names": [
+        "Natural Vanilla Flavor",
+        "Natural Vanilla Flavour",
+        "Vanilla Flavor",
+        "Vanilla Flavour"
+      ],
+      "e_number": null,
+      "category": "other",
+      "definition": "Natural vanilla flavor is a flavoring made from vanilla beans, typically extracted using ethyl alcohol as the carrier. The label term is regulated but does not specify the solvent.",
+      "common_sources": [
+        {
+          "name": "Vanilla beans extracted in ethanol",
+          "note": "Disputed — alcohol carrier"
+        },
+        {
+          "name": "Alcohol-free vanilla flavoring",
+          "note": "Halal"
+        },
+        {
+          "name": "Glycerin-based vanilla flavoring",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "caution",
+          "explanation": "Natural vanilla flavor is tricky: the vanilla bean itself is halal, but commercial 'natural vanilla flavor' is usually extracted using ethyl alcohol as a solvent or carrier. Halal status depends on the alcohol amount, the cooking process, and your school of jurisprudence. Conservative ruling: mushbooh.",
+          "disputed": true,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Vanilla_extract"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "caution"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:pork",
       "names": [
         "Pork",
@@ -2661,7 +2758,7 @@
       ],
       "e_number": null,
       "category": "meat",
-      "definition": "Meat from pigs and any product derived from pigs (bacon, ham, prosciutto, salami, pancetta).",
+      "definition": "Pork — meat from pigs and any product derived from pigs (bacon, ham, prosciutto, salami, pancetta).",
       "common_sources": [
         {
           "name": "Pig (any cut or preparation)",
@@ -2709,7 +2806,7 @@
       ],
       "e_number": null,
       "category": "additive",
-      "definition": "An enzyme complex used to coagulate milk into cheese curds. Traditionally extracted from the stomach lining of young ruminant animals.",
+      "definition": "Rennet is an enzyme complex used to coagulate milk into cheese curds. Traditionally extracted from the stomach lining of young ruminant animals.",
       "common_sources": [
         {
           "name": "Calf stomach (traditional)",
@@ -2762,7 +2859,7 @@
       ],
       "e_number": null,
       "category": "mineral",
-      "definition": "Sodium chloride. A mineral used as a seasoning and preservative.",
+      "definition": "Salt — sodium chloride. A mineral used as a seasoning and preservative.",
       "common_sources": [
         {
           "name": "Sea salt",
@@ -2808,7 +2905,7 @@
       ],
       "e_number": "E322",
       "category": "additive",
-      "definition": "Plant-derived emulsifier extracted from soybeans. Used to blend oils and water in chocolate, baked goods, and processed foods.",
+      "definition": "Soy Lecithin (E322) — plant-derived emulsifier extracted from soybeans. Used to blend oils and water in chocolate, baked goods, and processed foods.",
       "common_sources": [
         {
           "name": "Soybean",
@@ -2848,7 +2945,7 @@
       ],
       "e_number": null,
       "category": "plant",
-      "definition": "Sucrose extracted from sugar cane or sugar beets, used as a sweetener.",
+      "definition": "Sugar — sucrose extracted from sugar cane or sugar beets, used as a sweetener.",
       "common_sources": [
         {
           "name": "Sugar beet",
@@ -2883,6 +2980,45 @@
       "last_reviewed": "2026-06-02"
     },
     {
+      "id": "en:vanilla",
+      "names": [
+        "Vanilla",
+        "Vanilla Bean",
+        "Vanilla Pod"
+      ],
+      "e_number": null,
+      "category": "plant",
+      "definition": "Vanilla is the dried fruit (bean/pod) of an orchid in the genus Vanilla, the source of all vanilla flavoring.",
+      "common_sources": [
+        {
+          "name": "Vanilla bean",
+          "note": "Halal"
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "The vanilla bean itself is a plant product and unambiguously halal. (Vanilla EXTRACT and natural vanilla FLAVOR are separate entries because they typically use alcohol as a solvent.)",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Vanilla"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-03"
+    },
+    {
       "id": "en:vanilla-extract",
       "names": [
         "Vanilla Extract",
@@ -2890,7 +3026,7 @@
       ],
       "e_number": null,
       "category": "other",
-      "definition": "A flavoring made by macerating vanilla beans in ethanol — typically 35% alcohol by volume per US FDA standard.",
+      "definition": "Vanilla Extract is a flavoring made by macerating vanilla beans in ethanol — typically 35% alcohol by volume per US FDA standard.",
       "common_sources": [
         {
           "name": "Vanilla beans in ethanol (standard)",
@@ -2937,7 +3073,7 @@
       ],
       "e_number": null,
       "category": "mineral",
-      "definition": "H2O. Used as an ingredient, solvent, and base in nearly all processed foods and beverages.",
+      "definition": "Water — h2O. Used as an ingredient, solvent, and base in nearly all processed foods and beverages.",
       "common_sources": [
         {
           "name": "Any source",
@@ -2978,7 +3114,7 @@
       ],
       "e_number": null,
       "category": "dairy",
-      "definition": "Liquid byproduct of cheese-making, often dried into powder for protein supplements, infant formula, and processed foods.",
+      "definition": "Whey — liquid byproduct of cheese-making, often dried into powder for protein supplements, infant formula, and processed foods.",
       "common_sources": [
         {
           "name": "Cheese made with microbial rennet",
@@ -3027,7 +3163,7 @@
       ],
       "e_number": null,
       "category": "alcohol",
-      "definition": "Fermented grape juice. An alcoholic beverage and, in cooking wine form, an ingredient in sauces, marinades, and stews.",
+      "definition": "Wine — fermented grape juice. An alcoholic beverage and, in cooking wine form, an ingredient in sauces, marinades, and stews.",
       "common_sources": [
         {
           "name": "Fermented grape juice",
