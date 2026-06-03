@@ -1,5 +1,5 @@
 {
-  "version": "2026-06-02.4",
+  "version": "2026-06-03.1",
   "profiles": [
     "halal"
   ],
@@ -29,6 +29,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Beef"
+            },
             {
               "source": "Quran 5:3",
               "type": "scripture",
@@ -83,6 +89,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Cheese"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "caution",
@@ -123,6 +135,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Chicken_as_food"
+            },
             {
               "source": "Quran 5:3",
               "type": "scripture",
@@ -204,6 +222,12 @@
           "confidence": "medium",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Carmine"
+            },
+            {
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "forbidden",
@@ -256,6 +280,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Caramel_color"
+            },
             {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
@@ -649,6 +679,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Ascorbic_acid"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "allowed"
@@ -766,6 +802,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Citric_acid"
+            },
             {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
@@ -917,6 +959,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Carrageenan"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "allowed"
@@ -988,6 +1036,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Guar_gum"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "allowed"
@@ -1019,6 +1073,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Xanthan_gum"
+            },
             {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
@@ -1143,6 +1203,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Pectin"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "allowed"
@@ -1187,6 +1253,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Gelatin"
+            },
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
@@ -1355,6 +1427,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Mono-_and_diglycerides_of_fatty_acids"
+            },
+            {
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution"
@@ -1397,6 +1475,12 @@
           "confidence": "medium",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/DATEM"
+            },
+            {
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution"
@@ -1438,6 +1522,12 @@
           "confidence": "medium",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Polyglycerol"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "caution"
@@ -1475,6 +1565,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Polyglycerol_polyricinoleate"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "allowed"
@@ -1511,6 +1607,12 @@
           "disputed": false,
           "confidence": "medium",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Sodium_stearoyl_lactylate"
+            },
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
@@ -1552,6 +1654,12 @@
           "disputed": false,
           "confidence": "medium",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/E_number"
+            },
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
@@ -1638,6 +1746,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Bone_phosphate"
+            },
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
@@ -1796,6 +1910,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Monosodium_glutamate"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "allowed"
@@ -1883,6 +2003,12 @@
           "confidence": "medium",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Disodium_inosinate"
+            },
+            {
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
@@ -1929,6 +2055,12 @@
           "confidence": "medium",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Disodium_ribonucleotides"
+            },
+            {
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution"
@@ -1966,6 +2098,12 @@
           "disputed": true,
           "confidence": "medium",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Shellac"
+            },
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
@@ -2013,6 +2151,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Cysteine"
+            },
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
@@ -2214,6 +2358,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "forbidden",
+              "ref": "https://en.wikipedia.org/wiki/Ethanol"
+            },
+            {
               "source": "Quran 5:90",
               "type": "scripture",
               "status": "forbidden",
@@ -2265,6 +2415,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Gelatin"
+            },
+            {
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
@@ -2303,6 +2459,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "forbidden",
+              "ref": "https://en.wikipedia.org/wiki/Lard"
+            },
             {
               "source": "Quran 2:173",
               "type": "scripture",
@@ -2353,6 +2515,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Lecithin"
+            },
+            {
               "source": "WorldOfIslam E-number list",
               "type": "community",
               "status": "caution",
@@ -2398,6 +2566,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Mono-_and_diglycerides_of_fatty_acids"
+            },
             {
               "source": "WorldOfIslam E-number list",
               "type": "community",
@@ -2446,6 +2620,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Flavoring"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "caution",
@@ -2481,6 +2661,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "forbidden",
+              "ref": "https://en.wikipedia.org/wiki/Pork"
+            },
             {
               "source": "Quran 2:173",
               "type": "scripture",
@@ -2536,6 +2722,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Rennet"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "caution",
@@ -2579,6 +2771,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Salt"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "allowed"
@@ -2610,6 +2808,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Lecithin"
+            },
             {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
@@ -2648,6 +2852,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Sucrose"
+            },
             {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
@@ -2689,6 +2899,12 @@
           "confidence": "high",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Vanilla_extract"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "caution",
@@ -2721,6 +2937,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Water"
+            },
             {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
@@ -2765,6 +2987,12 @@
           "confidence": "medium",
           "opinions": [
             {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "caution",
+              "ref": "https://en.wikipedia.org/wiki/Whey"
+            },
+            {
               "source": "Community consensus across halal-checker resources",
               "type": "community",
               "status": "caution",
@@ -2807,6 +3035,12 @@
           "disputed": false,
           "confidence": "high",
           "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "forbidden",
+              "ref": "https://en.wikipedia.org/wiki/Wine"
+            },
             {
               "source": "Quran 5:90",
               "type": "scripture",

@@ -385,6 +385,21 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
         if op.get("source") == "Open Food Facts taxonomy" and "ref" not in op:
             op["ref"] = off_page_url
 
+    # If this is an E-number, add a Wikipedia citation. The URL pattern
+    # https://en.wikipedia.org/wiki/E<num> redirects to the appropriate
+    # Wikipedia article for every E-number Wikipedia covers.
+    e_num = extract_e_number(off_id, entry)
+    if e_num:
+        already_has_wiki = any(op.get("source") == "Wikipedia"
+                               for op in ruling.get("opinions", []))
+        if not already_has_wiki:
+            ruling["opinions"].insert(0, {
+                "source": "Wikipedia",
+                "type": "scientific",
+                "status": ruling["effective_status"],
+                "ref": f"https://en.wikipedia.org/wiki/{e_num}",
+            })
+
     names = collect_names(entry)
     if not names:
         # Generate a placeholder name from the id
