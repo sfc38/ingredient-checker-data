@@ -274,18 +274,23 @@ def fetch_off_taxonomy(force: bool = False) -> dict:
     return json.loads(data)
 
 
-def get_lang_value(field_value, prefer: tuple[str, ...] = ("en",)) -> str | None:
-    """OFF stores per-language values as { lang: value }. Pull preferred lang."""
+def get_lang_value(field_value, prefer: tuple[str, ...] = ("en",),
+                   allow_fallback: bool = True) -> str | None:
+    """OFF stores per-language values as { lang: value }. Pull preferred lang.
+    If allow_fallback is False and no preferred language is present, return
+    None (rather than picking some arbitrary language). Useful for fields
+    like `description` where showing a Swedish description to an English
+    audience is worse than showing nothing."""
     if not isinstance(field_value, dict):
         return field_value if isinstance(field_value, str) else None
     for lang in prefer:
         v = field_value.get(lang)
         if isinstance(v, str) and v.strip():
             return v.strip()
-    # Fallback to any present value
-    for v in field_value.values():
-        if isinstance(v, str) and v.strip():
-            return v.strip()
+    if allow_fallback:
+        for v in field_value.values():
+            if isinstance(v, str) and v.strip():
+                return v.strip()
     return None
 
 
@@ -636,14 +641,19 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
         slug = off_id.split(":", 1)[-1]
         names = [slug.replace("-", " ").capitalize()]
 
-    raw_desc = get_lang_value(entry.get("description"))
+    # Only accept English OFF descriptions. Showing a Swedish/French/etc
+    # paragraph to an English-only UI is worse than falling through to
+    # Wikipedia (which is what `definition is None` triggers below).
+    raw_desc = get_lang_value(entry.get("description"), allow_fallback=False)
     definition = clean_definition(raw_desc, names)
 
     e_num = extract_e_number(off_id, entry)
 
     # Try Wikipedia for a definition. For E-numbers: first the "E<num>"
-    # page, then fall back to the primary English ingredient name.
-    # For non-E ingredients: try the primary name directly.
+    # page. For everything: try the primary English name plus a series
+    # of suffix-stripped variations. Example: "pecan nut" -> also try
+    # "pecan" (because Wikipedia's article is just "Pecan"). Same for
+    # "tomato paste", "almond meal", "coconut oil", "wheat flour" etc.
     wiki_url_for_definition: str | None = None
     wiki_canonical_title: str | None = None
     if wiki_cache is not None:
@@ -651,7 +661,24 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
         if e_num:
             candidate_titles.append(e_num)
         if names:
-            candidate_titles.append(names[0])
+            primary = names[0]
+            candidate_titles.append(primary)
+            # Strip common compound suffixes one at a time
+            suffix_stripped = primary
+            for suffix in (" nut", " nuts", " seed", " seeds", " kernel",
+                           " flour", " meal", " powder", " oil",
+                           " butter", " extract", " paste", " puree",
+                           " syrup", " juice"):
+                if suffix_stripped.lower().endswith(suffix):
+                    suffix_stripped = suffix_stripped[: -len(suffix)].strip()
+            if suffix_stripped and suffix_stripped != primary:
+                candidate_titles.append(suffix_stripped)
+            # Last resort: the first word (covers "wild rice" -> "wild",
+            # but more importantly "pecan nuts" -> "pecan" cases the
+            # suffix-strip missed)
+            first_word = primary.split()[0] if primary.split() else ""
+            if first_word and first_word.lower() not in [c.lower() for c in candidate_titles]:
+                candidate_titles.append(first_word)
         for title in candidate_titles:
             wiki = fetch_wiki(title, wiki_cache)
             if wiki and wiki.get("extract"):
