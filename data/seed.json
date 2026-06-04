@@ -2719,7 +2719,18 @@
         "Flavouring",
         "Flavor",
         "Flavour",
-        "Artificial Flavoring"
+        "Flavors",
+        "Flavours",
+        "Flavorings",
+        "Flavourings",
+        "Artificial Flavoring",
+        "Artificial Flavouring",
+        "Artificial Flavor",
+        "Artificial Flavour",
+        "Artificial Flavors",
+        "Artificial Flavours",
+        "Artificial Flavorings",
+        "Artificial Flavourings"
       ],
       "e_number": null,
       "category": "other",
@@ -3199,7 +3210,11 @@
         "Natural Flavoring",
         "Natural Flavor",
         "Natural Flavour",
-        "Natural Flavours"
+        "Natural Flavours",
+        "Natural Flavouring",
+        "Natural Flavourings",
+        "Natural Flavors",
+        "Natural Flavorings"
       ],
       "e_number": null,
       "category": "other",

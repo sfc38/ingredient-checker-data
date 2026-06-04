@@ -377,6 +377,81 @@ def get_inherited_flag(off_id: str, off: dict, field: str,
     return None
 
 
+def is_descendant_of_any(off_id: str, off: dict, ancestor_ids: set[str],
+                         depth: int = 0, max_depth: int = 6,
+                         visited: set | None = None) -> bool:
+    """True if off_id is `ancestor_ids` itself, or transitively descends
+    from any of them via OFF's parent tree."""
+    if off_id in ancestor_ids:
+        return True
+    if depth >= max_depth:
+        return False
+    if visited is None:
+        visited = set()
+    if off_id in visited:
+        return False
+    visited.add(off_id)
+    entry = off.get(off_id)
+    if not isinstance(entry, dict):
+        return False
+    parents = entry.get("parents") or []
+    if not isinstance(parents, list):
+        return False
+    for p in parents:
+        if isinstance(p, str) and is_descendant_of_any(
+            p, off, ancestor_ids, depth + 1, max_depth, visited
+        ):
+            return True
+    return False
+
+
+# Sunni majority view (and explicitly Shafi'i, Maliki, Hanbali): all fish
+# are halal regardless of slaughter method; the Quranic basis is
+# "Lawful to you is the game of the sea and its food" (5:96). Hanafi
+# school restricts to fish (not other sea creatures), which is what
+# `en:fish` covers — shellfish/crustaceans live under `en:seafood`
+# alongside fish, so we only override the strict fish branch.
+HALAL_FISH_ANCESTORS = {"en:fish"}
+
+
+def apply_fish_halal_override(off_id: str, off: dict, ruling: dict) -> None:
+    """If this ingredient descends from `en:fish`, replace a caution
+    verdict driven by OFF's `vegetarian: no` flag with `allowed`,
+    because fish do not require Islamic ritual slaughter."""
+    if ruling.get("effective_status") != "caution":
+        return
+    if not is_descendant_of_any(off_id, off, HALAL_FISH_ANCESTORS):
+        return
+    # Only override the "vegetarian: no" caution path — leave other
+    # caution reasons (e.g. halal-aware pattern matches) untouched.
+    opinions = ruling.get("opinions", [])
+    triggered_by_off = any(
+        op.get("source") == "Open Food Facts taxonomy"
+        and op.get("note") == "vegetarian: no"
+        for op in opinions
+    )
+    if not triggered_by_off:
+        return
+    ruling["effective_status"] = "allowed"
+    ruling["explanation"] = (
+        "Fish do not require Islamic ritual slaughter (dhabihah) to be "
+        "permissible. The Quran (5:96) explicitly permits seafood, and "
+        "all four Sunni schools — Hanafi, Shafi'i, Maliki, Hanbali — "
+        "agree that fish is halal regardless of how it was caught or "
+        "killed. Open Food Facts marks fish as non-vegetarian for "
+        "dietary classification purposes, but that flag does not "
+        "translate to a halal concern for fish."
+    )
+    for op in opinions:
+        if (op.get("source") == "Open Food Facts taxonomy"
+                and op.get("note") == "vegetarian: no"):
+            op["status"] = "allowed"
+            op["note"] = (
+                "vegetarian: no, but classified as fish — fish is halal "
+                "in all Sunni schools without ritual slaughter"
+            )
+
+
 def clean_definition(raw: str | None, names: list[str]) -> str | None:
     """OFF descriptions often start with the ALL-CAPS name followed by
     a dash and the E-number; clean that off to leave a readable sentence."""
@@ -531,6 +606,45 @@ def heuristic_halal_ruling(vegan: str | None, vegetarian: str | None) -> dict | 
     return None
 
 
+def _normalize_name(name: str) -> str:
+    """Lower + collapse British/American spelling variants so the same
+    ingredient under either locale matches a single seed entry."""
+    n = name.strip().lower()
+    n = n.replace("flavouring", "flavoring").replace("flavour", "flavor")
+    n = n.replace("colouring", "coloring").replace("colour", "color")
+    # strip trailing 's' so "natural flavors" matches "natural flavor"
+    if n.endswith("s") and len(n) > 3:
+        n = n[:-1]
+    return n
+
+
+def build_seed_name_index(seed_ingredients: list[dict]) -> dict[str, str]:
+    """Map every normalized name from every seed entry back to its id."""
+    idx: dict[str, str] = {}
+    for entry in seed_ingredients:
+        for n in entry.get("names", []):
+            if not isinstance(n, str):
+                continue
+            key = _normalize_name(n)
+            # First-write wins so primary names beat aliases on conflicts.
+            idx.setdefault(key, entry["id"])
+    return idx
+
+
+def find_seed_by_name(entry: dict, seed_name_index: dict[str, str],
+                      self_id: str) -> str | None:
+    """Look up an OFF taxonomy entry's names against the seed name index.
+    Catches cases where en:natural-flavouring (British) refers to the
+    same ingredient as the seed's en:natural-flavoring (American) but
+    isn't a taxonomy descendant."""
+    names = collect_names(entry)
+    for name in names:
+        seed_id = seed_name_index.get(_normalize_name(name))
+        if seed_id and seed_id != self_id:
+            return seed_id
+    return None
+
+
 def find_seed_ancestor(off_id: str, off: dict, seed_ids: set[str],
                        max_depth: int = 8) -> str | None:
     """BFS through OFF parents to find the nearest ancestor that is in seed.
@@ -586,12 +700,20 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
                           seed_ids: set[str] | None = None,
                           seed_by_id: dict | None = None,
                           wiki_cache: dict | None = None,
-                          worldofislam: dict | None = None) -> dict | None:
+                          worldofislam: dict | None = None,
+                          seed_name_index: dict[str, str] | None = None) -> dict | None:
     # 1. Check if any ancestor is in the seed — inherit if so.
+    seed_match: str | None = None
     if seed_ids and seed_by_id:
-        seed_ancestor = find_seed_ancestor(off_id, off, seed_ids)
-        if seed_ancestor is not None:
-            ruling = inherited_ruling_from_seed(seed_ancestor, seed_by_id, off_id)
+        seed_match = find_seed_ancestor(off_id, off, seed_ids)
+        # 1b. If no taxonomy ancestor matched, check for a name-based
+        # match — handles British/American spelling siblings (e.g.
+        # en:natural-flavouring -> en:natural-flavoring) that aren't
+        # parent/child in OFF's taxonomy.
+        if seed_match is None and seed_name_index is not None:
+            seed_match = find_seed_by_name(entry, seed_name_index, off_id)
+        if seed_match is not None:
+            ruling = inherited_ruling_from_seed(seed_match, seed_by_id, off_id)
             names = collect_names(entry) or [off_id.split(":", 1)[-1].replace("-", " ").capitalize()]
             raw_desc = get_lang_value(entry.get("description"))
             definition = clean_definition(raw_desc, names)
@@ -613,6 +735,10 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
     ruling = heuristic_halal_ruling(vegan, vegetarian)
     if ruling is None:
         return None
+
+    # Fish are halal regardless of slaughter — override the
+    # vegetarian:no caution before the rest of the pipeline runs.
+    apply_fish_halal_override(off_id, off, ruling)
 
     # Attach the OFF ingredient page URL as a tappable source ref.
     off_page_url = f"https://world.openfoodfacts.org/ingredient/{off_id}"
@@ -673,12 +799,11 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
                     suffix_stripped = suffix_stripped[: -len(suffix)].strip()
             if suffix_stripped and suffix_stripped != primary:
                 candidate_titles.append(suffix_stripped)
-            # Last resort: the first word (covers "wild rice" -> "wild",
-            # but more importantly "pecan nuts" -> "pecan" cases the
-            # suffix-strip missed)
-            first_word = primary.split()[0] if primary.split() else ""
-            if first_word and first_word.lower() not in [c.lower() for c in candidate_titles]:
-                candidate_titles.append(first_word)
+            # Deliberately *not* falling back to the first word alone —
+            # "atlantic salmon" -> "Atlantic" hits Atlantic Ocean,
+            # "natural flavouring" -> "Natural" hits Nature, etc. The
+            # suffix-strip list above covers the legitimate cases like
+            # "pecan nuts" -> "pecan" without dragging in concept pages.
         for title in candidate_titles:
             wiki = fetch_wiki(title, wiki_cache)
             if wiki and wiki.get("extract"):
@@ -774,6 +899,10 @@ def main() -> None:
     worldofislam = parse_worldofislam_md()
     print(f"  {len(worldofislam)} E-number rulings")
 
+    print("Indexing seed names for cross-locale aliasing ...")
+    seed_name_index = build_seed_name_index(seed["ingredients"])
+    print(f"  {len(seed_name_index)} unique normalized seed names")
+
     print("Building bootstrap entries ...")
     new_entries: list[dict] = []
     no_id_filter = 0
@@ -789,7 +918,8 @@ def main() -> None:
         if not off_id.startswith("en:"):
             no_id_filter += 1
             continue
-        built = build_bootstrap_entry(off_id, entry, off, seed_ids, seed_by_id, wiki_cache, worldofislam)
+        built = build_bootstrap_entry(off_id, entry, off, seed_ids, seed_by_id,
+                                      wiki_cache, worldofislam, seed_name_index)
         if built is None:
             no_ruling += 1
             continue
