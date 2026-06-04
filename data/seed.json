@@ -3832,6 +3832,57 @@
       "last_reviewed": "2026-06-03"
     },
     {
+      "id": "en:vitamins",
+      "names": [
+        "Vitamins",
+        "Added vitamins",
+        "Vitamin",
+        "Mixed vitamins"
+      ],
+      "category": "additive",
+      "definition": "Vitamins are essential micronutrients added to fortified foods. Commercially produced by chemical synthesis (most B vitamins, vitamin C, vitamin E), microbial fermentation (vitamin B12, riboflavin), or extraction (vitamin D3 from lanolin; vitamin A from fish liver oil or synthesis).",
+      "common_sources": [
+        {
+          "name": "Chemical synthesis",
+          "note": "Halal — most B vitamins (thiamine, riboflavin, niacin, B6), vitamin C, vitamin E, provitamin A."
+        },
+        {
+          "name": "Microbial fermentation",
+          "note": "Halal — vitamin B12 and riboflavin are produced by bacterial cultures."
+        },
+        {
+          "name": "Lanolin (Vitamin D3)",
+          "note": "Generally halal — extracted from sheep wool without slaughter; allowed across mainstream Sunni schools. Vegan D2 (ergocalciferol) is an alternative."
+        },
+        {
+          "name": "Fish liver oil",
+          "note": "Halal — fish are halal regardless of slaughter method."
+        }
+      ],
+      "rulings": {
+        "halal": {
+          "effective_status": "allowed",
+          "explanation": "Vitamins added to fortified foods are halal across all forms used in commercial food production: synthetic (most B vitamins, C, E), fermentation-derived (B12, B2), lanolin-derived (D3, allowed by mainstream Sunni consensus), and plant or fish-derived. Salt forms like thiamine mononitrate, thiamine hydrochloride, and pyridoxine hydrochloride are chemically equivalent to the parent vitamin and share the same ruling.",
+          "disputed": false,
+          "confidence": "high",
+          "opinions": [
+            {
+              "source": "Wikipedia",
+              "type": "scientific",
+              "status": "allowed",
+              "ref": "https://en.wikipedia.org/wiki/Vitamin"
+            },
+            {
+              "source": "Community consensus across halal-checker resources",
+              "type": "community",
+              "status": "allowed"
+            }
+          ]
+        }
+      },
+      "last_reviewed": "2026-06-04"
+    },
+    {
       "id": "en:water",
       "names": [
         "Water",

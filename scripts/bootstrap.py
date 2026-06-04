@@ -645,6 +645,46 @@ def find_seed_by_name(entry: dict, seed_name_index: dict[str, str],
     return None
 
 
+def resolve_wikipedia_definition(names: list[str], e_num: str | None,
+                                 wiki_cache: dict | None) -> tuple[str | None, str | None, str | None]:
+    """Try to find a Wikipedia article whose extract we can use as a
+    definition. Returns (extract, url, canonical_title). For E-numbers
+    we try the "E<num>" page first. For everything we try the primary
+    English name plus a series of suffix-stripped variations: "pecan
+    nut" -> "pecan", "tomato paste" -> "tomato", etc. Deliberately *not*
+    falling back to the first word alone, because "atlantic salmon" ->
+    "Atlantic" lands on Atlantic Ocean and "natural flavour" -> "Natural"
+    lands on Nature."""
+    if wiki_cache is None:
+        return None, None, None
+    candidate_titles: list[str] = []
+    if e_num:
+        candidate_titles.append(e_num)
+    if names:
+        primary = names[0]
+        candidate_titles.append(primary)
+        suffix_stripped = primary
+        for suffix in (" nut", " nuts", " seed", " seeds", " kernel",
+                       " flour", " meal", " powder", " oil",
+                       " butter", " extract", " paste", " puree",
+                       " syrup", " juice"):
+            if suffix_stripped.lower().endswith(suffix):
+                suffix_stripped = suffix_stripped[: -len(suffix)].strip()
+        if suffix_stripped and suffix_stripped != primary:
+            candidate_titles.append(suffix_stripped)
+    for title in candidate_titles:
+        wiki = fetch_wiki(title, wiki_cache)
+        if wiki and wiki.get("extract"):
+            url = wiki.get("url")
+            canonical_title = None
+            if url and "/wiki/" in url:
+                import urllib.parse as urlparse
+                raw = url.rsplit("/wiki/", 1)[-1]
+                canonical_title = urlparse.unquote(raw).replace("_", " ")
+            return wiki["extract"], url, canonical_title
+    return None, None, None
+
+
 def find_seed_ancestor(off_id: str, off: dict, seed_ids: set[str],
                        max_depth: int = 8) -> str | None:
     """BFS through OFF parents to find the nearest ancestor that is in seed.
@@ -715,12 +755,28 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
         if seed_match is not None:
             ruling = inherited_ruling_from_seed(seed_match, seed_by_id, off_id)
             names = collect_names(entry) or [off_id.split(":", 1)[-1].replace("-", " ").capitalize()]
-            raw_desc = get_lang_value(entry.get("description"))
+            raw_desc = get_lang_value(entry.get("description"), allow_fallback=False)
             definition = clean_definition(raw_desc, names)
+            # Inherit e_number from the seed when OFF doesn't have one
+            # directly. en:soya-lecithin doesn't carry an E-code in OFF
+            # but its seed parent en:soy-lecithin is E322 — without
+            # this, the iOS sub-ingredient filter can't tell that an
+            # "E322" sub is the same additive as the parent.
+            e_num = extract_e_number(off_id, entry)
+            if not e_num:
+                e_num = seed_by_id[seed_match].get("e_number")
+            # Fall through to Wikipedia for a definition when OFF has
+            # no English description — without this, inheriting entries
+            # like en:thiamin-mononitrate would have an empty "What it is"
+            # section even though Wikipedia has a good article.
+            if definition is None:
+                wiki_extract, _, _ = resolve_wikipedia_definition(names, e_num, wiki_cache)
+                if wiki_extract:
+                    definition = wiki_extract
             result = {
                 "id": off_id,
                 "names": names,
-                "e_number": extract_e_number(off_id, entry),
+                "e_number": e_num,
                 "category": derive_category(off_id, entry),
             }
             if definition:
@@ -775,47 +831,10 @@ def build_bootstrap_entry(off_id: str, entry: dict, off: dict,
 
     e_num = extract_e_number(off_id, entry)
 
-    # Try Wikipedia for a definition. For E-numbers: first the "E<num>"
-    # page. For everything: try the primary English name plus a series
-    # of suffix-stripped variations. Example: "pecan nut" -> also try
-    # "pecan" (because Wikipedia's article is just "Pecan"). Same for
-    # "tomato paste", "almond meal", "coconut oil", "wheat flour" etc.
-    wiki_url_for_definition: str | None = None
-    wiki_canonical_title: str | None = None
-    if wiki_cache is not None:
-        candidate_titles: list[str] = []
-        if e_num:
-            candidate_titles.append(e_num)
-        if names:
-            primary = names[0]
-            candidate_titles.append(primary)
-            # Strip common compound suffixes one at a time
-            suffix_stripped = primary
-            for suffix in (" nut", " nuts", " seed", " seeds", " kernel",
-                           " flour", " meal", " powder", " oil",
-                           " butter", " extract", " paste", " puree",
-                           " syrup", " juice"):
-                if suffix_stripped.lower().endswith(suffix):
-                    suffix_stripped = suffix_stripped[: -len(suffix)].strip()
-            if suffix_stripped and suffix_stripped != primary:
-                candidate_titles.append(suffix_stripped)
-            # Deliberately *not* falling back to the first word alone —
-            # "atlantic salmon" -> "Atlantic" hits Atlantic Ocean,
-            # "natural flavouring" -> "Natural" hits Nature, etc. The
-            # suffix-strip list above covers the legitimate cases like
-            # "pecan nuts" -> "pecan" without dragging in concept pages.
-        for title in candidate_titles:
-            wiki = fetch_wiki(title, wiki_cache)
-            if wiki and wiki.get("extract"):
-                if definition is None:
-                    definition = wiki["extract"]
-                wiki_url_for_definition = wiki.get("url")
-                # Extract canonical Wikipedia title for redirect lookup
-                if wiki_url_for_definition and "/wiki/" in wiki_url_for_definition:
-                    import urllib.parse as urlparse
-                    raw = wiki_url_for_definition.rsplit("/wiki/", 1)[-1]
-                    wiki_canonical_title = urlparse.unquote(raw).replace("_", " ")
-                break
+    wiki_extract, wiki_url_for_definition, wiki_canonical_title = \
+        resolve_wikipedia_definition(names, e_num, wiki_cache)
+    if definition is None and wiki_extract:
+        definition = wiki_extract
 
     # Apply halal-aware pattern heuristics BEFORE we expand names[] with
     # Wikipedia redirects. Reason: a Wikipedia redirect for "Almond" can
